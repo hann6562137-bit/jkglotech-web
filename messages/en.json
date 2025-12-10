@@ -1,0 +1,16 @@
+{
+  "menu": {
+    "bodyarmor": "Body Armor",
+    "bulletproof-vest": "Bulletproof Vest",
+    "stabproof-vest": "Stabproof Vest",
+    "plate": "Plate",
+    "thermal": "Thermal",
+    "garment": "Garment",
+    "glove": "Glove",
+    "hood": "Hood",
+    "equipment": "Equipment",
+    "ev-tank": "EV Tank",
+    "washer": "Washer",
+    "about-us": "About us"
+  }
+}
