@@ -39,8 +39,8 @@ export default async function LocaleLayout({ children, params }: Props) {
         <html lang={locale}>
             <NextIntlClientProvider>
                 <body className="antialiased flex flex-col min-h-screen bg-[#000000] text-white">
-                    <TopBar pathname=''/>
-                    <main className="grow pt-[100px]">
+                    <TopBar pathname='' />
+                    <main className="grow">
                         {children}
                     </main>
                     <Footer />

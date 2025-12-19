@@ -38,7 +38,7 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
                         <div
                             className="flex items-center justify-center h-full px-4 me-6"
                         >
-                            {t(item.nameKey)} 
+                            {t(item.nameKey)}
                             <Image
                                 src="/assets/topbar/down.svg"
                                 alt="Down Arrow"
@@ -48,7 +48,7 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
                             />
                             <div
                                 className={`absolute top-full left-0 w-full flex flex-col invisible group-hover:visible py-7`}
-                                ref={(el) => {menuRefs.current[index] = el}}
+                                ref={(el) => { menuRefs.current[index] = el }}
                             >
                                 {
                                     item.subMenu?.map((subItem) => (
@@ -86,16 +86,16 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
     );
 }
 
-export default function TopBar({pathname}: {pathname: string}) {
+export default function TopBar({ pathname }: { pathname: string }) {
     const t = useTranslations('menu');
-    
+
     return (
-        <nav 
+        <nav
             key={pathname}
-            className="fixed top-0 left-0 right-0 z-50 w-screen h-[100px] antialiased">
+            className="fixed top-0 left-0 right-0 z-50 w-screen h-[100px] antialiased bg-black/50 backdrop-blur-md">
             <div className="content-container h-full">
-                <div className="mx-5 flex flex-row items-center justify-start h-full border-b border-[#676767] font-aldrich">
-                    <Link 
+                <div className="mx-5 flex flex-row items-center justify-start h-full border-b border-[#404040] font-aldrich">
+                    <Link
                         href="/"
                         className="flex items-center justify-center w-[250px] h-full">
                         <Image

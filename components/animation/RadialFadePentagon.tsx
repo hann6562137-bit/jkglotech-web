@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 type Stat = { name: string; percentage: number };
 
+// Internal coordinate system size
+const COORD_SIZE = 500;
+
 export default function LayeredRadar({
-    size = 500,
     duration = 700,
     stats = [
         { name: "신축성", percentage: 80 },
@@ -15,31 +17,54 @@ export default function LayeredRadar({
         { name: "강성", percentage: 40 },
     ],
 }: {
-    size?: number;
     duration?: number;
     stats: Stat[];
 }) {
-    const [opacity, setOpacity] = useState(0);
     const [scale, setScale] = useState(0.7);
+    const [isVisible, setIsVisible] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
 
-    const cx = size / 2;
-    const cy = size / 2;
-    const rMax = size * 0.2;
+    const cx = COORD_SIZE / 2;
+    const cy = COORD_SIZE / 2;
+    const rMax = COORD_SIZE * 0.4;
 
     useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isVisible) return;
+
         const start = performance.now();
         const animate = (t: number) => {
             const elapsed = t - start;
             const ratio = Math.min(elapsed / duration, 1);
             const eased = 1 - Math.pow(1 - ratio, 3);
 
-            setOpacity(eased);
             setScale(0.7 + eased * 0.3);
 
             if (ratio < 1) requestAnimationFrame(animate);
         };
         requestAnimationFrame(animate);
-    }, [duration]);
+    }, [duration, isVisible]);
 
     if (stats.length !== 5) {
         return <div style={{ color: "red" }}>stats.length must be 5</div>;
@@ -55,14 +80,23 @@ export default function LayeredRadar({
             .join(" ");
 
     const layerPercents = [
-        [20, 20, 20, 20, 20],
-        [45, 45, 45, 45, 45],
-        [70, 70, 70, 70, 70],
+        [40, 40, 40, 40, 40],
+        [60, 60, 60, 60, 60],
+        [80, 80, 80, 80, 80],
         [100, 100, 100, 100, 100],
     ];
 
+    const colors = [
+        'rgba(255,255,255,0.1)',
+        'rgba(255,255,255,0.1)',
+        'rgba(255,255,255,0.1)',
+        'rgba(255,255,255,0)',
+    ]
+
     const layers = layerPercents.map(getPolygon);
     const dataPoints = getPolygon(stats.map((s) => s.percentage));
+
+    // dataPoints for outline animation logic (scaled inside SVG logic if needed, but here we just animate transform)
 
     // 🔥 최외각 꼭짓점 좌표 계산 (100% 레이어)
     const outerPoints = layerPercents[3].map((percent, i) => {
@@ -76,74 +110,49 @@ export default function LayeredRadar({
     });
 
     return (
-        <div style={{ width: size, height: size }}>
-            <svg width={size} height={size}>
-                <defs>
-                    <mask id="radarMask">
-                        <rect width="100%" height="100%" fill="black" />
-                        <polygon
-                            points={dataPoints}
-                            fill="white"
-                            style={{
-                                transformOrigin: `${cx}px ${cy}px`,
-                                transform: `scale(${scale})`,
-                            }}
-                        />
-                    </mask>
-                </defs>
-
-                {/* ⭐ 레이어 채움 (mask 적용) */}
-                <g mask="url(#radarMask)" opacity={opacity}>
-                    {layers.map((points, i) => (
-                        <polygon
-                            key={i}
-                            points={points}
-                            fill={`rgba(255,255,255,${0.15 - i * 0.03})`}
-                        />
-                    ))}
-                </g>
-
+        <div className="w-full h-full" ref={containerRef}>
+            <svg viewBox={`0 0 ${COORD_SIZE} ${COORD_SIZE}`} className="w-full h-full overflow-visible">
                 {/* ⭐ 레이어 오각형 border (항상 표시) */}
                 {layers.map((points, i) => (
                     <polygon
                         key={i}
                         points={points}
-                        fill="none"
+                        fill={colors[i]}
                         stroke="white"
-                        strokeDasharray="4 3"
-                        strokeWidth={1}
+                        strokeDasharray="2 2"
+                        strokeWidth={0.7}
                         opacity={0.6}
                     />
                 ))}
 
-                {/* ⭐ 데이터 오각형 Outline */}
                 <polygon
                     points={dataPoints}
-                    fill="none"
-                    stroke="white"
-                    strokeWidth={2}
-                    strokeOpacity={0.9}
+                    fill="rgba(255,255,255,0.2)"
                     style={{
                         transformOrigin: `${cx}px ${cy}px`,
                         transform: `scale(${scale})`,
-                        opacity,
                     }}
                 />
 
                 {/* ⭐ 각 꼭짓점에 점 + 텍스트 */}
                 {outerPoints.map((p, i) => {
                     // 텍스트는 점에서 더 밖으로
-                    const labelRadius = rMax + 18; // 텍스트 거리
-                    const lx = cx + labelRadius * Math.cos(p.angle);
+                    const labelRadius = rMax + 25; // 텍스트 거리 보정
+                    let lx = cx + labelRadius * Math.cos(p.angle);
                     const ly = cy + labelRadius * Math.sin(p.angle);
 
-                    // ✔ 각도에 따라 align 다르게
-                    let anchor: "middle" | "start" | "end" = "middle";
-                    if (p.angle > -Math.PI / 2 && p.angle < Math.PI / 2) {
-                        anchor = "start"; // 오른쪽
-                    } else if (p.angle > Math.PI / 2 || p.angle < -Math.PI / 2) {
-                        anchor = "end"; // 왼쪽
-                    }
+                    // 텍스트 라인 분리
+                    const lines = stats[i].name.split('\n');
+                    const lineHeight = 16;
+
+                    // Left-align text block manually based on position
+                    // 0: Top (-90deg), 1: TR (-18deg), 2: BR (54deg), 3: BL (126deg), 4: TL (-162deg)
+                    let xOffset = 0;
+                    if (i === 0) xOffset = -40; // Center-ish for Top
+                    else if (i === 3 || i === 4) xOffset = -80; // Shift left for Left-side points (BL, TL)
+                    // i === 1, 2 are Right side, no offset needed for start-align
+
+                    const finalLx = lx + xOffset;
 
                     return (
                         <g key={i}>
@@ -152,14 +161,20 @@ export default function LayeredRadar({
 
                             {/* 텍스트 */}
                             <text
-                                x={lx}
-                                y={ly}
+                                x={finalLx}
+                                y={ly - ((lines.length - 1) * lineHeight) / 2} // 세로 중앙 정렬 보정
                                 fill="white"
-                                fontSize="12"
-                                textAnchor={anchor}
+                                fontSize="16"
+                                fontWeight="medium"
+                                textAnchor="start" // Always start (left) align
                                 dominantBaseline="middle"
+                                className="font-pretendard"
                             >
-                                {stats[i].name}
+                                {lines.map((line, k) => (
+                                    <tspan key={k} x={finalLx} dy={k === 0 ? 0 : lineHeight}>
+                                        {line}
+                                    </tspan>
+                                ))}
                             </text>
                         </g>
                     );
