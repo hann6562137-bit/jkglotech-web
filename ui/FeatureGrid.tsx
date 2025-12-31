@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useId } from 'react';
 
 interface FeatureGridItem {
     number: string;
@@ -12,10 +14,22 @@ interface FeatureGridProps {
 }
 
 const FeatureGrid: React.FC<FeatureGridProps> = ({ items, className = '' }) => {
+    const anchorId = useId();
+
     return (
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 ${className}`}>
+        <div
+            id={anchorId}
+            className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 ${className}`}
+        >
             {items.map((item, index) => (
-                <div key={index} className="flex flex-col text-white">
+                <div
+                    key={index}
+                    className="flex flex-col text-white"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay={`${index * 150}`}
+                    data-aos-anchor={`#${anchorId}`}
+                >
                     <div className="border-b border-gray-700 pb-2 mb-6">
                         <span className="text-[#FFD900] font-aldrich text-[40px] font-bold">
                             {item.number}

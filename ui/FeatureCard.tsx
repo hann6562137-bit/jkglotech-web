@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useId } from "react";
 
 interface FeatureCardProps {
     imageSrc: string;
@@ -19,10 +20,17 @@ export default function FeatureCard({
     isRight = false,
     isBackground = true
 }: FeatureCardProps) {
+    const anchorId = useId();
+
     return (
         <div className={`flex flex-col space-y-5 ${isRight ? 'md:flex-row-reverse' : 'md:flex-row'} w-full overflow-hidden ${className} font-pretendard`}>
             {/* Image Section */}
-            <div className={`relative w-full md:w-1/2 h-auto ${isBackground ? 'bg-[#303030]' : ''}`}>
+            <div
+                id={anchorId}
+                className={`relative w-full md:w-1/2 h-auto ${isBackground ? 'bg-[#303030]' : ''}`}
+                data-aos="fade-up"
+                data-aos-duration="800"
+            >
                 <Image
                     src={imageSrc}
                     alt={title}
@@ -34,17 +42,35 @@ export default function FeatureCard({
 
             {/* Text Section */}
             <div className="flex flex-col justify-center w-full md:w-1/2 p-8 md:p-16 md:pr-24">
-                <h3 className="text-[40px] font-bold text-white mb-6 font-pretendard">
+                <h3
+                    className="text-[40px] font-bold text-white mb-6 font-pretendard"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="200"
+                    data-aos-anchor={`#${anchorId}`}
+                >
                     {title}
                 </h3>
                 {Array.isArray(description) ? (
-                    <ul className="text-gray-400 text-[20px] leading-relaxed font-pretendard list-disc pl-5 space-y-2">
+                    <ul
+                        className="text-gray-400 text-[20px] leading-relaxed font-pretendard list-disc pl-5 space-y-2"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="400"
+                        data-aos-anchor={`#${anchorId}`}
+                    >
                         {description.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
                 ) : (
-                    <p className="text-gray-400 text-[20px] leading-relaxed whitespace-pre-line font-pretendard">
+                    <p
+                        className="text-gray-400 text-[20px] leading-relaxed whitespace-pre-line font-pretendard"
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        data-aos-delay="400"
+                        data-aos-anchor={`#${anchorId}`}
+                    >
                         {description}
                     </p>
                 )}

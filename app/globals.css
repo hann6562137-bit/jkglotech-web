@@ -198,3 +198,23 @@ input::-webkit-calendar-picker-indicator {
   cursor: pointer;
   font-style: italic;
 }
+
+/* Full-width infinite marquee (left -> right) */
+.jk-marquee {
+  overflow: hidden;
+}
+
+.jk-marquee__track {
+  width: max-content;
+  will-change: transform;
+  animation: jk-marquee-ltr 45s linear infinite;
+}
+
+@keyframes jk-marquee-ltr {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

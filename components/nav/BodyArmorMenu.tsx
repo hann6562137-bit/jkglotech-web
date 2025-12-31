@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 
 function MenuButton({ label, isSelected, href }: { label: string, isSelected: boolean, href: string }) {
     return (
-        <Link href={href} className={`font-aldrich text-[35px] text-white flex-1 flex items-center justify-center
+        <Link href={href} className={`font-aldrich text-[35px] text-white flex-1 flex items-center justify-center cursor-pointer py-4
             ${isSelected ? 'border-b-2 border-[#FFD900]' : 'border-b-2 border-[#303030]'}`}>
             {label}
         </Link>
@@ -21,7 +21,7 @@ export async function BodyArmorMenu({ currentMenu, menuNameKey = "bodyarmor" }: 
     const t = await getTranslations("menu");
 
     return (
-        <div className="w-full flex flex-row space-x-2">
+        <div className="w-full flex flex-row gap-10">
             {
                 bodyArmorMenuItems.map((item) => (
                     <MenuButton

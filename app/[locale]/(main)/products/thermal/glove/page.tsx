@@ -1,9 +1,10 @@
 import PentagonChart from "@/components/animation/PentagonChart";
 import { BodyArmorMenu } from "@/components/nav/BodyArmorMenu";
-import { Link } from "@/i18n/routing";
 import Banner from "@/ui/banner";
 import FeatureCard from "@/ui/FeatureCard";
 import FeatureGrid from "@/ui/FeatureGrid";
+import ThermalMiddleHero from "@/ui/ThermalMiddleHero";
+import ThermalBottomHero from "@/ui/ThermalBottomHero";
 import Image from "next/image";
 
 export default function GlovePage() {
@@ -83,22 +84,16 @@ export default function GlovePage() {
                     />
                 </div>
             </div>
-            <div className="w-full relative">
-                <Image
-                    src="/assets/products/glove-bottom.png"
-                    alt="glove"
-                    width={1920}
-                    height={1080}
-                    className="w-full h-auto"
-                />
-                <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <p className="text-white font-aldrich text-[24px] md:text-[32px] text-center leading-relaxed drop-shadow-md">
-                        DEXCut-Pro, made with DuPont™ Kevlar® Engineered Yarn,<br />
-                        provides comprehensive protection against cuts, flames,<br />
-                        and arc flash in a single glove.
-                    </p>
-                </div>
-            </div>
+            <ThermalMiddleHero
+                imageSrc="/assets/products/glove-bottom.png"
+                alt="glove"
+            >
+                <>
+                    DEXCut-Pro, made with DuPont™ Kevlar® Engineered Yarn,<br />
+                    provides comprehensive protection against cuts, flames,<br />
+                    and arc flash in a single glove.
+                </>
+            </ThermalMiddleHero>
             <div className="w-full bg-black py-20 mt-40">
                 <div className="w-full text-center font-aldrich text-[40px] mt-20 mb-24">
                     All-in-One High-Performance Kevlar® Protective Glove
@@ -135,17 +130,7 @@ export default function GlovePage() {
                     />
                 </div>
             </div>
-            <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
-                <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
-                    Curious about the performance? Contact us
-                </p>
-                <Link
-                    href="/about-us"
-                    className="bg-[#FFD900] text-black font-pretendard px-20 py-4 text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
-                >
-                    About us <span className="ml-2 text-xl">→</span>
-                </Link>
-            </div>
+            <ThermalBottomHero />
         </div>
     );
 }

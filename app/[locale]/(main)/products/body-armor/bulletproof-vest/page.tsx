@@ -1,11 +1,11 @@
 import ProductMainIntoduce from "@/components/animation/ProductMainIntoduce";
 import { BodyArmorMenu } from "@/components/nav/BodyArmorMenu";
+import { Link } from "@/i18n/routing";
 import Banner from "@/ui/banner";
 import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
+import BodyArmorBottomHero from "@/ui/BodyArmorBottomHero";
 import Image from "next/image";
-
-import { Link } from "@/i18n/routing";
 
 export default function BulletproofVestPage() {
     return (
@@ -88,21 +88,15 @@ It is supplied to two Asian countries as well as the U.S. and the U.K., offering
                     />
                 </div>
             </div>
-            <div className="w-full relative">
-                <Image
-                    src="/assets/products/bulletproof-vest-bottom.png"
-                    alt="Bulletproof Vest"
-                    width={1920}
-                    height={1080}
-                    className="w-full h-auto"
-                />
-                <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <p className="text-white font-aldrich text-[24px] md:text-[32px] text-center leading-relaxed drop-shadow-md">
-                        Even on the battlefield, our reliable military-grade bulletproof vest delivers<br />
-                        powerful protection and unwavering stability
-                    </p>
-                </div>
-            </div>
+            <BodyArmorBottomHero
+                imageSrc="/assets/products/bulletproof-vest-bottom.png"
+                alt="Bulletproof Vest"
+            >
+                <>
+                    Even on the battlefield, our reliable military-grade bulletproof vest delivers<br />
+                    powerful protection and unwavering stability
+                </>
+            </BodyArmorBottomHero>
             <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
                 <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
                     Discover trusted ballistic protection.

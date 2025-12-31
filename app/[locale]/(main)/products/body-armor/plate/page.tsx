@@ -4,6 +4,7 @@ import { Link } from "@/i18n/routing";
 import Banner from "@/ui/banner";
 import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
+import BodyArmorBottomHero from "@/ui/BodyArmorBottomHero";
 import Image from "next/image";
 
 export default function PlateVestPage() {
@@ -95,21 +96,15 @@ export default function PlateVestPage() {
                     />
                 </div>
             </div>
-            <div className="w-full relative">
-                <Image
-                    src="/assets/products/plate-bottom.png"
-                    alt="Plate"
-                    width={1920}
-                    height={1080}
-                    className="w-full h-auto"
-                />
-                <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <p className="text-white font-aldrich text-[24px] md:text-[32px] text-center leading-relaxed drop-shadow-md">
-                        Designed with an ultra-lightweight multi-curve structure,<br />
-                        this plate provides superior protection, comfort, and mobility.
-                    </p>
-                </div>
-            </div>
+            <BodyArmorBottomHero
+                imageSrc="/assets/products/plate-bottom.png"
+                alt="Plate"
+            >
+                <>
+                    Designed with an ultra-lightweight multi-curve structure,<br />
+                    this plate provides superior protection, comfort, and mobility.
+                </>
+            </BodyArmorBottomHero>
             <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
                 <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
                     Experience trusted ballistic protection

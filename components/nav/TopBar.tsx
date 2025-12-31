@@ -36,7 +36,7 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
                         className="relative inline-block h-full group"
                     >
                         <div
-                            className="flex items-center justify-center h-full px-4 me-6"
+                            className="flex items-center justify-center h-full px-4 me-6 cursor-pointer"
                         >
                             {t(item.nameKey)}
                             <Image
@@ -55,7 +55,7 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
                                         <Link
                                             key={subItem.nameKey}
                                             href={subItem.link}
-                                            className="block px-4 py-1 whitespace-nowrap text-white text-aldrich text-[25px]"
+                                            className="block px-4 py-1 whitespace-nowrap text-white text-aldrich text-[25px] cursor-pointer"
                                         >
                                             <div className="flex flex-row items-center">
                                                 {subItem.icon && (
@@ -97,7 +97,7 @@ export default function TopBar({ pathname }: { pathname: string }) {
                 <div className="mx-5 flex flex-row items-center justify-start h-full border-b border-[#404040] font-aldrich">
                     <Link
                         href="/"
-                        className="flex items-center justify-center w-[250px] h-full">
+                        className="flex items-center justify-center w-[250px] h-full cursor-pointer">
                         <Image
                             src="/assets/logo.png"
                             alt="Logo"
@@ -112,7 +112,7 @@ export default function TopBar({ pathname }: { pathname: string }) {
                     <div className="h-full flex items-center justify-center">
                         <Link
                             href="/about-us"
-                            className="px-4 py-2 block items-center justify-center bg-[#FFD900] text-black">
+                            className="px-4 py-2 block items-center justify-center bg-[#FFD900] text-black cursor-pointer">
                             {t('about-us')}
                         </Link>
                     </div>

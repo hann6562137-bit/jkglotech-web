@@ -1,10 +1,12 @@
 import PentagonChart from "@/components/animation/PentagonChart";
 import { BodyArmorMenu } from "@/components/nav/BodyArmorMenu";
-import { Link } from "@/i18n/routing";
 import Banner from "@/ui/banner";
 import FeatureCard from "@/ui/FeatureCard";
-import Image from "next/image";
 import FeatureGrid from "@/ui/FeatureGrid";
+import BodyArmorBottomHero from "@/ui/BodyArmorBottomHero";
+import ThermalMiddleHero from "@/ui/ThermalMiddleHero";
+import ThermalBottomHero from "@/ui/ThermalBottomHero";
+import Image from "next/image";
 
 export default function GarmentPage() {
     return (
@@ -76,24 +78,18 @@ export default function GarmentPage() {
                     />
                 </div>
             </div>
-            <div className="w-full relative">
-                <Image
-                    src="/assets/products/garment-bottom.png"
-                    alt="Garment"
-                    width={1920}
-                    height={1080}
-                    className="w-full h-auto"
-                />
-                <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <p className="text-white font-aldrich text-[24px] md:text-[32px] text-center leading-relaxed drop-shadow-md">
-                        It provides reliable protection in various high-risk work
-                        <br />
-                        environments through lightweight comfort, high durability,
-                        <br />
+            <ThermalMiddleHero
+                imageSrc="/assets/products/garment-bottom.png"
+                alt="Garment"
+            >
+                <>
+                    It provides reliable protection in various high-risk work
+                    <br />
+                    environments through lightweight comfort, high durability,
+                    <br />
                         and internationally certified safety performance
-                    </p>
-                </div>
-            </div>
+                </>
+            </ThermalMiddleHero>
 
 
             <div className="w-full bg-black py-20 mt-40">
@@ -133,17 +129,7 @@ export default function GarmentPage() {
                 </div>
             </div>
 
-            <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
-                <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
-                    Curious about the performance? Contact us
-                </p>
-                <Link
-                    href="/about-us"
-                    className="bg-[#FFD900] text-black font-pretendard px-20 py-4 text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
-                >
-                    About us <span className="ml-2 text-xl">→</span>
-                </Link>
-            </div>
+            <ThermalBottomHero />
         </div >
     );
 }

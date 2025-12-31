@@ -6,6 +6,7 @@ import "@/app/globals.css";
 import { setRequestLocale } from 'next-intl/server';
 import Footer from '@/components/footer/Footer';
 import TopBar from '@/components/nav/TopBar';
+import AOSInitProvider from '@/components/AOSInitProvider';
 
 export const metadata: Metadata = {
     title: "jk-glotech",
@@ -39,11 +40,13 @@ export default async function LocaleLayout({ children, params }: Props) {
         <html lang={locale}>
             <NextIntlClientProvider>
                 <body className="antialiased flex flex-col min-h-screen bg-[#000000] text-white">
-                    <TopBar pathname='' />
-                    <main className="grow">
-                        {children}
-                    </main>
-                    <Footer />
+                    <AOSInitProvider>
+                        <TopBar pathname='' />
+                        <main className="grow">
+                            {children}
+                        </main>
+                        <Footer />
+                    </AOSInitProvider>
                 </body>
             </NextIntlClientProvider>
         </html>
