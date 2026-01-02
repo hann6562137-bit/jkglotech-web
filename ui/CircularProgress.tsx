@@ -10,7 +10,7 @@ export default function CircularProgress({
     suffix = "",
     prefix = "",
     decimals = 0,
-    background = "#181920",
+  background = "#121319",
     strokeThickness = 8,
     bgRingColor = "black",
     ringColor = "white",
@@ -32,7 +32,7 @@ export default function CircularProgress({
     imageSrc?: string
 }) {
     return (
-        <div className={`flex flex-col font-pretendard justify-start items-center bg-[${background}] py-12 w-full h-full`}>
+      <div className={`flex flex-col font-pretendard justify-start items-center bg-[${background}] py-12 w-full h-full `}>
             <div className="w-full px-20">
                 <CircularProgressCenterNumber
                     percentage={percentage}

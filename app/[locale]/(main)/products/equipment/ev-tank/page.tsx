@@ -6,26 +6,30 @@ import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
 import Image from "next/image";
 import HorizontalScrollCards from "@/ui/HorizontalScrollCards";
+import { useTranslations } from "next-intl";
 
 export default function EVTankPage() {
+    const t = useTranslations("products.evTank");
+    const tMenu = useTranslations("menu");
+
     return (
         <div className="mt-[100px]">
             <Banner
-                title="EV TANK"
+                title={t("bannerTitle")}
                 bgSrc="/assets/banners/ev-tank-banner.png"
-                description="A flexible, drive-through tube system that immerses and suppresses EV batteries within 30 minutes using minimal crew and water."
+                description={t("bannerDescription")}
                 direction="right"
             />
             <div className="content-container mt-15 flex flex-col">
                 <BodyArmorMenu currentMenu="ev-tank" menuNameKey="equipment" />
                 <div className="mt-50 mb-20 font-aldrich text-[50px] mx-auto text-center">
-                    Key Features
+                    {t("keyFeaturesTitle")}
                 </div>
             </div>
             <div className="w-full relative mb-80">
                 <Image
                     src="/assets/products/ev-tank-top.png"
-                    alt="EV Tank"
+                    alt={t("topImageAlt")}
                     width={1920}
                     height={1080}
                     className="w-full h-auto" />
@@ -39,7 +43,7 @@ export default function EVTankPage() {
                             background="rgba(0,0,0,0)"
                             bgRingColor="#121319"
                             strokeThickness={6}
-                            bigTitle={`Installation Speed\nImprovement Rate`}
+                            bigTitle={t("stats.installationSpeed")}
                         />
                         <CircularProgress
                             percentage={60}
@@ -48,7 +52,7 @@ export default function EVTankPage() {
                             background="rgba(0,0,0,0)"
                             bgRingColor="#121319"
                             strokeThickness={6}
-                            bigTitle={`Water Consumption\nReduction Rate`}
+                            bigTitle={t("stats.waterReduction")}
                         />
                         <CircularProgress
                             percentage={90}
@@ -57,71 +61,78 @@ export default function EVTankPage() {
                             background="rgba(0,0,0,0)"
                             bgRingColor="#121319"
                             strokeThickness={6}
-                            bigTitle={`Durability\nRetention Rate`}
+                            bigTitle={t("stats.durabilityRetention")}
                         />
                     </div>
                 </div>
             </div>
             <div className="content-container">
                 <div className="font-aldrich text-[50px] mb-10 w-full text-center">
-                    Immediate & Efficient Response<br />
-                    Structure for EV Fire Incidents
+                    {t("responseTitle").split("\n").map((line, idx) => (
+                        <span key={idx}>
+                            {line}
+                            {idx === 0 && <br />}
+                        </span>
+                    ))}
                 </div>
                 <div className="flex flex-col gap-[2px] mt-20 w-full mb-40">
                     <FeatureCard
                         imageSrc="/assets/products/ev-tank-feature-1.png"
-                        title="Proven Safety"
+                        title={t("features.feature1.title")}
                         isBackground={false}
-                        description="Over 17 stab-resistance tests completed at accredited domestic and international laboratories."
+                        description={t("features.feature1.description")}
                     />
                     <FeatureCard
                         imageSrc="/assets/products/ev-tank-feature-2.png"
-                        title="Weight Distribution System"
+                        title={t("features.feature2.title")}
                         isBackground={false}
-                        description={`A 3-point waist-tightening mechanism ensures a snug fit around the torso, enhancing comfort and evenly distributing weight to minimize fatigue during long wear.`}
+                        description={t("features.feature2.description")}
                         isRight
                     />
                     <FeatureCard
                         imageSrc="/assets/products/ev-tank-feature-3.png"
-                        title="Quick Wearability"
+                        title={t("features.feature3.title")}
                         isBackground={false}
-                        description="Incorporates an aircraft life-vest fastening system with a zipper closure, allowing rapid wear and removal — even enabling over-the-head donning in emergencies for immediate readiness."
+                        description={t("features.feature3.description")}
                     />
                 </div>
+            </div>
+            <div className="w-full text-center mb-10 font-aldrich text-[40px]">
+                {t("scrollCards.introText")}
             </div>
             <HorizontalScrollCards
                 cards={[
                     {
                         imageSrc: "/assets/products/ev-tank-1.png",
-                        title: "Bottomless mobile immersion system",
-                        description: "Push-in response with minimal site limitations."
+                        title: t("scrollCards.card1.title"),
+                        description: t("scrollCards.card1.description")
                     },
                     {
                         imageSrc: "/assets/products/ev-tank-2.png",
-                        title: "Intuitive operator interface",
-                        description: "Simple water controls and ports for quick use."
+                        title: t("scrollCards.card2.title"),
+                        description: t("scrollCards.card2.description")
                     },
                     {
                         imageSrc: "/assets/products/ev-tank-3.png",
-                        title: "Fast setup, low water use",
-                        description: "Four-person deployment, immersion in 30 minutes with 7–8 tons."
+                        title: t("scrollCards.card3.title"),
+                        description: t("scrollCards.card3.description")
                     },
                     {
                         imageSrc: "/assets/products/ev-tank-4.png",
-                        title: "Korea-made & patented",
-                        description: "Domestic manufacturing backed by multiple patents."
+                        title: t("scrollCards.card4.title"),
+                        description: t("scrollCards.card4.description")
                     }
                 ]}
             />
             <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
                 <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
-                    Experience trusted ballistic protection
+                    {t("cta.heading")}
                 </p>
                 <Link
                     href="/about-us"
                     className="bg-[#FFD900] text-black font-pretendard px-20 py-4 text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
                 >
-                    About us <span className="ml-2 text-xl">→</span>
+                    {tMenu("about-us")} <span className="ml-2 text-xl">→</span>
                 </Link>
             </div>
         </div>

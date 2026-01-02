@@ -7,13 +7,17 @@ import BodyArmorBottomHero from "@/ui/BodyArmorBottomHero";
 import ThermalMiddleHero from "@/ui/ThermalMiddleHero";
 import ThermalBottomHero from "@/ui/ThermalBottomHero";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function GarmentPage() {
+    const t = useTranslations("products.garment");
+    const middleHeroLines = t("middleHero.text").split("\n");
+
     return (
         <div>
             <Banner
-                title="Garment"
-                description={"The ENIGMA flame-resistant garment made with DuPont™ Nomex® fabric is a high-performance industrial\nprotective wear designed to safeguard workers from flash fires and arc flash hazards."}
+                title={t("bannerTitle")}
+                description={t("bannerDescription")}
                 bgSrc="/assets/banners/garment-banner.png"
             />
             <div className="content-container mt-15 flex flex-col">
@@ -21,13 +25,13 @@ export default function GarmentPage() {
                 <div className="w-full h-auto mt-10">
                     <Image
                         src="/assets/products/garment-top.png"
-                        alt="Garment"
+                        alt={t("topImageAlt")}
                         width={1920}
                         height={1080}
                     />
                 </div>
                 <div className="mt-50 mb-50 font-aldrich text-[50px] mx-auto text-center">
-                    Nomex®-Based Protection Performance Radar Chart
+                    {t("chartTitle")}
                 </div>
 
             </div>
@@ -38,11 +42,11 @@ export default function GarmentPage() {
                             centerImageSrc="/assets/products/garment-chart.png"
                             centerImageWidthPercent={73}
                             labels={[
-                                "Flame Resistance",
-                                "Arc Flash\nProtection",
-                                "Reliability",
-                                "Durability",
-                                "Comfort\n& Mobility"
+                                t("chart.labels.flameResistance"),
+                                t("chart.labels.arcFlashProtection"),
+                                t("chart.labels.reliability"),
+                                t("chart.labels.durability"),
+                                t("chart.labels.comfortMobility")
                             ]}
                             values={[
                                 92,
@@ -59,70 +63,71 @@ export default function GarmentPage() {
                 <div className="flex flex-col gap-[2px] mt-20 w-full mb-40">
                     <FeatureCard
                         imageSrc="/assets/products/garment-feature-1.png"
-                        title="High Level of Flame Protection Based on International Standards"
-                        description="It meets global flame-resistant standards such as ISO 11612 and NFPA 2112, maintaining reliable protection even in flash fire and high-temperature environments."
+                        title={t("features.feature1.title")}
+                        description={t("features.feature1.description")}
                         isBackground={false}
                     />
                     <FeatureCard
                         imageSrc="/assets/products/garment-feature-2.png"
-                        title="Lightweight Comfort Unique to Nomex®"
-                        description={`The soft texture and lightweight structure of Nomex® Comfort and Essential Arc fabrics reduce fatigue during long working hours..`}
+                        title={t("features.feature2.title")}
+                        description={t("features.feature2.description")}
                         isBackground={false}
                         isRight
                     />
                     <FeatureCard
                         imageSrc="/assets/products/garment-feature-3.png"
-                        title="Arc Flash Protection"
-                        description="Engineered with Nomex® Essential Arc fabric for arc flash protection, it provides HRC 2 (8 cal/cm²) or higher performance, with the jacket and pants each carrying their own certified Arc Rating."
+                        title={t("features.feature3.title")}
+                        description={t("features.feature3.description")}
                         isBackground={false}
                     />
                 </div>
             </div>
             <ThermalMiddleHero
                 imageSrc="/assets/products/garment-bottom.png"
-                alt="Garment"
+                alt={t("topImageAlt")}
             >
                 <>
-                    It provides reliable protection in various high-risk work
-                    <br />
-                    environments through lightweight comfort, high durability,
-                    <br />
-                        and internationally certified safety performance
+                    {middleHeroLines.map((line, idx) => (
+                        <span key={idx}>
+                            {line}
+                            {idx !== middleHeroLines.length - 1 && <br />}
+                        </span>
+                    ))}
                 </>
             </ThermalMiddleHero>
 
 
             <div className="w-full bg-black py-20 mt-40">
                 <div className="w-full text-center font-aldrich text-[40px] mt-20 mb-24">
-                    Ergonomic 3D pattern design with an ear-zone air pocket
+                    {t("ergonomicTitle")}
                 </div>
                 <div className="content-container">
                     <FeatureGrid
                         items={[
                             {
                                 number: "01.",
-                                title: "Permanent Flame Resistance",
-                                description: "Because Nomex® is inherently flame-resistant at the fiber level rather than through surface coating, its protection does not diminish with washing or abrasion."
+                                title: t("grid.items.item1.title"),
+                                description: t("grid.items.item1.description")
                             },
                             {
                                 number: "02.",
-                                title: "Enhanced Breathability and Workability",
-                                description: "Nomex® is lighter and offers superior breathability and moisture management compared to other FR materials, maintaining comfort even during high-heat tasks."
+                                title: t("grid.items.item2.title"),
+                                description: t("grid.items.item2.description")
                             },
                             {
                                 number: "03.",
-                                title: "Versatile Industrial Garment Configurations",
-                                description: "It can be manufactured in various forms—coveralls, shirts, pants—to build a customized PPE system tailored to different work environments."
+                                title: t("grid.items.item3.title"),
+                                description: t("grid.items.item3.description")
                             },
                             {
                                 number: "04.",
-                                title: "Exceptional Heat & Flame Resistance",
-                                description: "The air-pocket structure formed around the ear area blocks direct heat transfer in fire or high-temperature environments, reducing the risk of burn injuries."
+                                title: t("grid.items.item4.title"),
+                                description: t("grid.items.item4.description")
                             },
                             {
                                 number: "05.",
-                                title: "Durable for Long-Term Industrial Use",
-                                description: "It maintains fabric strength and durability even after repeated use in high-risk industrial settings such as petrochemical plants, utilities, and oil & gas operations."
+                                title: t("grid.items.item5.title"),
+                                description: t("grid.items.item5.description")
                             }
                         ]}
                     />

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 type ProductListItem = {
   title: string;
@@ -12,6 +13,8 @@ type ProductListItem = {
 };
 
 function ProductListRow({ item, reverse }: { item: ProductListItem; reverse?: boolean }) {
+  const tCommon = useTranslations("common");
+
   return (
     <div className="grid grid-cols-2 items-center gap-16">
       {/* Image (50%) */}
@@ -50,8 +53,9 @@ function ProductListRow({ item, reverse }: { item: ProductListItem; reverse?: bo
 
         <Link
           href={item.href}
-          className="inline-flex items-center justify-center mt-8 bg-[#FFD900] text-black font-pretendard text-[20px] font-semibold px-14 py-4 hover:bg-[#ffe033] transition-colors">
-          Learn More
+          className="inline-flex items-center justify-center mt-8 bg-[#FFD900] text-black font-pretendard text-[20px] font-semibold px-14 py-4 hover:bg-[#ffe033] transition-colors"
+        >
+          {tCommon("learnMore")}
         </Link>
       </div>
     </div>
@@ -59,32 +63,33 @@ function ProductListRow({ item, reverse }: { item: ProductListItem; reverse?: bo
 }
 
 export default function ProductListSection() {
+  const t = useTranslations("main.productListSection");
+
   const productList: ProductListItem[] = [
     {
-      title: "FR Workwear",
-      description: "Workwear that can protect workers from instantaneous Flash Fire (flame).",
+      title: t("cards.frWorkwear.title"),
+      description: t("cards.frWorkwear.description"),
       bullets: [
-        "Flash Fire Protection",
-        "Electric Arc Protection",
-        "Heat Protection",
-        "Molten Metal Splash Protection",
+        t("cards.frWorkwear.bullet1"),
+        t("cards.frWorkwear.bullet2"),
+        t("cards.frWorkwear.bullet3"),
+        t("cards.frWorkwear.bullet4"),
       ],
       imageSrc: "/assets/main/main-product-list-1.png",
       href: "/products/thermal/garment",
     },
     {
-      title: "Bulletproof vest",
-      description:
-        "Developed by DuPont in 2023, this ballistic material delivers 30% higher\nstrength than standard aramids. It’s certified to Korean licensing\nstandards, meets NIJ 0101.06 Level 3A,\nand complies with MIL-STD-662F V50 ≥ 560 m/s.",
+      title: t("cards.bulletproofVest.title"),
+      description: t("cards.bulletproofVest.description"),
       imageSrc: "/assets/main/main-product-list-2.png",
       href: "/products/body-armor/bulletproof-vest",
     },
     {
-      title: "Equipment & Accessories",
+      title: t("cards.equipmentAccessories.title"),
       bullets: [
-        "Equipment : Rescue Intellitech – Decon Washer/ EV Fire Suppression Tank",
-        "F.R & ARC : Balaclava&buff, Gloves, Shoes made with Nomex®, Kevlar®",
-        "Cut Resistance : Gloves, Shoes made with Nomex®, Kevlar®",
+        t("cards.equipmentAccessories.bullet1"),
+        t("cards.equipmentAccessories.bullet2"),
+        t("cards.equipmentAccessories.bullet3"),
       ],
       imageSrc: "/assets/main/main-product-list-3.png",
       href: "/products/equipment/ev-tank",
@@ -94,7 +99,7 @@ export default function ProductListSection() {
   return (
     <div className="bg-[#121319] mt-20 py-50">
       <div className="content-container">
-        <div className="text-center font-pretendard font-semibold text-[40px] text-white">Products List</div>
+        <div className="text-center font-pretendard font-semibold text-[40px] text-white">{t("title")}</div>
 
         <div className="flex flex-col gap-24">
           <ProductListRow item={productList[0]} />

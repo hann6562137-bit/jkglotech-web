@@ -1,3 +1,588 @@
 {
-  
+  "aboutUsAlerts": {
+    "selectProduct": "Please select at least one option.",
+    "enterOrganization": "Please enter your organization/company.",
+    "enterCountry": "Please enter your country.",
+    "enterFirstName": "Please enter your first name.",
+    "enterLastName": "Please enter your last name.",
+    "enterEmail": "Please enter your email.",
+    "enterPhone": "Please enter your phone number.",
+    "agreeConsent": "Please agree to the collection of personal information."
+  },
+  "aboutUs": {
+    "pageTitle": "About us",
+    "sectionTitle": "About us",
+    "sectionDesc1": "Design the future of safety with JK GLOTECH, a leader in global protection standards. JK GLOTECH delivers protection solutions optimized for your needs.",
+    "sectionDesc2": "Contact us now and experience our premium-quality solutions.",
+    "step1Title": "Which of our products are you interested in?",
+    "step1Products": [
+      "Bulletproof vest",
+      "Hood",
+      "tabproof vest",
+      "EV tank",
+      "Plate",
+      "Washer",
+      "Garment",
+      "Others",
+      "Glove"
+    ],
+    "next": "Next",
+    "submit": "Submit",
+    "goBack": "Go Back",
+    "step2Notice": "We regret to inform you that we are currently unable to provide services to individuals or organizations outside the government and corporate sectors.",
+    "organizationLabel": "Organization / Company",
+    "countryLabel": "Country",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone Number",
+    "commentsLabel": "Comments",
+    "consentLabel": "Consent to Collect Personal Information",
+    "submissionComplete": "Submission Complete",
+    "submissionThanks": "We will get back to you shortly.\nThank you."
+  },
+  "menu": {
+    "bodyarmor": "Body Armor",
+    "bulletproof-vest": "Bulletproof Vest",
+    "stabproof-vest": "Stabproof Vest",
+    "plate": "Plate",
+    "thermal": "Thermal",
+    "garment": "Garment",
+    "glove": "Gloves",
+    "hood": "Hoods",
+    "equipment": "Equipment",
+    "ev-tank": "EV Tank",
+    "washer": "Decon Washer",
+    "about-us": "About us"
+  },
+  "common": {
+    "learnMore": "Learn More"
+  },
+  "main": {
+    "hero": {
+      "titleLine1": "Flame Resistant",
+      "titleLine2": "Wearwear",
+      "descriptionLine1": "We provide one-stop custom FR garment development and production.",
+      "descriptionLine2": "Experience global-standard FR PPE with JK Glotech."
+    },
+    "mission": {
+      "titleLine1": "Mission",
+      "titleLine2": "Statement",
+      "body": "JK GLOTECH specializes in Meta- and Para-Aramid material R&D, overseeing the full process from fiber to finished garments. For nearly 20 years, we’ve partnered with leading companies to advance the flame-resistant market. Driven by the needs of Firefighting, Oil & Gas, Industrial, Chemical, and Military sectors, we ensure reliable solutions through strict global standards and testing. Experience true Global Standards with JK GLOTECH."
+    },
+    "images": {
+      "main": "Main Image",
+      "associates": "Associates"
+    },
+    "techInnovation": {
+      "title": "Technological Innovation",
+      "imageAlt": "Technological Innovation",
+      "developmentCapability": {
+        "title": "Development Capability",
+        "description": "We comply with international standards and customize workwear to meet customer needs."
+      },
+      "rdFocus": {
+        "title": "R&D Focus",
+        "description": "We deliver high value solutions through strategic R&D investment and prioritization of market demands."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We secure the reliability of test results through repeated sample tests by accredited testing institutes."
+      },
+      "collaborationAgility": {
+        "title": "Collaboration & Agility",
+        "description": "The vertical integration system from materials to finished products has made it possible to respond quickly."
+      }
+    },
+    "productListSection": {
+      "title": "Products List",
+      "cards": {
+        "frWorkwear": {
+          "title": "FR Workwear",
+          "description": "Workwear that can protect workers from instantaneous Flash Fire (flame).",
+          "bullet1": "Flash Fire Protection",
+          "bullet2": "Electric Arc Protection",
+          "bullet3": "Heat Protection",
+          "bullet4": "Molten Metal Splash Protection"
+        },
+        "bulletproofVest": {
+          "title": "Bulletproof vest",
+          "description": "Developed by DuPont in 2023, this ballistic material delivers 30% higher strength than standard aramids. It’s certified to Korean licensing standards, meets NIJ 0101.06 Level 3A, and complies with MIL-STD-662F V50 ≥ 560 m/s."
+        },
+        "equipmentAccessories": {
+          "title": "Equipment & Accessories",
+          "bullet1": "Equipment : Rescue Intellitech – Decon Washer/ EV Fire Suppression Tank",
+          "bullet2": "F.R & ARC : Balaclava&buff, Gloves, Shoes made with Nomex®, Kevlar®",
+          "bullet3": "Cut Resistance : Gloves, Shoes made with Nomex®, Kevlar®"
+        }
+      }
+    },
+    "technologyIntro": {
+      "sectionTitle": "Technology Introduction",
+      "prevButtonLabel": "Previous slide",
+      "nextButtonLabel": "Next slide",
+      "goToSlide": "Go to slide {index}",
+      "cards": {
+        "card1": {
+          "title": "Nomex Kevlar",
+          "description": ""
+        },
+        "card2": {
+          "title": "Certified & Compliant",
+          "description": "We comply with international regulations – ISO, NFPA, and EN standards, and we manage our operations in compliance with ISO9001, based on DuPont™'s thorough management system."
+        },
+        "card3": {
+          "title": "Flame Resistance Meets Comfort",
+          "description": "We are constantly developing our products to provide not only permanent flame resistance but also comfort for every work place."
+        },
+        "card4": {
+          "title": "Satisfy Global Standards",
+          "description": "We comply with International regulations -ISO, NFPA, EN, and NIJ Standards."
+        }
+      }
+    },
+    "corporatePhilosophy": {
+      "sectionTitle": "Corporate Philosophy",
+      "cards": {
+        "card1": {
+          "title": "Slogan",
+          "description": "Go Above and Beyond!"
+        },
+        "card2": {
+          "title": "Professionalism",
+          "description": "Join with us and experience the Global Standard for FR PPE"
+        },
+        "card3": {
+          "title": "Sustainable Growth",
+          "description": "Since 2009, We have been growing continuously."
+        },
+        "card4": {
+          "title": "Innovation & R&D\nLeadership",
+          "description": "We lead high-end PPE solutions through robust R&D investment."
+        },
+        "card5": {
+          "title": "Safety-First Commitment",
+          "description": "The safety of workers and workplaces is always our top priority."
+        },
+        "card6": {
+          "title": "Customer Collaboration\n& Reliability",
+          "description": "We provide solutions by identifying the customer's unmet needs"
+        }
+      }
+    },
+    "bottomMarquee": {
+      "alt1": "Marquee 1",
+      "alt2": "Marquee 2",
+      "alt3": "Marquee 3",
+      "alt4": "Marquee 4",
+      "alt5": "Marquee 5",
+      "alt6": "Marquee 6",
+      "alt7": "Marquee 7",
+      "alt8": "Marquee 8"
+    }
+  },
+  "products": {
+    "hood": {
+      "bannerTitle": "Hoods",
+      "bannerDescription": "A premium flame-resistant hood designed with an ergonomic triple-layer thermal barrier\nand specialized patterning to deliver exceptional protection and comfort in high-heat environments.",
+      "topImageAlt": "hood",
+      "centerTitle": "Nomex® Special Balaclava Protection Index",
+      "chartTitle": "Hood Overall Protection Performance Index",
+      "chart": {
+        "labels": {
+          "flashFireProtection": "Breathability",
+          "ergonomicFit": "Ergonomic Fit",
+          "enhancedSafety": "Enhanced Safety",
+          "softComfort": "Soft Comfort",
+          "arcFlashProtection": "Flash Fire and\nArc Flash Resistance"
+        }
+      },
+      "features": {
+        "feature1": {
+          "title": "Enhanced Thermal Blocking with Patented Dual-Layer Structure",
+          "description": "An internal air layer creates a triple thermal barrier, maximizing protection against flames and high heat."
+        },
+        "feature2": {
+          "title": "Soft, Enhanced Comfort",
+          "description": "Specially engineered fabrics maintain softness and flexibility even after repeated washing, ensuring long-lasting comfort."
+        },
+        "feature3": {
+          "title": "Optimized Nomex® Blend to Minimize Burn Risk",
+          "description": "Made with DuPont™ Nomex®, minimizing burn risk caused by trapped heat and perspiration."
+        }
+      },
+      "middleHero": {
+        "text": "The Nomex® Balaclava is the optimal choice for protecting\nyour head even in extreme environments."
+      },
+      "ergonomicTitle": "Ergonomic 3D pattern design with an ear-area air pocket.",
+      "grid": {
+        "items": {
+          "item1": {
+            "title": "Permanent Flame Resistance",
+            "description": "Maintains durable flame-resistant performance after repeated use and washing."
+          },
+          "item2": {
+            "title": "Thermo-man® Tested",
+            "description": "Proven protection validated through DuPont™ Thermo-man® fire mannequin testing."
+          },
+          "item3": {
+            "title": "Lightweight & Highly Flexible",
+            "description": "Designed for long-wear comfort with excellent mobility."
+          },
+          "item4": {
+            "title": "Flash Fire & Arc Flash Dual Protection",
+            "description": "Shields workers from both flash fire and arc-flash energy."
+          },
+          "item5": {
+            "title": "Arc Flash Rating: 9.4 cal/cm² APTV",
+            "description": "Provides certified arc-flash protection for safer work conditions."
+          }
+        }
+      }
+    },
+    "bulletproofVest": {
+      "bannerTitle": "Bulletproof Vest",
+      "topImageAlt": "Bulletproof Vest",
+      "titleMain": "Bullet proof Vest",
+      "titleSub": "Tylo - 4500W",
+      "materialDurabilityTitle": "Key Features",
+      "stats": {
+        "enhancedStrength": {
+          "title": "Enhanced ballistic\nmaterial strength",
+          "description": "30% higher strength\ncompared to conventional\naramid"
+        },
+        "quickDisassembly": {
+          "title": "Quick Release",
+          "description": "Can be released within\n10 seconds"
+        },
+        "quickAssembly": {
+          "title": "Quick Assembly",
+          "description": "Can be reassembled within\n1 minute and 30 seconds"
+        },
+        "advancedFabrication": {
+          "title": "Advanced Fabrication",
+          "description": "Kevlar® woven fabric\npressed with phenol\nprepreg ensures precision\nand uniform quality"
+        }
+      },
+      "features": {
+        "feature1": {
+          "title": "Advanced Lightweight Material",
+          "description": "Performance safety secured through multiple tests conducted at internationally certified ballistic testing laboratories and partner research institutes."
+        },
+        "feature2": {
+          "title": "Application of Lightweight New Materials",
+          "description": "The latest material officially launched by DuPont in the U.S. on April 13, 2023.\nIt is supplied to two Asian countries as well as the U.S. and the U.K., offering outstanding flexibility."
+        },
+        "feature3": {
+          "title": "Quick Release and Assembly",
+          "description": "Can be released within 10 seconds and reassembled within 1 minute and 30 seconds."
+        },
+        "feature4": {
+          "title": "Rapid Rescue Readiness",
+          "description": "Emergency escape and securing the golden time."
+        }
+      },
+      "bottomHero": {
+        "alt": "Bulletproof Vest",
+        "text": "Even on the battlefield, our reliable military-grade bulletproof vest delivers\npowerful protection and unwavering stability"
+      },
+      "cta": {
+        "heading": "Discover trusted ballistic protection."
+      }
+    },
+    "plate": {
+      "bannerTitle": "Plate",
+      "topImageAlt": "Plate",
+      "titleMain": "Ultralight Multi-Curve Ballistic Plate \nToRo-2450",
+      "materialDurabilityTitle": "Key Features",
+      "stats": {
+        "lightweightDesign": {
+          "title": "Lightweight Design",
+          "description": "Approximately 15% lighter (by area) compared to standard Korean military ballistic plates."
+        },
+        "wearability": {
+          "title": "Wearability",
+          "description": "Approximately 20% thinner than standard Korean military ballistic plates."
+        },
+        "protectionLevel": {
+          "title": "Protection Level",
+          "description": "Certified NIJ Level IV protection with stand alone."
+        }
+      },
+      "features": {
+        "feature1": {
+          "title": "Proven Technology",
+          "description": "Delivered Level IV ballistic plates to the Defense Acquisition Program Administration (2023)\nEstablished partnerships with global companies\nEnsured product reliability"
+        },
+        "feature2": {
+          "title": "Multi-Curve Fit",
+          "description": "Utilizes special ceramics and proprietary bonding technology optimized for mobility to achieve multi-curve shaping\nCompatible and replaceable — can be inserted into Army Multipurpose Type I body armor\nReduces physical fatigue"
+        },
+        "feature3": {
+          "title": "Advanced Materials",
+          "description": "Applies SAINT-GOBAIN ceramics (B4C) adopted by the U.S. military"
+        }
+      },
+      "bottomHero": {
+        "alt": "Plate",
+        "text": "Designed with an ultra-lightweight multi-curve structure,\nthis plate provides superior protection, comfort, and mobility."
+      },
+      "cta": {
+        "heading": "Experience trusted ballistic protection"
+      }
+    },
+    "stabproofVest": {
+      "bannerTitle": "Stabproof Vest",
+      "topImageAlt": "Stabproof Vest",
+      "titleMain": "Stab proof Vest",
+      "materialDurabilityTitle": "Key Features",
+      "stats": {
+        "stabResistanceTest": {
+          "title": "Stab-Resistance\nPerformance Test",
+          "description": "Ensures sufficient stability\nthrough 15 rounds of\nperformance testing"
+        },
+        "inHouseProduction": {
+          "title": "In-House Production\nTechnology",
+          "description": "Specially coated stab-\nresistant material produced\nwith proprietary technology,\noffering flexibility and high\nresilience"
+        },
+        "kevlarPrepreg": {
+          "title": "Kevlar® Prepreg\nfabric",
+          "description": "Pre-impregnated Kevlar®\nlayers engineered for\nsuperior strength and\nconsistent quality."
+        },
+        "kevlarCeramic": {
+          "title": "Kevlar® Ceramic\nCoated fabric",
+          "description": "Kevlar® fabric reinforced\nwith a ceramic coating to\nenhance stab and cut\nresistance."
+        }
+      },
+      "features": {
+        "feature1": {
+          "title": "Proven Safety",
+          "description": "Over 15 stab-resistance tests completed at accredited domestic and international laboratories."
+        },
+        "feature2": {
+          "title": "Weight Distribution System",
+          "description": "A 3-point waist-tightening mechanism ensures a snug fit around the torso, enhancing comfort and evenly distributing weight to minimize fatigue during long wear."
+        },
+        "feature3": {
+          "title": "Quick Wearability",
+          "description": "Incorporates an aircraft life-vest fastening system with a zipper closure, allowing rapid wear and removal — even enabling over-the-head donning in emergencies for immediate readiness."
+        }
+      },
+      "bottomHero": {
+        "alt": "Stabproof Vest",
+        "text": "A field-proven stab-resistant vest, designed for quick wear and\nagile movement, specialized for police operations."
+      },
+      "cta": {
+        "heading": "Experience trusted stab-resistant protection"
+      }
+    },
+    "evTank": {
+      "bannerTitle": "EV TANK",
+      "bannerDescription": "A flexible, drive-through tube system that immerses and suppresses EV batteries within 30 minutes using minimal crew and water.",
+      "topImageAlt": "EV Tank",
+      "keyFeaturesTitle": "Key Features",
+      "stats": {
+        "installationSpeed": "Installation Speed\nImprovement Rate",
+        "waterReduction": "Water Consumption\nReduction Rate",
+        "durabilityRetention": "Durability\nRetention Rate"
+      },
+      "responseTitle": "Immediate & Efficient Response\nStructure for EV Fire Incidents",
+      "features": {
+        "feature1": {
+          "title": "Fast Deployment & Mobility",
+          "description": "EV Tank can be quickly positioned at the rear or side of a vehicle, enabling immediate response right after arrival."
+        },
+        "feature2": {
+          "title": "EV Battery Fire–Focused Response",
+          "description": "Designed specifically for the unique characteristics of EV battery fires—reignition, extreme heat, and toxic gases—providing an optimized isolation and cooling system."
+        },
+        "feature3": {
+          "title": "Bottomless Design for Space Efficiency",
+          "description": "Unlike traditional water pools or containment units, its bottomless structure allows installation directly on the ground, minimizing spatial limitations and enabling flexible placement in tight environments."
+        }
+      },
+      "scrollCards": {
+        "introText": "Core Technologies Enhancing EV Tank Field Response",
+        "card1": {
+          "title": "Bottomless mobile immersion system",
+          "description": "Push-in response with minimal site limitations."
+        },
+        "card2": {
+          "title": "Intuitive operator interface",
+          "description": "Simple water controls and ports for quick use."
+        },
+        "card3": {
+          "title": "Fast setup, low water use",
+          "description": "Four-person deployment, immersion in 30 minutes with 7–8 tons."
+        },
+        "card4": {
+          "title": "Korea-made & patented",
+          "description": "Domestic manufacturing backed by multiple patents."
+        }
+      },
+      "cta": {
+        "heading": "Experience trusted ballistic protection"
+      }
+    },
+    "washer": {
+      "bannerTitle": "Decon Washer",
+      "bannerDescription": "A flexible, drive-through tube system that immerses and suppresses EV batteries within 30 minutes using minimal crew and water.",
+      "topImageAlt": "Washer",
+      "keyFeaturesTitle": "Key Features",
+      "stats": {
+        "installationSpeed": "Gloves & Boots",
+        "waterReduction": "SCBA & Helmets"
+      },
+      "systemTitle": "Integrated Contamination-Control Washing System",
+      "features": {
+        "feature1": {
+          "title": "Cross-Contamination Prevention Process",
+          "description": "Designed to handle contaminated equipment within a controlled environment, significantly reducing the risk of secondary exposure and cross-contamination."
+        },
+        "feature2": {
+          "title": "Multi-PPE Cleaning System",
+          "description": "SCBAs, air cylinders, helmets, masks, boots, gloves, and other equipment can all be washed in a single machine, maximizing operational efficiency."
+        },
+        "feature3": {
+          "title": "Disinfection Function Option",
+          "description": "Disinfectant can be applied during the rinsing cycle, or a separate disinfection program can be used, removing up to 99.9% of harmful contaminants."
+        }
+      },
+      "scrollCards": {
+        "card1": {
+          "title": "Powerful Rotational Washing Technology",
+          "description": "High-pressure rotating wash arms and optimized nozzles effectively remove contaminants, carbon residues, and PAH particles from deep inside the equipment."
+        },
+        "card2": {
+          "title": "Fast Washing Cycles",
+          "description": "Gloves and boots are cleaned within 3 minutes, and SCBA units and helmets within 8 minutes, ensuring rapid equipment turnaround in high-frequency response environments."
+        },
+        "card3": {
+          "title": "Intuitive Touch UI",
+          "description": "A modern single-touch interface allows easy control of wash/rinse temperatures, detergent concentration, and program monitoring, supporting a wide range of operational settings."
+        },
+        "card4": {
+          "title": "Minimized Exposure to Harmful Substances",
+          "description": "From loading contaminated equipment to completing the wash, the entire process occurs inside the machine—significantly reducing worker exposure to toxic and hazardous contaminants."
+        }
+      },
+      "cta": {
+        "heading": "Experience trusted ballistic protection"
+      }
+    },
+    "garment": {
+      "bannerTitle": "Garment",
+      "bannerDescription": "The ENIGMA flame-resistant garment made with DuPont™ Nomex® fabric is a high-performance industrial\nprotective wear designed to safeguard workers from flash fires and arc flash hazards.",
+      "topImageAlt": "Garment",
+      "chartTitle": "Nomex® FR Performance Chart",
+      "chart": {
+        "labels": {
+          "flameResistance": "Flame Resistance",
+          "arcFlashProtection": "Arc Flash\nProtection",
+          "reliability": "Reliability",
+          "durability": "Durability",
+          "comfortMobility": "Comfort\n& Mobility"
+        }
+      },
+      "features": {
+        "feature1": {
+          "title": "High Level of Flame Protection Based on International Standards",
+          "description": "It meets global flame-resistant standards such as ISO 11612 and NFPA 2112, maintaining reliable protection even in flash fire and high-temperature environments."
+        },
+        "feature2": {
+          "title": "Lightweight Comfort Unique to Nomex®",
+          "description": "The soft texture and lightweight structure of Nomex® Comfort and Essential Arc fabrics reduce fatigue during long working hours.."
+        },
+        "feature3": {
+          "title": "Arc Flash Protection",
+          "description": "Engineered with Nomex® Essential Arc fabric for arc flash protection, it provides HRC 2 (8 cal/cm²) or higher performance, with the jacket and pants each carrying their own certified Arc Rating."
+        }
+      },
+      "middleHero": {
+        "text": "It provides reliable protection in various high-risk work\nenvironments through lightweight comfort, high durability,\nand internationally certified safety performance"
+      },
+      "ergonomicTitle": "We deliver optimal solutions through innovative development",
+      "grid": {
+        "items": {
+          "item1": {
+            "title": "Permanent flame resistance",
+            "description": "Nomex® possesses inherent, permanent flame resistance. Therefore, its protective performance does not diminish even after repeated wear and laundering."
+          },
+          "item2": {
+            "title": "Enhanced Breathability and Workability",
+            "description": "Made with Nomex® Special Blended fabric, it is lighter and offers excellent breathability and moisture absorption, ensuring comfort even in high-heat environments."
+          },
+          "item3": {
+            "title": "Various styles available",
+            "description": "With our in-house sewing facility, we provide fast feedback and customization tailored to client needs."
+          },
+          "item4": {
+            "title": "Exceptional Heat & Flame Resistance",
+            "description": "This equipment uses 122 sensors to graph burn severity and tests in compliance with ASTM F1930."
+          },
+          "item5": {
+            "title": "Providing field-appropriate fabrics and solutions",
+            "description": "Maintains fabric strength and durability even with repeated use in high-risk industrial environments such as oil & gas, electrical, and chemical plants."
+          }
+        }
+      }
+    },
+    "glove": {
+      "bannerTitle": "Glove",
+      "bannerDescription": "With ANSI/ISEA 105 Cut Level A5 performance and outstanding comfort,\nyou can experience top-level safety and ease on the job.",
+      "topImageAlt": "glove",
+      "chartTitle": "DEXCut-Pro Overall Protection Performance Index",
+      "chart": {
+        "labels": {
+          "cutResistance": "Cut Resistance",
+          "heatArcProtection": "Heat \n& Arc Protection",
+          "comfortFlexibility": "Comfort & Flexibility",
+          "durability": "Durability",
+          "fieldProven": "Field-Proven\nPerformance"
+        }
+      },
+      "features": {
+        "feature1": {
+          "title": "Permanent flame resistance + cut protection",
+          "description": "The heat-resistant fiber structure of Kevlar® Engineered Yarn minimizes performance degradation under high temperatures, providing stable protection during heat-intensive tasks, sparks, and friction heat."
+        },
+        "feature2": {
+          "title": "Ultra-Lightweight Design for Reduced Fatigue",
+          "description": "Its lightweight yarn construction reduces bulk and hand strain, significantly lowering wrist and finger fatigue during repetitive or precision tasks."
+        },
+        "feature3": {
+          "title": "Field-Optimized Engineering",
+          "description": "Through repeated field testing across metalwork, automotive, utilities, and electrical industries, the glove delivers a balanced combination of protection, flexibility, and durability optimized for real-world work environments."
+        }
+      },
+      "middleHero": {
+        "text": "Experience the innovative flame and cut protection technologies of\nthe DEXCut-Pro Glove made with Kevlar® Engineered Yarn."
+      },
+      "allInOneTitle": "All-in-One High-Performance Kevlar® Protective Glove",
+      "grid": {
+        "items": {
+          "item1": {
+            "title": "High Cut Resistance",
+            "description": "Delivers top-tier cut protection meeting ANSI/ISEA 105 Level A5."
+          },
+          "item2": {
+            "title": "Superior Comfort & Grip",
+            "description": "A core metal-fiber structure enhances stability, ensuring exceptional comfort and grip."
+          },
+          "item3": {
+            "title": "Multi-Hazard Protection",
+            "description": "Engineered to protect against multiple hazards rarely covered by standard cut-resistant gloves."
+          },
+          "item4": {
+            "title": "Advanced Kevlar®\nEngineered Yarn",
+            "description": "Lightweight and flexible yarn reduces fatigue and supports precision tasks."
+          },
+          "item5": {
+            "title": "Versatility Across Industries",
+            "description": "Meets global standards and is suitable for steel, automotive, utilities, and various industrial environments."
+          }
+        }
+      }
+    }
+  }
 }

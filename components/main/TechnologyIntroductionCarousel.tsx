@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type TechCard = {
   title: string;
@@ -32,30 +33,32 @@ function CarouselCard({ card }: { card: TechCard }) {
 }
 
 export default function TechnologyIntroductionCarousel() {
+  const t = useTranslations("main.technologyIntro");
+
   const cards = useMemo<TechCard[]>(
     () => [
       {
-        title: "Nomex Kevlar",
-        description: "",
+        title: t("cards.card1.title"),
+        description: t("cards.card1.description"),
         imageSrc: "/assets/main/intro-1.png",
       },
       {
-        title: "Certified & Compliant",
-        description: "We comply with international regulations – ISO, NFPA, and EN standards, and we manage our operations in compliance with ISO9001, based on DuPont™'s thorough management system.",
+        title: t("cards.card2.title"),
+        description: t("cards.card2.description"),
         imageSrc: "/assets/main/intro-2.png",
       },
       {
-        title: "Flame Resistance Meets Comfort",
-        description: "We are constantly developing our products to provide not only permanent flame resistance but also comfort for every work place",
+        title: t("cards.card3.title"),
+        description: t("cards.card3.description"),
         imageSrc: "/assets/main/intro-3.png",
       },
       {
-        title: "Satisfy Global Standards",
-        description: "We comply with International regulations -ISO, NFPA, EN, and NIJ Standards.",
+        title: t("cards.card4.title"),
+        description: t("cards.card4.description"),
         imageSrc: "/assets/main/intro-4.png",
       },
     ],
-    [],
+    [t],
   );
 
   // Center align + partial slide width enables left/right peeking while keeping the section centered.
@@ -92,14 +95,14 @@ export default function TechnologyIntroductionCarousel() {
       {/* parent container owns content-container */}
       <div className="content-container">
         <div className="flex items-center justify-between">
-          <div className="font-pretendard font-semibold text-white text-[40px] ms-8">Technology Introduction</div>
+          <div className="font-pretendard font-semibold text-white text-[40px] ms-8">{t("sectionTitle")}</div>
 
           <div className="flex items-center gap-2 me-8">
             <button
               type="button"
               onClick={() => emblaApi?.scrollPrev()}
               className="h-16 w-16 bg-[#292B36] text-white cursor-pointer text-4xl"
-              aria-label="Previous slide"
+              aria-label={t("prevButtonLabel")}
             >
               ‹
             </button>
@@ -107,7 +110,7 @@ export default function TechnologyIntroductionCarousel() {
               type="button"
               onClick={() => emblaApi?.scrollNext()}
               className="h-16 w-16 bg-[#292B36] text-white cursor-pointer text-4xl"
-              aria-label="Next slide"
+              aria-label={t("nextButtonLabel")}
             >
               ›
             </button>
@@ -143,7 +146,7 @@ export default function TechnologyIntroductionCarousel() {
                 type="button"
                 onClick={() => emblaApi?.scrollTo(idx)}
                 className="cursor-pointer flex flex-row"
-                aria-label={`Go to slide ${idx + 1}`}
+                aria-label={t("goToSlide", { index: idx + 1 })}
               >
                 <div
                   className={`inset-0 h-1 w-20 my-5 mx-2 transition-opacity ${selectedIndex === idx ? "bg-[#FFD900]" : "bg-white/20"}`}

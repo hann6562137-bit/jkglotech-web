@@ -6,13 +6,18 @@ import FeatureGrid from "@/ui/FeatureGrid";
 import ThermalMiddleHero from "@/ui/ThermalMiddleHero";
 import ThermalBottomHero from "@/ui/ThermalBottomHero";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function HoodPage() {
+    const t = useTranslations("products.hood");
+
+    const middleHeroLines = t("middleHero.text").split("\n");
+
     return (
         <div>
             <Banner
-                title="Hood"
-                description={"With ANSI/ISEA 105 Cut Level A5 performance and outstanding comfort,\nyou can experience top-level safety and ease on the job."}
+                title={t("bannerTitle")}
+                description={t("bannerDescription")}
                 bgSrc="/assets/banners/hood-banner.png"
             />
             <div className="content-container mt-15 flex flex-col">
@@ -20,13 +25,13 @@ export default function HoodPage() {
                 <div className="w-full h-auto mt-10">
                     <Image
                         src="/assets/products/hood-top.png"
-                        alt="hood"
+                        alt={t("topImageAlt")}
                         width={1920}
                         height={1080}
                     />
                 </div>
                 <div className="mt-50 mb-50 font-aldrich text-[50px] mx-auto text-center">
-                    Ergonomic Thermal & Safety Protection
+                    {t("centerTitle")}
                 </div>
 
             </div>
@@ -37,18 +42,18 @@ export default function HoodPage() {
                             centerImageSrc="/assets/products/hood-chart.png"
                             centerImageWidthPercent={60}
                             labels={[
-                                "Flash Fire Protection",
-                                "Ergonomic Fit",
-                                "Enhanced Safety",
-                                "Soft Comfort",
-                                "Arc Flash\nProtection"
+                                t("chart.labels.flashFireProtection"),
+                                t("chart.labels.ergonomicFit"),
+                                t("chart.labels.enhancedSafety"),
+                                t("chart.labels.softComfort"),
+                                t("chart.labels.arcFlashProtection"),
                             ]}
                             values={[
                                 92,
                                 92,
                                 94,
                                 90,
-                                92
+                                92,
                             ]}
                         />
                     </div>
@@ -57,67 +62,71 @@ export default function HoodPage() {
             <div className="content-container flex flex-col mb-10">
                 <div className="flex flex-col gap-[2px] mt-20 w-full mb-50">
                     <FeatureCard
-                        imageSrc="/assets/products/glove-feature-1.png"
-                        title="Enhanced Thermal Blocking with\nPatented Dual-Layer Structure"
-                        description="An internal air layer creates a triple thermal barrier, maximizing protection against flames and high heat."
+                        imageSrc="/assets/products/hood-feature-1.png"
+                        title={t("features.feature1.title")}
+                        description={t("features.feature1.description")}
                         isBackground={false}
                     />
                     <FeatureCard
-                        imageSrc="/assets/products/glove-feature-2.png"
-                        title="Soft, Enhanced Comfort"
-                        description={`Specially engineered fabrics maintain softness and flexibility even after repeated washing, ensuring long-lasting comfort.`}
+                        imageSrc="/assets/products/hood-feature-2.png"
+                        title={t("features.feature2.title")}
+                        description={t("features.feature2.description")}
                         isBackground={false}
                         isRight
                     />
                     <FeatureCard
-                        imageSrc="/assets/products/glove-feature-3.png"
-                        title="Optimized Nomex® Blend to Minimize\nBurn Risk"
-                        description="Made with DuPont™ Nomex®, minimizing burn risk caused by trapped heat and perspiration."
+                        imageSrc="/assets/products/hood-feature-3.png"
+                        title={t("features.feature3.title")}
+                        description={t("features.feature3.description")}
                         isBackground={false}
                     />
                 </div>
             </div>
             <ThermalMiddleHero
                 imageSrc="/assets/products/hood-bottom.png"
-                alt="hood"
+                alt={t("topImageAlt")}
             >
                 <>
-                    The optimal protective choice for safeguarding
-                    <br />your head in extreme environments.
+                    {middleHeroLines.map((line, index) => (
+                        <span key={index}>
+                            {line}
+                            {index !== middleHeroLines.length - 1 && <br />}
+                        </span>
+                    ))}
                 </>
             </ThermalMiddleHero>
             <div className="w-full bg-black py-20 mt-40">
                 <div className="w-full text-center font-aldrich text-[40px] mt-20 mb-24">
-                    Ergonomic 3D pattern design with an ear-area air pocket.
+                    {t("ergonomicTitle")}
                 </div>
                 <div className="content-container">
                     <FeatureGrid
                         items={[
                             {
                                 number: "01.",
-                                title: "Permanent Flame \nResistance",
-                                description: "Maintains durable flame-resistant performance after repeated use and washing."
+                                title: t("grid.items.item1.title"),
+                                description: t("grid.items.item1.description"),
                             },
                             {
                                 number: "02.",
-                                title: "Thermo-man® Tested",
-                                description: "Proven protection validated through DuPont™ Thermo-man® fire mannequin testing."
+                                title: t("grid.items.item2.title"),
+                                description: t("grid.items.item2.description"),
                             },
                             {
                                 number: "03.",
-                                title: "Lightweight & Highly\nFlexible",
-                                description: "Designed for long-wear comfort with excellent mobility."
+                                title: t("grid.items.item3.title"),
+                                description: t("grid.items.item3.description"),
                             },
                             {
                                 number: "04.",
-                                title: "Flash Fire & Arc Flash \nDual Protection",
-                                description: "Shields workers from both flash fire and arc-flash energy."
+                                title: t("grid.items.item4.title"),
+                                description: t("grid.items.item4.description"),
                             },
                             {
                                 number: "05.",
-                                title: "Arc Flash Rating: 9.4 cal/cm² \nAPTV",
-                                description: "Provides certified arc-flash protection for safer work conditions."
-                            }
+                                title: t("grid.items.item5.title"),
+                                description: t("grid.items.item5.description"),
+                            },
                         ]}
                     />
                 </div>

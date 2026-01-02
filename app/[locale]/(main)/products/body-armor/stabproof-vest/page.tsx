@@ -6,12 +6,16 @@ import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
 import BodyArmorBottomHero from "@/ui/BodyArmorBottomHero";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function StabproofVestPage() {
+    const t = useTranslations("products.stabproofVest");
+    const tMenu = useTranslations("menu");
+
     return (
-        <div className="mt-[100px]">
+        <div className="">
             <Banner
-                title="Stabproof Vest"
+                title={t("bannerTitle")}
                 bgSrc="/assets/banners/stabproof-vest-banner.png"
             />
             <div className="content-container mt-15 flex flex-col">
@@ -19,13 +23,13 @@ export default function StabproofVestPage() {
                 <div className="w-full h-auto mt-10">
                     <Image
                         src="/assets/products/stabproof-vest-top.png"
-                        alt="Stabproof Vest"
+                        alt={t("topImageAlt")}
                         width={1920}
                         height={1080}
                     />
                 </div>
                 <div className="mt-50 mb-50 font-aldrich text-[50px] mx-auto text-center">
-                    Stab proof Vest
+                    {t("titleMain")}
                 </div>
 
             </div>
@@ -36,74 +40,71 @@ export default function StabproofVestPage() {
             </div>
             <div className="content-container flex flex-col">
                 <div className="mt-50 mb-30 font-aldrich text-[40px] mx-auto text-center">
-                    Material Durability
+                    {t("materialDurabilityTitle")}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full mb-40">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mb-40  md:px-50">
                     <CircularProgress
                         percentage={85}
-                        value={17}
+                        value={15}
                         prefix="x"
-                        title={`Stab-Resistance\nPerformance Test`}
-                        description={`Ensures sufficient stability\nthrough 17 rounds of\nperformance testing`}
-                    />
-                    <CircularProgress
-                        percentage={70}
-                        value={10}
-                        suffix="s"
-                        title={`In-House Production\nTechnology`}
-                        description={`Specially coated stab-\nresistant material produced\nwith proprietary technology,\noffering flexibility and high\nresilience`}
+                        title={t("stats.stabResistanceTest.title")}
+                        description={t("stats.stabResistanceTest.description")}
                     />
                     <CircularProgress
                         percentage={100}
                         value={100}
                         suffix="%"
-                        title={`Kevlar® Prepreg\nfabric`}
-                        description={`Pre-impregnated Kevlar®\nlayers engineered for\nsuperior strength, flexibility,\nand consistent quality.`}
+                        title={t("stats.kevlarPrepreg.title")}
+                        description={t("stats.kevlarPrepreg.description")}
                     />
                     <CircularProgress
                         percentage={100}
                         value={100}
                         suffix="%"
-                        title={`Kevlar® Ceramic\nCoated fabric`}
-                        description={`Kevlar® fabric reinforced\nwith a ceramic coating to\nenhance stab and cut\nresistance.`}
+                        title={t("stats.kevlarCeramic.title")}
+                        description={t("stats.kevlarCeramic.description")}
                     />
                 </div>
                 <div className="flex flex-col gap-[2px] mt-20 w-full mb-40">
                     <FeatureCard
                         imageSrc="/assets/products/stabproof-vest-feature-2.png"
-                        title="Proven Safety"
-                        description="Over 17 stab-resistance tests completed at accredited domestic and international laboratories."
+                        title={t("features.feature1.title")}
+                        description={t("features.feature1.description")}
                     />
                     <FeatureCard
                         imageSrc="/assets/products/stabproof-vest-feature-3.png"
-                        title="Weight Distribution System"
-                        description={`A 3-point waist-tightening mechanism ensures a snug fit around the torso, enhancing comfort and evenly distributing weight to minimize fatigue during long wear.`}
+                        title={t("features.feature2.title")}
+                        description={t("features.feature2.description")}
                     />
                     <FeatureCard
                         imageSrc="/assets/products/stabproof-vest-feature-4.png"
-                        title="Quick Wearability"
-                        description="Incorporates an aircraft life-vest fastening system with a zipper closure, allowing rapid wear and removal — even enabling over-the-head donning in emergencies for immediate readiness."
+                        title={t("features.feature3.title")}
+                        description={t("features.feature3.description")}
                     />
                 </div>
             </div>
             <BodyArmorBottomHero
                 imageSrc="/assets/products/stabproof-vest-bottom.png"
-                alt="Stabproof Vest"
+                alt={t("bottomHero.alt")}
             >
                 <>
-                    A field-proven stab-resistant vest, designed for quick wear and<br />
-                    agile movement, specialized for police operations.
+                    {t("bottomHero.text").split("\n").map((line, idx) => (
+                        <span key={idx}>
+                            {line}
+                            {idx === 0 && <br />}
+                        </span>
+                    ))}
                 </>
             </BodyArmorBottomHero>
             <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
                 <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
-                    Experience trusted stab-resistant protection
+                    {t("cta.heading")}
                 </p>
                 <Link
                     href="/about-us"
                     className="bg-[#FFD900] text-black font-pretendard px-20 py-4 text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
                 >
-                    About us <span className="ml-2 text-xl">→</span>
+                    {tMenu("about-us")} <span className="ml-2 text-xl">→</span>
                 </Link>
             </div>
         </div>

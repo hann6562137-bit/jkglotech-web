@@ -6,14 +6,18 @@ import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
 import Image from "next/image";
 import HorizontalScrollCards from "@/ui/HorizontalScrollCards";
+import { useTranslations } from "next-intl";
 
 export default function WasherPage() {
+    const t = useTranslations("products.washer");
+    const tMenu = useTranslations("menu");
+
     return (
         <div className="mt-[100px]">
             <Banner
-                title="Washer"
+                title={t("bannerTitle")}
                 bgSrc="/assets/banners/washer-banner.png"
-                description="A flexible, drive-through tube system that immerses and suppresses EV batteries within 30 minutes using minimal crew and water."
+                description={t("bannerDescription")}
                 direction="right"
             />
             <div className="content-container mt-15 flex flex-col">
@@ -22,14 +26,14 @@ export default function WasherPage() {
             <div className="w-full relative mb-80">
                 <Image
                     src="/assets/products/washer-top.png"
-                    alt="Washer"
+                    alt={t("topImageAlt")}
                     width={1920}
                     height={1080}
                     className="w-full h-auto" />
 
                 <div className="absolute w-full h-full top-0 left-0">
                     <div className="mt-50 mb-20 font-aldrich text-[50px] mx-auto text-center">
-                        Key Features
+                        {t("keyFeaturesTitle")}
                     </div>
                     <div className="grid grid-cols-2 gap-10 w-full max-w-[900px] mx-auto">
                         <CircularProgress
@@ -39,7 +43,7 @@ export default function WasherPage() {
                             background="rgba(0,0,0,0)"
                             bgRingColor="#121319"
                             strokeThickness={6}
-                            bigTitle={`Installation Speed\nImprovement Rate`}
+                            bigTitle={t("stats.installationSpeed")}
                             imageSrc="/assets/products/washer-circle-1.png"
                         />
                         <CircularProgress
@@ -49,7 +53,7 @@ export default function WasherPage() {
                             background="rgba(0,0,0,0)"
                             bgRingColor="#121319"
                             strokeThickness={6}
-                            bigTitle={`Water Consumption\nReduction Rate`}
+                            bigTitle={t("stats.waterReduction")}
                             imageSrc="/assets/products/washer-circle-2.png"
                         />
                     </div>
@@ -57,27 +61,27 @@ export default function WasherPage() {
             </div>
             <div className="content-container">
                 <div className="font-aldrich text-[50px] mb-10 w-full text-center">
-                    Integrated Contamination-Control Washing System
+                    {t("systemTitle")}
                 </div>
                 <div className="flex flex-col gap-[2px] mt-20 w-full mb-40">
                     <FeatureCard
                         imageSrc="/assets/products/washer-feature-1.png"
-                        title="Cross-Contamination Prevention Process"
+                        title={t("features.feature1.title")}
                         isBackground={false}
-                        description="Designed to handle contaminated equipment within a controlled environment, significantly reducing the risk of secondary exposure and cross-contamination."
+                        description={t("features.feature1.description")}
                     />
                     <FeatureCard
                         imageSrc="/assets/products/washer-feature-2.png"
-                        title="Multi-PPE Cleaning System"
+                        title={t("features.feature2.title")}
                         isBackground={false}
-                        description={`Supports SCBA, air cylinders, helmets, masks, boots, gloves, and more—maximizing operational efficiency by cleaning multiple PPE types with a single machine.`}
+                        description={t("features.feature2.description")}
                         isRight
                     />
                     <FeatureCard
                         imageSrc="/assets/products/washer-feature-3.png"
-                        title="Disinfection Function Option"
+                        title={t("features.feature3.title")}
                         isBackground={false}
-                        description="Allows disinfectant application during the rinse stage or through a dedicated disinfection program, enabling enhanced hygiene beyond standard washing."
+                        description={t("features.feature3.description")}
                     />
                 </div>
             </div>
@@ -85,35 +89,35 @@ export default function WasherPage() {
                 cards={[
                     {
                         imageSrc: "/assets/products/washer-1.png",
-                        title: "Bottomless mobile immersion system",
-                        description: "Push-in response with minimal site limitations."
+                        title: t("scrollCards.card1.title"),
+                        description: t("scrollCards.card1.description")
                     },
                     {
                         imageSrc: "/assets/products/washer-2.png",
-                        title: "Intuitive operator interface",
-                        description: "Simple water controls and ports for quick use."
+                        title: t("scrollCards.card2.title"),
+                        description: t("scrollCards.card2.description")
                     },
                     {
                         imageSrc: "/assets/products/washer-3.png",
-                        title: "Fast setup, low water use",
-                        description: "Four-person deployment, immersion in 30 minutes with 7–8 tons."
+                        title: t("scrollCards.card3.title"),
+                        description: t("scrollCards.card3.description")
                     },
                     {
                         imageSrc: "/assets/products/washer-4.png",
-                        title: "Korea-made & patented",
-                        description: "Domestic manufacturing backed by multiple patents."
+                        title: t("scrollCards.card4.title"),
+                        description: t("scrollCards.card4.description")
                     }
                 ]}
             />
             <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
                 <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
-                    Experience trusted ballistic protection
+                    {t("cta.heading")}
                 </p>
                 <Link
                     href="/about-us"
                     className="bg-[#FFD900] text-black font-pretendard px-20 py-4 text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
                 >
-                    About us <span className="ml-2 text-xl">→</span>
+                    {tMenu("about-us")} <span className="ml-2 text-xl">→</span>
                 </Link>
             </div>
         </div>

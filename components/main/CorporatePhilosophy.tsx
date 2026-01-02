@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type PhilosophyCard = {
   iconSrc: string;
@@ -23,42 +24,44 @@ function PhilosophyCardItem({ card }: { card: PhilosophyCard }) {
 }
 
 export default function CorporatePhilosophy() {
+  const t = useTranslations("main.corporatePhilosophy");
+
   const cards: PhilosophyCard[] = [
     {
       iconSrc: "/assets/main/Globe.png",
-      title: "Slogan",
-      description: "Go Above and Beyond!",
+      title: t("cards.card1.title"),
+      description: t("cards.card1.description"),
     },
     {
       iconSrc: "/assets/main/Compass.png",
-      title: "Professionalism",
-      description: "Join with us and experience the Global Standard for FR PPE",
+      title: t("cards.card2.title"),
+      description: t("cards.card2.description"),
     },
     {
       iconSrc: "/assets/main/Data.png",
-      title: "Sustainable Growth",
-      description: "Since 2009, We have been growing continuously.",
+      title: t("cards.card3.title"),
+      description: t("cards.card3.description"),
     },
     {
       iconSrc: "/assets/main/Users_Group.png",
-      title: "Innovation & R&D\nLeadership",
-      description: "We lead high-end PPE solutions through robust R&D investment.",
+      title: t("cards.card4.title"),
+      description: t("cards.card4.description"),
     },
     {
       iconSrc: "/assets/main/First_Aid.png",
-      title: "Safety-First Commitment",
-      description: "The safety of workers and workplaces is always our top priority.",
+      title: t("cards.card5.title"),
+      description: t("cards.card5.description"),
     },
     {
       iconSrc: "/assets/main/Chat_Dots.png",
-      title: "Customer Collaboration\n& Reliability",
-      description: "We provide solutions by identifying the customer's unmet needs",
+      title: t("cards.card6.title"),
+      description: t("cards.card6.description"),
     },
   ];
 
   return (
     <section className="content-container py-40">
-      <div className="font-pretendard font-semibold text-white text-[40px]">Corporate Philosophy</div>
+      <div className="font-pretendard font-semibold text-white text-[40px]">{t("sectionTitle")}</div>
       <div className="mt-10 grid grid-cols-3 gap-6">
         {cards.map((card) => (
           <PhilosophyCardItem key={card.title} card={card} />

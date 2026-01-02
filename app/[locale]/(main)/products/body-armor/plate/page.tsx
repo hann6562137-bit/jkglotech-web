@@ -6,12 +6,16 @@ import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
 import BodyArmorBottomHero from "@/ui/BodyArmorBottomHero";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function PlateVestPage() {
+    const t = useTranslations("products.plate");
+    const tMenu = useTranslations("menu");
+
     return (
         <div className="mt-[100px]">
             <Banner
-                title="Plate"
+                title={t("bannerTitle")}
                 bgSrc="/assets/banners/plate-banner.png"
             />
             <div className="content-container mt-15 flex flex-col">
@@ -19,14 +23,13 @@ export default function PlateVestPage() {
                 <div className="w-full h-auto mt-10">
                     <Image
                         src="/assets/products/plate-top.png"
-                        alt="Plate"
+                        alt={t("topImageAlt")}
                         width={1920}
                         height={1080}
                     />
                 </div>
-                <div className="mt-50 mb-50 font-aldrich text-[50px] mx-auto text-center">
-                    ToRo-2450 Ultralight<br />
-                    Multi-Curve Ballistic Plate
+                <div className="mt-50 mb-50 font-aldrich text-[50px] mx-auto text-center whitespace-pre-line">
+                    {t("titleMain")}
                 </div>
 
             </div>
@@ -37,83 +40,71 @@ export default function PlateVestPage() {
             </div>
             <div className="content-container flex flex-col">
                 <div className="mt-50 mb-30 font-aldrich text-[40px] mx-auto text-center">
-                    Material Durability
+                    {t("materialDurabilityTitle")}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full mb-40">
-                    <CircularProgress
-                        percentage={25}
-                        value={4.5}
-                        suffix=" kg"
-                        decimals={1}
-                        title={`Weight Efficiency`}
-                        description={`Optimized 4.5 kg/m²\nlightweight structure\ndelivering maximum\nprotection-to-weight\nperformance.`}
-                    />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full mb-40  md:px-50">
                     <CircularProgress
                         percentage={15}
                         value={15}
                         suffix="%"
-                        title={`Lightweight Design`}
-                        description={`Approximately 15% lighter\n(by area) compared to\nstandard Korean military\nballistic plates`}
+                        title={t("stats.lightweightDesign.title")}
+                        description={t("stats.lightweightDesign.description")}
                     />
                     <CircularProgress
                         percentage={20}
                         value={20}
                         suffix="%"
-                        title={`Wearability`}
-                        description={`Approximately 20% thinner\nthan standard Korean\nmilitary ballistic plates`}
+                        title={t("stats.wearability.title")}
+                        description={t("stats.wearability.description")}
                     />
                     <CircularProgress
                         percentage={100}
                         value={100}
                         suffix="%"
-                        title={`Protection Level`}
-                        description={`Certified NIJ Level IV\nprotection withstanding\nthree APM2 rounds`}
+                        title={t("stats.protectionLevel.title")}
+                        description={t("stats.protectionLevel.description")}
                     />
                 </div>
                 <div className="flex flex-col gap-[2px] mt-20 w-full mb-40">
                     <FeatureCard
                         imageSrc="/assets/products/plate-feature-1.png"
-                        title="Proven Technology"
-                        description={[
-                            "Delivered Level IV ballistic plates to the Defense Acquisition Program Administration (2023)",
-                            "Established partnerships with global companies",
-                            "Ensured product reliability"
-                        ]}
+                        title={t("features.feature1.title")}
+                        description={t("features.feature1.description")}
                     />
                     <FeatureCard
                         imageSrc="/assets/products/plate-feature-2.png"
-                        title="Multi-Curve Fit"
-                        description={[
-                            "Utilizes special ceramics and proprietary bonding technology optimized for mobility to achieve multi-curve shaping",
-                            "Compatible and replaceable — can be inserted into Army Multipurpose Type I body armor",
-                            "Reduces physical fatigue"
-                        ]}
+                        title={t("features.feature2.title")}
+                        description={t("features.feature2.description")}
                     />
                     <FeatureCard
                         imageSrc="/assets/products/plate-feature-3.png"
-                        title="Advanced Materials"
-                        description="Applies SAINT-GOBAIN ceramics (B4C) adopted by the U.S. military"
+                        title={t("features.feature3.title")}
+                        description={t("features.feature3.description")}
                     />
                 </div>
             </div>
             <BodyArmorBottomHero
                 imageSrc="/assets/products/plate-bottom.png"
-                alt="Plate"
+                alt={t("bottomHero.alt")}
             >
                 <>
-                    Designed with an ultra-lightweight multi-curve structure,<br />
-                    this plate provides superior protection, comfort, and mobility.
+                    {t("bottomHero.text").split("\n").map((line, idx) => (
+                        <span key={idx}>
+                            {line}
+                            {idx === 0 && <br />}
+                        </span>
+                    ))}
                 </>
             </BodyArmorBottomHero>
             <div className="w-full bg-black mt-[300px] mb-[300px] flex flex-col items-center justify-center text-center px-4">
                 <p className="text-white font-pretendard text-[50px] mb-10 font-semibold">
-                    Experience trusted ballistic protection
+                    {t("cta.heading")}
                 </p>
                 <Link
                     href="/about-us"
                     className="bg-[#FFD900] text-black font-pretendard px-20 py-4 text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
                 >
-                    About us <span className="ml-2 text-xl">→</span>
+                    {tMenu("about-us")} <span className="ml-2 text-xl">→</span>
                 </Link>
             </div>
         </div>
