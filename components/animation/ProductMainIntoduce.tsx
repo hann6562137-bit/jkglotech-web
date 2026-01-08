@@ -3,7 +3,7 @@ import Image from "next/image";
 import RadialRingsSVG from "./RadialFade";
 import { useEffect, useState } from "react";
 
-function useIsMobile(breakpoint = 1280) {
+export function useIsMobile(breakpoint = 1280) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

@@ -131,7 +131,7 @@ export default function CircularProgressCenterNumber({
       <div className="absolute inset-0 flex flex-col items-center justify-center select-none">
         {imageSrc ? (
           <>
-            <div className="relative w-[100%] h-[100%] md:w-[40%] md:h-[40%] mb-2">
+            <div className="relative w-[30%] h-[30%] xl:w-[40%] xl:h-[40%] mb-2">
               <Image
                 src={imageSrc}
                 alt="Progress Icon"

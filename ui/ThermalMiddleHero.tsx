@@ -22,11 +22,14 @@ export default function ThermalMiddleHero({
           alt={alt}
           width={1920}
           height={1080}
-          className="w-full h-auto"
+          className="z-0 xl:w-full xl:h-auto w-full xl:aspect-auto aspect-[5/4] object-cover"
         />
-        <div className="absolute inset-0 flex items-center justify-center p-4">
+        <div className="xl:hidden block z-10 absolute inset-0 bg-black opacity-50">
+
+        </div>
+        <div className="z-20 absolute inset-0 flex items-center justify-center p-4 xl:w-full w-[80%] mx-auto">
           <p
-            className="text-white font-aldrich text-[24px] md:text-[32px] text-center leading-relaxed drop-shadow-md"
+            className="text-white font-aldrich text-[15px] xl:text-[32px] text-center leading-relaxed drop-shadow-md"
             data-aos="fade-up"
             data-aos-duration="800"
           >

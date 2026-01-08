@@ -14,7 +14,8 @@ export default function CircularProgress({
   strokeThickness = 8,
   bgRingColor = "black",
   ringColor = "white",
-  imageSrc
+  imageSrc,
+  isEquipment = false,
 }: {
   bigTitle?: string,
   title?: string,
@@ -29,11 +30,12 @@ export default function CircularProgress({
   strokeThickness?: number,
   bgRingColor?: string,
   ringColor?: string,
-  imageSrc?: string
+  imageSrc?: string,
+  isEquipment?: boolean,
 }) {
   return (
-    <div className={`flex flex-col font-pretendard justify-start items-center bg-[${background}] py-12 w-full h-full `}>
-      <div className="w-full px-5 xl:px-20">
+    <div className={`flex flex-col font-pretendard justify-start items-center bg-[${background}] ${isEquipment ? "xl:py-12 py-3" : "py-12"} w-full h-full `}>
+      <div className={`w-full px-5 xl:px-20 ${isEquipment ? "h-[100px] xl:h-auto" : "h-auto" }`}>
         <CircularProgressCenterNumber
           percentage={percentage}
           value={value}
@@ -48,7 +50,7 @@ export default function CircularProgress({
         />
       </div>
       {
-        bigTitle && <div className="mt-5 xl:mt-10 text-white text-[15px] xl:text-[35px] font-medium whitespace-pre-line text-center flex items-center">{bigTitle}</div>
+        bigTitle && <div className={`${isEquipment ? "text-[12px] xl:text-[35px]" : "text-[15px] xl:text-[35px]"} mt-5 xl:mt-10 text-white font-medium whitespace-pre-line text-center flex items-center ${isEquipment ? 'equipment-class' : ''}`}>{bigTitle}</div>
       }
       {
         title && <div className="mt-5 xl:mt-10 text-white text-[15px] xl:text-[30px] font-semibold whitespace-pre-line text-center flex items-center">{title}</div>

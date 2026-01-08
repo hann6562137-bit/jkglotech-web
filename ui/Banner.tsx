@@ -38,7 +38,7 @@ export default function Banner({
           <h1 className={`${description ? 'text-[20px] xl:text-[50px]' : 'text-[20px] xl:text-[70px]'} font-aldrich`}>{title}</h1>
           <br />
           {description &&
-            <p className={`max-w-[700px] text-gray-400 font-pretendard text-[25px] whitespace-pre-line ${direction === 'center' ? 'text-center' : ''}`}>
+            <p className={`xl:px-0 px-5 max-w-[700px] text-gray-400 font-pretendard text-[10px] xl:text-[25px] whitespace-pre-line ${direction === 'center' ? 'text-center' : ''}`}>
               {description}
             </p>
           }
