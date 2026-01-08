@@ -62,7 +62,7 @@ export default function HorizontalDragCards({
             `}</style>
             <div
                 ref={scrollContainerRef}
-                className="content-container overflow-x-scroll relative h-[700px] horizontal-scroll-yellow pb-10"
+                className="content-container overflow-x-scroll relative h-[800px] horizontal-scroll-yellow pb-10"
                 style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}

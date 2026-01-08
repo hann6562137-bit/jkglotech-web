@@ -18,8 +18,17 @@ function ContentSection() {
   return (
     <div className="min-h-screen bg-black overflow-x-hidden">
 
-      <div className="relative flex items-center mt-[100px] min-h-[80vh] bg-gray-500">
-        <div className="content-container">
+      <div className="relative flex items-center mt-[100px] min-h-[80vh]">
+        <div className="absolute w-full h-full ">
+          <video
+            src="/video/background.mp4"
+            autoPlay
+            loop
+            muted
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="content-container z-10">
           <h1 className="text-white font-aldrich text-[80px] leading-tight mb-6">
             {tHero("titleLine1")}<br />
             {tHero("titleLine2")}
