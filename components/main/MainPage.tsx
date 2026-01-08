@@ -18,7 +18,7 @@ function ContentSection() {
   return (
     <div className="min-h-screen bg-black overflow-x-hidden">
 
-      <div className="relative flex items-center mt-[100px] min-h-[80vh]">
+      <div className="relative flex items-center mt-[50px] xl:mt-[100px] min-h-[80vh]">
         <div className="absolute w-full h-full ">
           <video
             src="/video/background.mp4"
@@ -29,31 +29,32 @@ function ContentSection() {
           />
         </div>
         <div className="content-container z-10">
-          <h1 className="text-white font-aldrich text-[80px] leading-tight mb-6">
+          <h1 className="text-white font-aldrich xl:text-[80px] text-[40px] leading-tight mb-6 xl:text-start text-center">
             {tHero("titleLine1")}<br />
             {tHero("titleLine2")}
           </h1>
-          <p className="text-white font-pretendard text-[30px] leading-relaxed mb-20">
+          <p className="text-white font-pretendard xl:text-[30px] text-[15px] leading-relaxed mb-20 xl:text-start text-center">
             {tHero("descriptionLine1")}<br />
             {tHero("descriptionLine2")}
           </p>
           <Link
             href="/about-us"
-            className="inline-block bg-[#FFD900] text-black font-pretendard text-[24px] font-semibold px-10 py-4 hover:bg-[#ffe033] transition-colors"
+            className="w-full xl:w-auto text-center inline-block bg-[#FFD900] text-black font-aldrich xl:text-[24px] text-[20px] px-10 xl:py-4 py-2 hover:bg-[#ffe033] transition-colors"
           >
             {tMenu("about-us")}
           </Link>
         </div>
       </div>
 
-      <div className='content-container-content py-50'>
-        <div className='w-full flex flex-row'>
-          <div className='font-pretendard font-semibold text-[40px] pe-10'>
+      <div className='content-container-content xl:py-50 py-20'>
+        <div className='w-full flex xl:flex-row flex-col'>
+          <div className='font-pretendard font-semibold xl:text-[40px] text-[20px] xl:pe-10'>
             {tMission("titleLine1")}
-            <br />
+            <br className="xl:block hidden" />
+            <span className="xl:hidden inline">&nbsp;</span>
             {tMission("titleLine2")}
           </div>
-          <div className='font-pretendard text-[20px] leading-relaxed pe-10'>
+          <div className='font-pretendard xl:text-[20px] text-[12px] leading-relaxed xl:pe-10 mt-5 xl:mt-0'>
             {tMission("body")}
           </div>
         </div>
@@ -70,26 +71,33 @@ function ContentSection() {
 
       <ProductListSection />
 
-      <div className='content-container my-60'>
+      <div className='content-container xl:my-60 my-30'>
         <div className='w-full'>
           <Image
             src="/assets/main/main-associates.png"
             width={1920}
             height={300}
             alt={tImages("associates")}
-            className="w-full h-auto"
+            className="w-full h-auto hidden xl:block"
+          />
+          <Image
+            src="/assets/main/main-associates-mobile.png"
+            width={1920}
+            height={300}
+            alt={tImages("associates")}
+            className="w-full h-auto block xl:hidden"
           />
         </div>
       </div>
 
       <TechnologyIntroductionCarousel />
 
-      <section className="content-container py-40">
-        <div className="font-pretendard font-semibold text-white text-[40px]">
+      <section className="content-container py-10 xl:py-40">
+        <div className="font-pretendard font-semibold text-white text-[20px] xl:text-[40px]">
           {tTech("title")}
         </div>
 
-        <div className="mt-10 flex flex-row gap-12 items-start">
+        <div className="mt-10 flex flex-col xl:flex-row gap-12 items-start">
           <div className="flex-3/5">
             <Image
               src="/assets/main/technological-innovation.png"
@@ -103,31 +111,31 @@ function ContentSection() {
 
           <div className="flex-2/5 pt-6">
             <div className="flex flex-col space-y-2">
-              <div className="font-pretendard font-semibold text-white text-[35px]">
+              <div className="font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
                 {tTech("developmentCapability.title")}
               </div>
-              <div className="mt-2 font-pretendard font-medium text-white/60 text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
                 {tTech("developmentCapability.description")}
               </div>
 
-              <div className="mt-8 font-pretendard font-semibold text-white text-[35px]">
+              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
                 {tTech("rdFocus.title")}
               </div>
-              <div className="mt-2 font-pretendard font-medium text-white/60 text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
                 {tTech("rdFocus.description")}
               </div>
 
-              <div className="mt-8 font-pretendard font-semibold text-white text-[35px]">
+              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
                 {tTech("reliability.title")}
               </div>
-              <div className="mt-2 font-pretendard font-medium text-white/60 text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
                 {tTech("reliability.description")}
               </div>
 
-              <div className="mt-8 font-pretendard font-semibold text-white text-[24px]">
+              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
                 {tTech("collaborationAgility.title")}
               </div>
-              <div className="mt-2 font-pretendard font-medium text-white/60 text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
                 {tTech("collaborationAgility.description")}
               </div>
             </div>

@@ -1,7 +1,7 @@
 import ProductMainIntoduce from "@/components/animation/ProductMainIntoduce";
 import { BodyArmorMenu } from "@/components/nav/BodyArmorMenu";
 import { Link } from "@/i18n/routing";
-import Banner from "@/ui/banner";
+import Banner from "@/ui/Banner";
 import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
 import Image from "next/image";

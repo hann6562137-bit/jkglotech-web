@@ -25,7 +25,7 @@ export default function BodyArmorBottomHero({
       />
       <div className="absolute inset-0 flex items-center justify-center p-4">
         <p
-          className="text-white font-aldrich text-[24px] md:text-[32px] text-center leading-relaxed drop-shadow-md"
+          className="text-white font-aldrich text-[12px] md:text-[32px] text-center leading-relaxed drop-shadow-md"
           data-aos="fade-up"
           data-aos-duration="800"
         >

@@ -1,6 +1,6 @@
 import PentagonChart from "@/components/animation/PentagonChart";
 import { BodyArmorMenu } from "@/components/nav/BodyArmorMenu";
-import Banner from "@/ui/banner";
+import Banner from "@/ui/Banner";
 import FeatureCard from "@/ui/FeatureCard";
 import FeatureGrid from "@/ui/FeatureGrid";
 import BodyArmorBottomHero from "@/ui/BodyArmorBottomHero";

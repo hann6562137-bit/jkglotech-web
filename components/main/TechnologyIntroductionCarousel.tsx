@@ -13,18 +13,18 @@ type TechCard = {
 
 function CarouselCard({ card }: { card: TechCard }) {
   return (
-    <div className="w-full bg-[#292B36] aspect-20/9 overflow-hidden">
-      <div className="h-full w-full flex flex-col md:flex-row">
+    <div className="w-full bg-[#292B36] aspect-square xl:aspect-20/9 overflow-hidden">
+      <div className="h-full w-full flex flex-col xl:flex-row">
         {/* Left text panel */}
-        <div className="basis-2/5 bg-black/20 p-15 flex flex-col justify-between">
-          <div className="font-pretendard font-semibold text-white text-[40px] leading-tight whitespace-pre-line">
+        <div className="basis-2/5 bg-black/20 xl:p-15 p-5 flex flex-col xl:justify-between xl:order-1 order-2">
+          <div className="font-pretendard font-semibold text-white text-[12px] xl:text-[40px] leading-tight whitespace-pre-line">
             {card.title}
           </div>
-          <div className="font-pretendard text-white/50 text-sm leading-relaxed font-medium text-[20px]">{card.description}</div>
+          <div className="font-pretendard text-white/50 leading-relaxed font-medium text-[10px] xl:text-[20px]">{card.description}</div>
         </div>
 
         {/* Right image panel */}
-        <div className="basis-3/5 relative">
+        <div className="basis-3/5 relative xl:order-2 order-1">
           <Image src={card.imageSrc} alt={card.title} fill className="object-cover object-center" priority={false} />
         </div>
       </div>
@@ -91,13 +91,13 @@ export default function TechnologyIntroductionCarousel() {
   }, [emblaApi]);
 
   return (
-    <section className="py-40 overflow-x-hidden">
+    <section className="xl:py-40 py-0 overflow-x-hidden">
       {/* parent container owns content-container */}
       <div className="content-container">
         <div className="flex items-center justify-between">
-          <div className="font-pretendard font-semibold text-white text-[40px] ms-8">{t("sectionTitle")}</div>
+          <div className="font-pretendard font-semibold text-white xl:text-[40px] text-[20px] xl:ms-8">{t("sectionTitle")}</div>
 
-          <div className="flex items-center gap-2 me-8">
+          <div className="hidden xl:flex items-center gap-2 me-8">
             <button
               type="button"
               onClick={() => emblaApi?.scrollPrev()}
@@ -127,7 +127,7 @@ export default function TechnologyIntroductionCarousel() {
               {cards.map((card) => (
                 <div
                   key={card.title}
-                  className="shrink-0 basis-[99%] px-5"
+                  className="shrink-0 basis-[99%] xl:px-5 px-2"
                 >
                   <CarouselCard card={card} />
                 </div>
@@ -138,7 +138,7 @@ export default function TechnologyIntroductionCarousel() {
       </div>
 
       <div className="content-container">
-        <div className="mt-3 flex justify-center">
+        <div className="px-5 xl:px-0 mt-2 xl:mt-3 flex justify-center">
           <div className="flex items-center">
             {cards.map((_, idx) => (
               <button
@@ -149,7 +149,7 @@ export default function TechnologyIntroductionCarousel() {
                 aria-label={t("goToSlide", { index: idx + 1 })}
               >
                 <div
-                  className={`inset-0 h-1 w-20 my-5 mx-2 transition-opacity ${selectedIndex === idx ? "bg-[#FFD900]" : "bg-white/20"}`}
+                  className={`inset-0 h-1 w-20 my-5 xl:mx-2 mx-0.5 transition-opacity ${selectedIndex === idx ? "bg-[#FFD900]" : "bg-white/20"}`}
                 />
               </button>
             ))}
