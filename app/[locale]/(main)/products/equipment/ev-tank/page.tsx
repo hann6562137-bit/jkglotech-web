@@ -1,12 +1,11 @@
-import ProductMainIntoduce from "@/components/animation/ProductMainIntoduce";
 import { BodyArmorMenu } from "@/components/nav/BodyArmorMenu";
 import { Link } from "@/i18n/routing";
-import Banner from "@/ui/Banner";
 import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
 import Image from "next/image";
 import HorizontalScrollCards from "@/ui/HorizontalScrollCards";
 import { useTranslations } from "next-intl";
+import EquipmentBanner from "@/ui/EquipmentBanner";
 
 export default function EVTankPage() {
   const t = useTranslations("products.evTank");
@@ -14,11 +13,11 @@ export default function EVTankPage() {
 
   return (
     <div className="mt-[50px] xl:mt-[100px]">
-      <Banner
+      <EquipmentBanner
         title={t("bannerTitle")}
         bgSrc="/assets/banners/ev-tank-banner.png"
+        mobileBgSrc="/assets/banners/ev-tank-banner-mobile.png"
         description={t("bannerDescription")}
-        direction="right"
       />
       <div className="content-container mt-5 xl:mt-15 flex flex-col">
         <BodyArmorMenu currentMenu="ev-tank" menuNameKey="equipment" />

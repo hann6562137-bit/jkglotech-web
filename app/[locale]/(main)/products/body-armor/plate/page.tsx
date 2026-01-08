@@ -34,10 +34,10 @@ export default function PlateVestPage() {
       </div>
       <div className="w-full bg-[#121319]">
         <div className="w-full max-w-[1920px] mx-auto">
-          <ProductMainIntoduce 
-            src="/assets/products/plate-intro.png" 
+          <ProductMainIntoduce
+            src="/assets/products/plate-intro.png"
             mobileSrc="/assets/products/plate-intro-mobile.png"
-            mobileText="/assets/products/plate-intro-text.svg"/>
+            mobileText="/assets/products/plate-intro-text.svg" />
         </div>
       </div>
       <div className="content-container flex flex-col">
@@ -87,16 +87,20 @@ export default function PlateVestPage() {
       </div>
       <BodyArmorBottomHero
         imageSrc="/assets/products/plate-bottom.png"
+        mobileImageSrc="/assets/products/plate-bottom-mobile.png"
         alt={t("bottomHero.alt")}
       >
         <>
           {t("bottomHero.text").split("\n").map((line, idx) => (
-            <span key={idx}>
+            <span key={idx} className="hidden xl:inline">
               {line}
               {idx === 0 && <br />}
             </span>
           ))}
         </>
+        <span className="inline xl:hidden">
+          {t("bottomHero.text")}
+        </span>
       </BodyArmorBottomHero>
       <div className="w-full bg-black mt-[100px] xl:mt-[300px] mb-[100px] xl:mb-[300px] flex flex-col items-center justify-center text-center px-4">
         <p className="text-white font-pretendard text-[20px] xl:text-[50px] mb-10 font-semibold">

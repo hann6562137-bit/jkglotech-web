@@ -18,7 +18,8 @@ export default function GlovePage() {
         title={t("bannerTitle")}
         description={t("bannerDescription")}
         bgSrc="/assets/banners/glove-banner.png"
-        aspect="xl:aspect-auto aspect-[5/4]"
+        mobileBgSrc="/assets/banners/glove-banner-mobile.png"
+        aspect="xl:aspect-auto aspect-[3/2]"
       />
       <div className="content-container mt-5 xl:mt-15 flex flex-col">
         <BodyArmorMenu currentMenu="glove" menuNameKey="thermal" />

@@ -1,11 +1,11 @@
 import { BodyArmorMenu } from "@/components/nav/BodyArmorMenu";
 import { Link } from "@/i18n/routing";
-import Banner from "@/ui/Banner";
 import CircularProgress from "@/ui/CircularProgress";
 import FeatureCard from "@/ui/FeatureCard";
 import Image from "next/image";
 import HorizontalScrollCards from "@/ui/HorizontalScrollCards";
 import { useTranslations } from "next-intl";
+import EquipmentBanner from "@/ui/EquipmentBanner";
 
 export default function WasherPage() {
   const t = useTranslations("products.washer");
@@ -13,11 +13,11 @@ export default function WasherPage() {
 
   return (
     <div className="mt-[50px] xl:mt-[100px]">
-      <Banner
+      <EquipmentBanner
         title={t("bannerTitle")}
         bgSrc="/assets/banners/washer-banner.png"
+        mobileBgSrc="/assets/banners/washer-banner-mobile.png"
         description={t("bannerDescription")}
-        direction="right"
       />
       <div className="content-container mt-5 xl:mt-15 flex flex-col">
         <BodyArmorMenu currentMenu="washer" menuNameKey="equipment" />
@@ -116,7 +116,7 @@ export default function WasherPage() {
         </p>
         <Link
           href="/about-us"
-          className="bg-[#FFD900] w-full justify-center text-black font-pretendard xl:px-20 py-2 xl:py-4 text-[17px] xl:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
+          className="bg-[#FFD900] w-full xl:w-auto justify-center text-black font-pretendard xl:px-20 py-2 xl:py-4 text-[17px] xl:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
         >
           {tMenu("about-us")} <span className="ml-2 text-xl">→</span>
         </Link>
