@@ -43,11 +43,6 @@ export default function TechnologyIntroductionCarousel() {
         imageSrc: "/assets/main/intro-1.png",
       },
       {
-        title: t("cards.card2.title"),
-        description: t("cards.card2.description"),
-        imageSrc: "/assets/main/intro-2.png",
-      },
-      {
         title: t("cards.card3.title"),
         description: t("cards.card3.description"),
         imageSrc: "/assets/main/intro-3.png",
