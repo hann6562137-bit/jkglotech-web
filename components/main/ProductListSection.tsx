@@ -45,7 +45,7 @@ function ProductListRow({ item, reverse }: { item: ProductListItem; reverse?: bo
 
         {item.bullets && item.bullets.length > 0 && item.bullets[0] != "" && (
           <ul className="mt-4 list-disc pl-5 space-y-2 font-pretendard text-white/50 xl:text-[20px] text-[12px]">
-            {item.bullets.map((bullet) => (
+            {item.bullets.filter((item) => item !== "").map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
