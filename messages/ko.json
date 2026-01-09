@@ -10,36 +10,36 @@
     "agreeConsent": "Please agree to the collection of personal information."
   },
   "aboutUs": {
-    "pageTitle": "About us",
-    "sectionTitle": "About us",
-    "sectionDesc1": "Design the future of safety with JK GLOTECH, a leader in global protection standards. JK GLOTECH delivers protection solutions optimized for your needs.",
-    "sectionDesc2": "Contact us now and experience our premium-quality solutions.",
-    "step1Title": "Which of our products are you interested in?",
+    "pageTitle": "문의하기",
+    "sectionTitle": "문의하기",
+    "sectionDesc1": "글로벌 표준을 선도하는 JK GLOTECH과 함께 안전의 미래를 설계하세요. JK GLOTECH은 고객의 요구에 최적화된 보호 솔루션을 제공합니다. ",
+    "sectionDesc2": "지금 바로 문의하여, 최고의 품질 솔루션을 경험하세요.",
+    "step1Title": "어떤 것에 관심이 있나요?",
     "step1Products": [
-      "Bulletproof vest",
-      "Hood",
-      "tabproof vest",
-      "EV tank",
-      "Plate",
-      "Washer",
-      "Garment",
-      "Others",
-      "Glove"
+      "방탄조끼",
+      "후드",
+      "방검조끼",
+      "증발탱크",
+      "방탄판",
+      "와셔",
+      "방염복",
+      "기타",
+      "장갑"
     ],
-    "next": "Next",
-    "submit": "Submit",
-    "goBack": "Go Back",
-    "step2Notice": "We regret to inform you that we are currently unable to provide services to individuals or organizations outside the government and corporate sectors.",
-    "organizationLabel": "Organization / Company",
-    "countryLabel": "Country",
-    "firstNameLabel": "First Name",
-    "lastNameLabel": "Last Name",
-    "emailLabel": "Email",
-    "phoneLabel": "Phone Number",
-    "commentsLabel": "Comments",
-    "consentLabel": "Consent to Collect Personal Information",
-    "submissionComplete": "Submission Complete",
-    "submissionThanks": "We will get back to you shortly.\nThank you."
+    "next": "다음",
+    "submit": "제출하기",
+    "goBack": "돌아가기",
+    "step2Notice": "정부 및 기업 부문 외의 개인이나 단체의 경우, 현재 비정부 또는 비기업 단체에 서비스를 제공하지 않는다는 점을 유감스럽게 알려드립니다.",
+    "organizationLabel": "조직 / 회사",
+    "countryLabel": "국가",
+    "firstNameLabel": "이름",
+    "lastNameLabel": "성",
+    "emailLabel": "이메일",
+    "phoneLabel": "전화번호",
+    "commentsLabel": "메시지",
+    "consentLabel": "개인정보 수집 동의",
+    "submissionComplete": "제출완료",
+    "submissionThanks": "빠르게 연락드리도록 하겠습니다.\n감사합니다."
   },
   "menu": {
     "bodyarmor": "Body Armor",
@@ -53,120 +53,121 @@
     "equipment": "Equipment",
     "ev-tank": "EV Tank",
     "washer": "Decon Washer",
-    "about-us": "About us"
+    "about-us": "About us",
+    "about-us2": "문의하기"
   },
   "common": {
-    "learnMore": "Learn More"
+    "learnMore": "더 보기",
+    "thermal-bottom": "성능이 궁금하다면, 지금 바로 문의해보세요"
   },
   "main": {
     "hero": {
-      "titleLine1": "Flame Resistant",
-      "titleLine2": "Wearwear",
-      "descriptionLine1": "We provide one-stop custom FR garment development and production.",
-      "descriptionLine2": "Experience global-standard FR PPE with JK Glotech."
+      "titleLine1": "GO Above and Beyond!",
+      "titleLine2": "",
+      "descriptionLine1": "전문적인 지식으로 현장에 맞는 최적의 솔루션을 제공합니다.",
+      "descriptionLine2": "JK Glotech과 함께 Global Standard를 경험하십시오."
     },
     "mission": {
-      "titleLine1": "Mission",
-      "titleLine2": "Statement",
-      "body": "JK GLOTECH specializes in Meta- and Para-Aramid material R&D, overseeing the full process from fiber to finished garments. For nearly 20 years, we’ve partnered with leading companies to advance the flame-resistant market. Driven by the needs of Firefighting, Oil & Gas, Industrial, Chemical, and Military sectors, we ensure reliable solutions through strict global standards and testing. Experience true Global Standards with JK GLOTECH."
+      "titleLine1": "핵심가치",
+      "titleLine2": "",
+      "body": "JK GLOTECH은 메타/파라아라미드 소재 연구·개발에 특화된 기업으로, 섬유 / 원사 / 직물 / 최종 작업복까지 전체 생산 공정을 직접 관리하고 있습니다. 약 20년간 글로벌 주요 기업들과 협력하며 방염 소재 시장을 선도해왔으며 소방, 오일&가스, 산업용, 화학, 군 등 다양한 고위험 산업군의 니즈를 기반으로 개발을 이어오고 있습니다. 엄격한 글로벌 기준과 테스트를 기반으로 신뢰할 수 있는 FR 솔루션을 제공합니다. 연구개발과 혁신은 제이케이글로텍의 핵심가치 입니다. \"최고의 기술로 최적의 솔루션을 제공합니다.\""
     },
     "images": {
       "main": "Main Image",
       "associates": "Associates"
     },
     "techInnovation": {
-      "title": "Technological Innovation",
+      "title": "기술 개발을 위한 노력",
       "imageAlt": "Technological Innovation",
       "developmentCapability": {
-        "title": "Development Capability",
-        "description": "We comply with international standards and customize workwear to meet customer needs."
+        "title": "기술 역량",
+        "description": "저희는 국제 규격을 철저히 준수하며, 고객의 요구에 맞춘 맞춤형 작업복을 설계·제작합니다."
       },
       "rdFocus": {
-        "title": "R&D Focus",
-        "description": "We deliver high value solutions through strategic R&D investment and prioritization of market demands."
+        "title": "연구개발",
+        "description": "연간매출의  5% 이상을 R&D에 지속 투자하여, 새로운 \n솔루션과 혁신적인 제품을 제안합니다."
       },
       "reliability": {
-        "title": "Reliability",
-        "description": "We secure the reliability of test results through repeated sample tests by accredited testing institutes."
+        "title": "안정성 검증",
+        "description": "같은 원단을 사용하더라도, 새로운 디자인은 반드시 화염 마네킹 테스트(Thermal Mannequin Test)를 거쳐\n신뢰할 수 있는 안전성 데이터를 확보합니다."
       },
       "collaborationAgility": {
-        "title": "Collaboration & Agility",
-        "description": "The vertical integration system from materials to finished products has made it possible to respond quickly."
+        "title": "협업 및 고객 대응성",
+        "description": "국내 봉제를 진행하여 신속한 제작과\n빠른 대응으로 고객의 불편을 최소화 합니다."
       }
     },
     "productListSection": {
-      "title": "Products List",
+      "title": "제품 리스트",
       "cards": {
         "frWorkwear": {
-          "title": "FR Workwear",
-          "description": "Workwear that can protect workers from instantaneous Flash Fire (flame).",
-          "bullet1": "Flash Fire Protection",
-          "bullet2": "Electric Arc Protection",
-          "bullet3": "Heat Protection",
-          "bullet4": "Molten Metal Splash Protection"
+          "title": "NOXKA Workwear for Flame Resistant",
+          "description": "순간 화염(Flash Fire)으로부터 작업자를 보호하는 방염 작업복",
+          "bullet": "Flash Fire: 가연성 가스·분진이 점화원에 의해 순간적으로 폭발하며 매우 짧은 시간에 확산되는 화재 현상\n"
         },
         "bulletproofVest": {
           "title": "Bulletproof vest",
-          "description": "Developed by DuPont in 2023, this ballistic material delivers 30% higher strength than standard aramids. It’s certified to Korean licensing standards, meets NIJ 0101.06 Level 3A, and complies with MIL-STD-662F V50 ≥ 560 m/s."
+          "description": "DuPont가 2023년에 개발한 최신 방탄 소재로, 기존 아라미드 대비 \n약 30% 향상된 강도를 제공합니다.",
+          "bullet": "한국 브랜드 라이선싱 규격 인증\nNIJ STD 0101.06 LEVEL 3A 충족\nMIL STD 662F 17gr V50 ≥ 560 m/s 준수"
         },
         "equipmentAccessories": {
           "title": "Equipment & Accessories",
-          "bullet1": "Equipment : Rescue Intellitech – Decon Washer/ EV Fire Suppression Tank",
-          "bullet2": "F.R & ARC : Balaclava&buff, Gloves, Shoes made with Nomex®, Kevlar®",
-          "bullet3": "Cut Resistance : Gloves, Shoes made with Nomex®, Kevlar®"
+          "bullet1": "Decon Washer/ EV Fire Supression Tank",
+          "bullet2": "FR+Arc : Nomex®, Kevlar®로 제작된 방염·아크 대응용 발라클라바, 버프, 장갑, 신발",
+          "bullet3": "Cut Resistant : Nomex®, Kevlar® 기반 베임저항 장갑 & 신발"
         }
       }
     },
     "technologyIntro": {
-      "sectionTitle": "Technology Introduction",
-      "prevButtonLabel": "Previous slide",
-      "nextButtonLabel": "Next slide",
-      "goToSlide": "Go to slide {index}",
+      "sectionTitle": "기술 소개",
+      "prevButtonLabel": "이전 슬라이드",
+      "nextButtonLabel": "다음 슬라이드",
+      "goToSlide": "{index}번 슬라이드로 이동",
       "cards": {
         "card1": {
-          "title": "Nomex Kevlar",
+          "title": "소재 기반 기술력",
           "description": ""
         },
         "card2": {
-          "title": "Certified & Compliant",
-          "description": "We comply with international regulations – ISO, NFPA, and EN standards, and we manage our operations in compliance with ISO9001, based on DuPont™'s thorough management system."
+          "title": "글로벌 기준 인증 및 \n규격 준수",
+          "description": "ISO, NFPA, EN, NIJ 등 국제 규격을 준수합니다."
         },
         "card3": {
-          "title": "Flame Resistance Meets Comfort",
-          "description": "We are constantly developing our products to provide not only permanent flame resistance but also comfort for every work place."
+          "title": "방염성과 \n착용감의 균형",
+          "description": "우리는 영구적 방염 성능뿐만 아니라, \n작업 시 편안한 착용감까지 제공하기 위해 \n지속적으로 제품을 개발하고 있습니다."
         },
         "card4": {
-          "title": "Satisfy Global Standards",
-          "description": "We comply with International regulations -ISO, NFPA, EN, and NIJ Standards."
+          "title": "글로벌 기준 인증 및 \n규격 준수",
+          "description": "ISO, NFPA, EN, NIJ 등 국제 규격을 준수합니다."
         }
       }
     },
     "corporatePhilosophy": {
-      "sectionTitle": "Corporate Philosophy",
+      "sectionTitle": "기업 철학",
+      "sectionDescription": "고객의 기대를 뛰어넘을 수 있도록 \n전문적이고 효과적인 맞춤화된 사고 예방 솔루션을 제공합니다.",
       "cards": {
         "card1": {
-          "title": "Slogan",
+          "title": "슬로건",
           "description": "Go Above and Beyond!"
         },
         "card2": {
-          "title": "Professionalism",
-          "description": "Join with us and experience the Global Standard for FR PPE"
+          "title": "전문성",
+          "description": "ISO9001 & ISO14001 인증 기반의\n전문적이고 맞춤화된 솔루션을 제공합니다"
         },
         "card3": {
-          "title": "Sustainable Growth",
-          "description": "Since 2009, We have been growing continuously."
+          "title": "기업 안정성",
+          "description": "DuPont™ 기술 개발 파트너로서, 광범위하고\n고품질의 데이터 역량을 보유하고 있습니다"
         },
         "card4": {
-          "title": "Innovation & R&D\nLeadership",
-          "description": "We lead high-end PPE solutions through robust R&D investment."
+          "title": "혁신과 연구개발 리더십",
+          "description": "끊임없는 기술 혁신 R&D 투자를 통해\n 세계 수준의 보호 솔루션을 선도합니다."
         },
         "card5": {
-          "title": "Safety-First Commitment",
-          "description": "The safety of workers and workplaces is always our top priority."
+          "title": "안전 최우선 책임경영",
+          "description": "고위험 산업의 안전 강화를 최우선으로 삼고,\n확실하게 검증된 보호 성능만을 제공합니다."
         },
         "card6": {
-          "title": "Customer Collaboration\n& Reliability",
-          "description": "We provide solutions by identifying the customer's unmet needs"
+          "title": "고객 협업과 신뢰성",
+          "description": "고객과의 긴밀한 협업을 통해\n현장의 문제를 해결하는 실질적이고 \n신뢰할 수 있는 솔루션을 제공합니다."
         }
       }
     },
@@ -184,58 +185,59 @@
   "products": {
     "hood": {
       "bannerTitle": "Hoods",
-      "bannerDescription": "A premium flame-resistant hood designed with an ergonomic triple-layer thermal barrier\nand specialized patterning to deliver exceptional protection and comfort in high-heat environments.",
+      "bannerDescription": "인체공학적 3중 열차단 구조와 특수 패턴을 적용해,\n고열 환경에서도 뛰어난 보호성과 편안함을 제공하는 프리미엄 방화두건",
       "topImageAlt": "hood",
-      "centerTitle": "Nomex® Special Balaclava Protection Index",
+      "centerTitle": "Nomex® Special Balaclava 종합 보호 성능 지표",
       "chartTitle": "Hood Overall Protection Performance Index",
       "chart": {
         "labels": {
-          "flashFireProtection": "Breathability",
-          "ergonomicFit": "Ergonomic Fit",
-          "enhancedSafety": "Enhanced Safety",
-          "softComfort": "Soft Comfort",
-          "arcFlashProtection": "Flash Fire and\nArc Flash Resistance"
+          "flashFireProtection": "통기성",
+          "ergonomicFit": "인체공학 핏",
+          "enhancedSafety": "향상된 안전성",
+          "softComfort": "부드러운 착용감",
+          "arcFlashProtection": "플래시파이어\n+아크플래쉬 저항성"
         }
       },
       "features": {
         "feature1": {
-          "title": "Enhanced Thermal Blocking with Patented Dual-Layer Structure",
-          "description": "An internal air layer creates a triple thermal barrier, maximizing protection against flames and high heat."
+          "title": "특허 기반 2중 구조로 강화된 열 차단 성능",
+          "description": "결감 내부에 공기층을 형성해 2중 열 차단 구조 구현\n화염·고온 보호 성능을 극대화 합니다."
         },
         "feature2": {
-          "title": "Soft, Enhanced Comfort",
-          "description": "Specially engineered fabrics maintain softness and flexibility even after repeated washing, ensuring long-lasting comfort."
+          "title": "부드럽고 향상된 착용감",
+          "description": "특수 기술로 제작된 원단 조합을 사용해 반복 세탁 후에도 부드러움과 \n유연성을 유지하며, 장시간 착용 시에도 편안함을 제공합니다."
         },
         "feature3": {
-          "title": "Optimized Nomex® Blend to Minimize Burn Risk",
-          "description": "Made with DuPont™ Nomex®, minimizing burn risk caused by trapped heat and perspiration."
+          "title": "Nomex® Xtreme ARC 소재 적용",
+          "description": "Nomex® Xtreme ARC 원단을 사용해 갑작스러운 화염에 대한 안정적인 보호 성능을 제공합니다."
         }
       },
       "middleHero": {
-        "text": "The Nomex® Balaclava is the optimal choice for protecting\nyour head even in extreme environments."
+        "text": "극한 환경에서도 머리를 지켜주는 Nomex® Balaclava는\n최적의 보호 선택입니다"
       },
-      "ergonomicTitle": "Ergonomic 3D pattern design with an ear-area air pocket.",
+      "middleText": "화염 차단 능력에 뛰어난 방화두건",
+      "ergonomicTitle": "인체공학적 입체 패턴 디자인과 귀 부위 에어포켓",
       "grid": {
         "items": {
           "item1": {
-            "title": "Permanent Flame Resistance",
-            "description": "Maintains durable flame-resistant performance after repeated use and washing."
+            "title": "영구적 방염 성능",
+            "description": "세탁과 사용 후에도 지속되는 난연 성능을 \n유지합니다."
           },
           "item2": {
-            "title": "Thermo-man® Tested",
-            "description": "Proven protection validated through DuPont™ Thermo-man® fire mannequin testing."
+            "title": "Thermo-man® 실험 검증",
+            "description": "DuPont™ Thermo-man®(화염 마네킹) 테스트를 통해 보호 성능을 입증했습니다."
           },
           "item3": {
-            "title": "Lightweight & Highly Flexible",
-            "description": "Designed for long-wear comfort with excellent mobility."
+            "title": "가벼운 착용감과 높은 활동성",
+            "description": "경량 설계로 장시간 착용에도 편안하며 움직임이 자유롭습니다."
           },
           "item4": {
-            "title": "Flash Fire & Arc Flash Dual Protection",
-            "description": "Shields workers from both flash fire and arc-flash energy."
+            "title": "Flash Fire & Arc Flash\n이중 보호",
+            "description": "순간 화염과 아크플래시 에너지로부터 작업자를 \n동시에 보호합니다."
           },
           "item5": {
-            "title": "Arc Flash Rating: 9.4 cal/cm² APTV",
-            "description": "Provides certified arc-flash protection for safer work conditions."
+            "title": "Arc Flash 성능 9.4 cal/cm² \nAPTV",
+            "description": "검증된 아크 플래시 보호 등급으로 안정적인 작업 환경을 제공합니다."
           }
         }
       }
@@ -245,341 +247,341 @@
       "topImageAlt": "Bulletproof Vest",
       "titleMain": "Bullet proof Vest",
       "titleSub": "Tylo - 4500W",
-      "materialDurabilityTitle": "Key Features",
+      "materialDurabilityTitle": "주요 특징",
       "stats": {
         "enhancedStrength": {
-          "title": "Enhanced ballistic\nmaterial strength",
-          "description": "30% higher strength\ncompared to conventional\naramid"
+          "title": "강화된 방탄 소재 강도",
+          "description": "기존 아라미드 대비 강도가 30% 향상되었습니다"
         },
         "quickDisassembly": {
-          "title": "Quick Release",
-          "description": "Can be released within\n10 seconds"
+          "title": "빠른 탈착 기능",
+          "description": "10초 이내로 탈착이 가능합니다"
         },
         "quickAssembly": {
-          "title": "Quick Assembly",
-          "description": "Can be reassembled within\n1 minute and 30 seconds"
+          "title": "빠른 조립 기능",
+          "description": "1분 30초 이내로 재조립이 \n가능합니다"
         },
         "advancedFabrication": {
-          "title": "Advanced Fabrication",
-          "description": "Kevlar® woven fabric\npressed with phenol\nprepreg ensures precision\nand uniform quality"
+          "title": "고급 경량 소재",
+          "description": "국제 공인 방탄 시험기관 및 파트너 연구소에서 시행된 다수의 테스트를 통해 성능 안전성이 검증되었습니다."
         }
       },
       "features": {
         "feature1": {
-          "title": "Advanced Lightweight Material",
-          "description": "Performance safety secured through multiple tests conducted at internationally certified ballistic testing laboratories and partner research institutes."
+          "title": "고급 경량 소재",
+          "description": "국제 공인 방탄 시험기관 및 파트너 연구소에서 시행된 다수의 테스트를 통해 성능 안전성이 검증되었습니다."
         },
         "feature2": {
-          "title": "Application of Lightweight New Materials",
-          "description": "The latest material officially launched by DuPont in the U.S. on April 13, 2023.\nIt is supplied to two Asian countries as well as the U.S. and the U.K., offering outstanding flexibility."
+          "title": "신형 경량 소재 적용",
+          "description": "듀폰이 2023년 4월 13일 미국에서 공식 출시한 최신 소재로, 미국·영국뿐 아니라 아시아 2개국에도 공급되고 있으며 우수한 유연성을 제공합니다."
         },
         "feature3": {
-          "title": "Quick Release and Assembly",
-          "description": "Can be released within 10 seconds and reassembled within 1 minute and 30 seconds."
+          "title": "빠른 탈착 및 조립 기능",
+          "description": "10초 이내로 탈착이 가능하며 1분 30초 이내로 재조립이 가능합니다."
         },
         "feature4": {
-          "title": "Rapid Rescue Readiness",
-          "description": "Emergency escape and securing the golden time."
+          "title": "신속 구조 준비 태세",
+          "description": "응급 탈출 및 골든타임 확보"
         }
       },
       "bottomHero": {
         "alt": "Bulletproof Vest",
-        "text": "Even on the battlefield, our reliable military-grade bulletproof vest delivers\npowerful protection and unwavering stability"
+        "text": "전장에서도, 우리의 신뢰할 수 있는 군용급 방탄조끼는\n강력한 보호력과 흔들림 없는 안정성을 제공합니다."
       },
       "cta": {
-        "heading": "Discover trusted ballistic protection."
+        "heading": "신뢰할 수 있는 방탄 보호 성능을 경험해보세요."
       }
     },
     "plate": {
       "bannerTitle": "Plate",
       "topImageAlt": "Plate",
       "titleMain": "Ultralight Multi-Curve Ballistic Plate \nToRo-2450",
-      "materialDurabilityTitle": "Key Features",
+      "materialDurabilityTitle": "주요 특징",
       "stats": {
         "lightweightDesign": {
-          "title": "Lightweight Design",
-          "description": "Approximately 15% lighter (by area) compared to standard Korean military ballistic plates."
+          "title": "경량화 설계",
+          "description": "한국군 표준 방탄판 대비 면적 기준 약 15% 더 가볍습니다"
         },
         "wearability": {
-          "title": "Wearability",
-          "description": "Approximately 20% thinner than standard Korean military ballistic plates."
+          "title": "착용성",
+          "description": "한국군 표준 방탄판 대비 약 20% 더 얇습니다"
         },
         "protectionLevel": {
-          "title": "Protection Level",
-          "description": "Certified NIJ Level IV protection with stand alone."
+          "title": "보호 등급",
+          "description": "단독(SA) 사용 시 NIJ Level IV 보호 등급을 인증받았습니다"
         }
       },
       "features": {
         "feature1": {
-          "title": "Proven Technology",
-          "description": "Delivered Level IV ballistic plates to the Defense Acquisition Program Administration (2023)\nEstablished partnerships with global companies\nEnsured product reliability"
+          "title": "입증된 기술력",
+          "description": "2023년 방위사업청에 Level IV 방탄판을 공급했습니다\n글로벌 기업들과의 파트너십을 구축했습니다\n제품 신뢰성을 확보했습니다"
         },
         "feature2": {
-          "title": "Multi-Curve Fit",
-          "description": "Utilizes special ceramics and proprietary bonding technology optimized for mobility to achieve multi-curve shaping\nCompatible and replaceable — can be inserted into Army Multipurpose Type I body armor\nReduces physical fatigue"
+          "title": "멀티 커브 핏 설계",
+          "description": "기동성에 최적화된 특수 세라믹과 독자적 접합 기술을 적용해 멀티 커브 형태를 구현했습니다\n교체 및 호환 가능하며, 군용 다목적 Type I 바디아머에 장착할 수 \n있습니다\n신체 피로도를 줄여줍니다"
         },
         "feature3": {
-          "title": "Advanced Materials",
-          "description": "Applies SAINT-GOBAIN ceramics (B4C) adopted by the U.S. military"
+          "title": "첨단 소재 적용",
+          "description": "미군이 채택한 B4C 세라믹을 적용했습니다"
         }
       },
       "bottomHero": {
         "alt": "Plate",
-        "text": "Designed with an ultra-lightweight multi-curve structure,\nthis plate provides superior protection, comfort, and mobility."
+        "text": "초경량 멀티 커브 구조로 설계되어 우수한 방호력과 편안한 착용감,\n그리고 탁월한 기동성을 제공합니다."
       },
       "cta": {
-        "heading": "Experience trusted ballistic protection"
+        "heading": "신뢰할 수 있는 방탄 보호 성능을 경험해보세요."
       }
     },
     "stabproofVest": {
       "bannerTitle": "Stabproof Vest",
       "topImageAlt": "Stabproof Vest",
       "titleMain": "Stab proof Vest",
-      "materialDurabilityTitle": "Key Features",
+      "materialDurabilityTitle": "주요 특징",
       "stats": {
         "stabResistanceTest": {
-          "title": "Stab-Resistance\nPerformance Test",
-          "description": "Ensures sufficient stability\nthrough 15 rounds of\nperformance testing"
+          "title": "방검 성능 테스트",
+          "description": "15회에 걸친 성능 테스트를 \n통해 충분한 안정성을 \n검증했습니다"
         },
         "inHouseProduction": {
-          "title": "In-House Production\nTechnology",
-          "description": "Specially coated stab-\nresistant material produced\nwith proprietary technology,\noffering flexibility and high\nresilience"
+          "title": "Kevlar® 프리프레그 원단",
+          "description": "높은 강도와 균일한 품질을 위해 사전 함침 처리된 Kevlar® 적층 구조입니다."
         },
         "kevlarPrepreg": {
-          "title": "Kevlar® Prepreg\nfabric",
-          "description": "Pre-impregnated Kevlar®\nlayers engineered for\nsuperior strength and\nconsistent quality."
+          "title": "Kevlar® 프리프레그 원단",
+          "description": "높은 강도와 균일한 품질을 위해 사전 함침 처리된 Kevlar® 적층 구조입니다."
         },
         "kevlarCeramic": {
-          "title": "Kevlar® Ceramic\nCoated fabric",
-          "description": "Kevlar® fabric reinforced\nwith a ceramic coating to\nenhance stab and cut\nresistance."
+          "title": "Kevlar® 세라믹 코팅 원단",
+          "description": "세라믹 코팅을 적용해 찌름·절단 저항성을 강화한 Kevlar® 원단입니다."
         }
       },
       "features": {
         "feature1": {
-          "title": "Proven Safety",
-          "description": "Over 15 stab-resistance tests completed at accredited domestic and international laboratories."
+          "title": "검증된 안전성",
+          "description": "국내외 공인 시험기관에서 15회 이상의 방검 성능 테스트를 완료했습니다."
         },
         "feature2": {
-          "title": "Weight Distribution System",
-          "description": "A 3-point waist-tightening mechanism ensures a snug fit around the torso, enhancing comfort and evenly distributing weight to minimize fatigue during long wear."
+          "title": "무게 분산 시스템",
+          "description": "3점식 허리 조임 구조가 몸통을 단단하게 고정해 착용감을 높이고, 무게를 고르게 분산해 장시간 착용 시 피로를 최소화합니다."
         },
         "feature3": {
-          "title": "Quick Wearability",
-          "description": "Incorporates an aircraft life-vest fastening system with a zipper closure, allowing rapid wear and removal — even enabling over-the-head donning in emergencies for immediate readiness."
+          "title": "신속한 착·탈착 기능",
+          "description": "항공기 구명조끼 방식의 잠금 구조와 지퍼 클로저를 적용해 빠른 착용과 \n탈착이 가능하며, 긴급 상황에서는 머리 위로 바로 착용할 수 있어 즉각적인 대응이 가능합니다."
         }
       },
       "bottomHero": {
         "alt": "Stabproof Vest",
-        "text": "A field-proven stab-resistant vest, designed for quick wear and\nagile movement, specialized for police operations."
+        "text": "현장에서 검증된 방검조끼로, 빠른 착용과 민첩한 움직임을 위해 설계되었으며\n경찰 작전에 특화되었습니다."
       },
       "cta": {
-        "heading": "Experience trusted stab-resistant protection"
+        "heading": "신뢰할 수 있는 방검 보호 성능을 경험해보세요."
       }
     },
     "evTank": {
       "bannerTitle": "EV TANK",
-      "bannerDescription": "A flexible, drive-through tube system that immerses and suppresses EV batteries within 30 minutes using minimal crew and water.",
+      "bannerDescription": "바닥이 없는 구조의 이동형 소화수조로 20분 내 화재 배터리를 \n효율적으로 진압하는 신개념 소방장비",
       "topImageAlt": "EV Tank",
-      "keyFeaturesTitle": "Key Features",
+      "keyFeaturesTitle": "주요 특징",
       "stats": {
-        "installationSpeed": "Installation Speed\nImprovement Rate",
-        "waterReduction": "Water Consumption\nReduction Rate",
-        "durabilityRetention": "Durability\nRetention Rate"
+        "installationSpeed": "설치 속도 향상률",
+        "waterReduction": "물 사용량 절감률",
+        "durabilityRetention": "내구성 유지율"
       },
-      "responseTitle": "Immediate & Efficient Response\nStructure for EV Fire Incidents",
+      "responseTitle": "전기차 화재 현장을 위한 즉각적·효율적 대응 구조",
       "features": {
         "feature1": {
-          "title": "Fast Deployment & Mobility",
-          "description": "EV Tank can be quickly positioned at the rear or side of a vehicle, enabling immediate response right after arrival."
+          "title": "빠른 설치 & 이동성",
+          "description": "EV Tank는 차량 뒤 또는 측면에 신속히 설치 가능한 구조로, 출동 후 즉시 현장 대응이 가능합니다."
         },
         "feature2": {
-          "title": "EV Battery Fire–Focused Response",
-          "description": "Designed specifically for the unique characteristics of EV battery fires—reignition, extreme heat, and toxic gases—providing an optimized isolation and cooling system."
+          "title": "전기차 배터리 화재 특화 대응",
+          "description": "EV Tank는 EV 배터리 발화 특성(재발화, 고열, 유해가스)을 고려해 설계된 격리·냉각 시스템입니다."
         },
         "feature3": {
-          "title": "Bottomless Design for Space Efficiency",
-          "description": "Unlike traditional water pools or containment units, its bottomless structure allows installation directly on the ground, minimizing spatial limitations and enabling flexible placement in tight environments."
+          "title": "바닥 없는 설계 · 공간 효율",
+          "description": "일반 급수 풀이나 격리 장비와 달리 바닥 없이 지면 위에 설치돼 공간 제약이 적고, 유연한 배치가 가능합니다."
         }
       },
       "scrollCards": {
-        "introText": "Core Technologies Enhancing EV Tank Field Response",
+        "introText": "현장 대응력을 높이는 EV Tank의 핵심 기술 구조",
         "card1": {
-          "title": "Bottomless mobile immersion system",
-          "description": "Push-in response with minimal site limitations."
+          "title": "바닥이 없는 세계 최초 \n이동식 침수 시스템",
+          "description": "지형 제약 없이 차량을 그대로 밀어 넣어 즉시 대응 가능하며, 주변 차량과 시설물 피해를 최소화합니다."
         },
         "card2": {
-          "title": "Intuitive operator interface",
-          "description": "Simple water controls and ports for quick use."
+          "title": "사용자 친화 운용 인터페이스",
+          "description": "현장 작업자들이 빠르게 장비를 이해하고 조작할 수 있도록 직관적인 입·출수 시스템, 연결포트, 밸브가 구성돼 있습니다."
         },
         "card3": {
-          "title": "Fast setup, low water use",
-          "description": "Four-person deployment, immersion in 30 minutes with 7–8 tons."
+          "title": "빠른 전개·운용 및 적은 \n소방용수",
+          "description": "총 4명의 대원으로 설치 가능하고, 약 7~8톤의 용수로 20분 이내 배터리 침수가 가능합니다. (일반 진압 대비 약 1/4 수준의 소방용수 사용)"
         },
         "card4": {
-          "title": "Korea-made & patented",
-          "description": "Domestic manufacturing backed by multiple patents."
+          "title": "국내 제작 및 다수 특허 보유",
+          "description": "국내 개발·제조로 신속한 A/S가 가능하며, 다수의 관련 특허를 보유해 기술 신뢰성이 검증된 장비입니다."
         }
       },
       "cta": {
-        "heading": "Experience trusted ballistic protection"
+        "heading": "성능이 궁금하다면, 지금 바로 문의해보세요"
       }
     },
     "washer": {
       "bannerTitle": "Decon Washer",
-      "bannerDescription": "A flexible, drive-through tube system that immerses and suppresses EV batteries within 30 minutes using minimal crew and water.",
+      "bannerDescription": "강력한 회전 세척과 스마트 인터페이스로 완성하는 빠르고 안전한\nPPE 세척",
       "topImageAlt": "Washer",
-      "keyFeaturesTitle": "Key Features",
+      "keyFeaturesTitle": "제품 특징",
       "stats": {
-        "installationSpeed": "Gloves & Boots",
-        "waterReduction": "SCBA & Helmets"
+        "installationSpeed": "장갑·부츠 3분",
+        "waterReduction": "SCBA·헬멧 8분"
       },
-      "systemTitle": "Integrated Contamination-Control Washing System",
+      "systemTitle": "통합 오염관리 세척 시스템",
       "features": {
         "feature1": {
-          "title": "Cross-Contamination Prevention Process",
-          "description": "Designed to handle contaminated equipment within a controlled environment, significantly reducing the risk of secondary exposure and cross-contamination."
+          "title": "교차 오염 방지 작업 프로세스",
+          "description": "오염된 장비를 통제된 환경에서 처리하도록 설계되어, 위험 물질로 인한 2차 오염(교차 오염) 가능성을 크게 줄여줍니다."
         },
         "feature2": {
-          "title": "Multi-PPE Cleaning System",
-          "description": "SCBAs, air cylinders, helmets, masks, boots, gloves, and other equipment can all be washed in a single machine, maximizing operational efficiency."
+          "title": "다양한 소방장비에 대응하는 멀티 세척 시스템",
+          "description": "SCBA, 에어 실린더, 헬멧, 마스크, 부츠, 장갑 등 다양한 장비를 한 기기에서 모두 세척할 수 있어 운영 효율성을 극대화합니다."
         },
         "feature3": {
-          "title": "Disinfection Function Option",
-          "description": "Disinfectant can be applied during the rinsing cycle, or a separate disinfection program can be used, removing up to 99.9% of harmful contaminants."
+          "title": "국내최초 필터시스템 도입",
+          "description": "헹굼간에서 소독제를 적용하거나 별도 소독 프로그램을 사용할 수 있어, \n유해물질을 최대 99.9% 세척합니다."
         }
       },
       "scrollCards": {
         "card1": {
-          "title": "Powerful Rotational Washing Technology",
-          "description": "High-pressure rotating wash arms and optimized nozzles effectively remove contaminants, carbon residues, and PAH particles from deep inside the equipment."
+          "title": "강력한 회전 세척 기술",
+          "description": "고압의 회전 워시 암과 최적화된 노즐 설계로 장비 깊숙한 곳까지 유해물질과 카본/PAH 찌꺼기를 효과적으로 제거합니다."
         },
         "card2": {
-          "title": "Fast Washing Cycles",
-          "description": "Gloves and boots are cleaned within 3 minutes, and SCBA units and helmets within 8 minutes, ensuring rapid equipment turnaround in high-frequency response environments."
+          "title": "빠른 세척 사이클",
+          "description": "장갑·부츠는 3분, SCBA·헬멧은 8분 이내로 처리해 고빈도 출동 환경에서도 빠르게 장비를 회전시킬 수 있습니다."
         },
         "card3": {
-          "title": "Intuitive Touch UI",
-          "description": "A modern single-touch interface allows easy control of wash/rinse temperatures, detergent concentration, and program monitoring, supporting a wide range of operational settings."
+          "title": "직관적인 터치 UI",
+          "description": "싱글 터치로 작동하는 현대적 UI를 제공하며, 세척/헹굼 온도 설정, 세제 농도 조절, 프로그램 진행 모니터링 등 다양한 환경 제어 기능을 지원합니다."
         },
         "card4": {
-          "title": "Minimized Exposure to Harmful Substances",
-          "description": "From loading contaminated equipment to completing the wash, the entire process occurs inside the machine—significantly reducing worker exposure to toxic and hazardous contaminants."
+          "title": "유해물질 노출 최소화 구조",
+          "description": "오염 장비 투입부터 세척까지 모든 과정이 기계 내부에서 이루어져 작업자의 독성·유해물질 노출을 크게 감소."
         }
       },
       "cta": {
-        "heading": "Experience trusted ballistic protection"
+        "heading": "성능이 궁금하다면, 지금 바로 문의해보세요"
       }
     },
     "garment": {
       "bannerTitle": "Garment",
-      "bannerDescription": "The ENIGMA flame-resistant garment made with DuPont™ Nomex® fabric is a high-performance industrial\nprotective wear designed to safeguard workers from flash fires and arc flash hazards.",
+      "bannerDescription": "DuPont™ Nomex® 원단으로 제작된 ENIGMA 방염복은 순간 화염·아크플래시 상황에서도\n작업자를 보호하는 고성능 산업용 보호복입니다.",
       "topImageAlt": "Garment",
-      "chartTitle": "Nomex® FR Performance Chart",
+      "chartTitle": "Nomex® 방염복의 보호성능 차트",
       "chart": {
         "labels": {
-          "flameResistance": "Flame Resistance",
-          "arcFlashProtection": "Arc Flash\nProtection",
-          "reliability": "Reliability",
-          "durability": "Durability",
-          "comfortMobility": "Comfort\n& Mobility"
+          "flameResistance": "방염성",
+          "arcFlashProtection": "아크 보호",
+          "reliability": "신뢰성",
+          "durability": "내구성",
+          "comfortMobility": "착용편의성"
         }
       },
       "features": {
         "feature1": {
-          "title": "High Level of Flame Protection Based on International Standards",
-          "description": "It meets global flame-resistant standards such as ISO 11612 and NFPA 2112, maintaining reliable protection even in flash fire and high-temperature environments."
+          "title": "안정적인 보호성능",
+          "description": "ISO 11612, NFPA 2112 등 글로벌 방염 기준을 충족하며, 순간 화염(Flash Fire)·고온 환경에서도 보호 성능을 유지합니다."
         },
         "feature2": {
-          "title": "Lightweight Comfort Unique to Nomex®",
-          "description": "The soft texture and lightweight structure of Nomex® Comfort and Essential Arc fabrics reduce fatigue during long working hours.."
+          "title": "Nomex® 특유의 가벼움과 편안한 착용감",
+          "description": "Nomex® 및 Kevalr®의 혁신적인 기술의 가볍고 부드러운 촉감으로 \n장시간 작업에도 피로도가 적습니다."
         },
         "feature3": {
-          "title": "Arc Flash Protection",
-          "description": "Engineered with Nomex® Essential Arc fabric for arc flash protection, it provides HRC 2 (8 cal/cm²) or higher performance, with the jacket and pants each carrying their own certified Arc Rating."
+          "title": "아크플래시 보호성능",
+          "description": "Arc Flash 보호에 특화된 Nomex® 특수 원단의 적용으로 HRC 2(8cal/cm2)이상의 보호 성능을 제공합니다."
         }
       },
       "middleHero": {
-        "text": "It provides reliable protection in various high-risk work\nenvironments through lightweight comfort, high durability,\nand internationally certified safety performance"
+        "text": "가벼운 착용감과 우수한 내구성, 국제 인증 기반의 \n안전성으로 다양한 작업 환경에서 신뢰성 있는 보호를 제공합니다"
       },
-      "ergonomicTitle": "We deliver optimal solutions through innovative development",
+      "ergonomicTitle": "혁신적인 개발을 통한 최적의 솔루션을 제공합니다",
       "grid": {
         "items": {
           "item1": {
-            "title": "Permanent flame resistance",
-            "description": "Nomex® possesses inherent, permanent flame resistance. Therefore, its protective performance does not diminish even after repeated wear and laundering."
+            "title": "영구적인 방염성능",
+            "description": "Nomex®는 영구적인 방염성을 태생적으로 가지고 있습니다. 따라서 반복적인 착용 및 세탁에도 방염성능이 사라지지 않습니다."
           },
           "item2": {
-            "title": "Enhanced Breathability and Workability",
-            "description": "Made with Nomex® Special Blended fabric, it is lighter and offers excellent breathability and moisture absorption, ensuring comfort even in high-heat environments."
+            "title": "통기성과 작업 편의성 향상",
+            "description": "Nomex® Special Blanded원단으로 보다 가벼우며 통기성·흡습성이 좋아 고열 작업에서도 쾌적함을 유지"
           },
           "item3": {
-            "title": "Various styles available",
-            "description": "With our in-house sewing facility, we provide fast feedback and customization tailored to client needs."
+            "title": "다양한 스타일 제작 가능",
+            "description": "자체적으로 봉제공장을 보유하고 있어 빠른 피드백 및 고객사 need에 맞춰Customizing 가능"
           },
           "item4": {
-            "title": "Exceptional Heat & Flame Resistance",
-            "description": "This equipment uses 122 sensors to graph burn severity and tests in compliance with ASTM F1930."
+            "title": "뛰어난 열·화염 저항성과\nThermo-Man® 테스트 검증",
+            "description": "122개의 센서로 화상의 정도를 그래프로 볼 수 있는 시험장비로 국제 규격인 ASTM-F1930의 기준에 맞춰 시험합니다."
           },
           "item5": {
-            "title": "Providing field-appropriate fabrics and solutions",
-            "description": "Maintains fabric strength and durability even with repeated use in high-risk industrial environments such as oil & gas, electrical, and chemical plants."
+            "title": "현장에 적합한 원단 및 \n솔루션 제시",
+            "description": "석유·가스, 전기·화학 플랜트 등 고위험 산업 환경에서 반복된 사용에도 원단 강도·내구성 유지"
           }
         }
       }
     },
     "glove": {
       "bannerTitle": "Glove",
-      "bannerDescription": "With ANSI/ISEA 105 Cut Level A5 performance and outstanding comfort,\nyou can experience top-level safety and ease on the job.",
+      "bannerDescription": "ANSI/ISEA 105 Cut Level A5 성능과 탁월한 착용감으로, \n현장에서 최고의 안전과 편안함을 동시에 경험하세요",
       "topImageAlt": "glove",
-      "chartTitle": "DEXCut-Pro Overall Protection Performance Index",
+      "chartTitle": "DEXCut-Pro 보호 성능 지표",
       "chart": {
         "labels": {
-          "cutResistance": "Cut Resistance",
-          "heatArcProtection": "Heat \n& Arc Protection",
-          "comfortFlexibility": "Comfort & Flexibility",
-          "durability": "Durability",
-          "fieldProven": "Field-Proven\nPerformance"
+          "cutResistance": "베임저항성",
+          "heatArcProtection": "내열·아크 보호",
+          "comfortFlexibility": "착용감·유연성",
+          "durability": "내구성",
+          "fieldProven": "현장검증성"
         }
       },
       "features": {
         "feature1": {
-          "title": "Permanent flame resistance + cut protection",
-          "description": "The heat-resistant fiber structure of Kevlar® Engineered Yarn minimizes performance degradation under high temperatures, providing stable protection during heat-intensive tasks, sparks, and friction heat."
+          "title": "영구적인 방염성 + 베임저항 성능",
+          "description": "Kevlar® Engineered Yarn의 혁신적인 기술로\n영구적인 방염성능은 물론 베임저항 성능을 제공합니다."
         },
         "feature2": {
-          "title": "Ultra-Lightweight Design for Reduced Fatigue",
-          "description": "Its lightweight yarn construction reduces bulk and hand strain, significantly lowering wrist and finger fatigue during repetitive or precision tasks."
+          "title": "장시간 작업에도 피로를 줄이는 초경량 설계",
+          "description": "불필요한 부피감과 무게를 줄인 경량 원사 사용으로 손의 부담을 \n최소화하며, 반복 작업·정밀 작업에서도 손목과 손가락의 피로 누적을 크게 줄여줍니다."
         },
         "feature3": {
-          "title": "Field-Optimized Engineering",
-          "description": "Through repeated field testing across metalwork, automotive, utilities, and electrical industries, the glove delivers a balanced combination of protection, flexibility, and durability optimized for real-world work environments."
+          "title": "실제 현장 기반의 최적화된 설계",
+          "description": "금속, 자동차, 유틸리티, 전기 등 다양한 산업 현장에서의 반복적인 Field Test를 통해 보호성·유연성·내구성을 균형 있게 조정해 실제 작업환경에 최적화된 성능을 제공합니다."
         }
       },
       "middleHero": {
-        "text": "Experience the innovative flame and cut protection technologies of\nthe DEXCut-Pro Glove made with Kevlar® Engineered Yarn."
+        "text": "Kevalr® Engineered Yarn의 DEXCut-Pro Glove\n방염과 베임저항의 혁신적인 기술을 경험하십시오."
       },
-      "allInOneTitle": "All-in-One High-Performance Kevlar® Protective Glove",
+      "allInOneTitle": "Kevlar® 기반 올인원 고성능 보호장갑",
       "grid": {
         "items": {
           "item1": {
-            "title": "High Cut Resistance",
-            "description": "Delivers top-tier cut protection meeting ANSI/ISEA 105 Level A5."
+            "title": "등급 초고강도 베임저항",
+            "description": "ANSI/ISEA 105 기준 최상위 수준 베임저항 \n성능 제공"
           },
           "item2": {
-            "title": "Superior Comfort & Grip",
-            "description": "A core metal-fiber structure enhances stability, ensuring exceptional comfort and grip."
+            "title": "탁월한 착용감과 그립감",
+            "description": "원사 중심부에 금속섬유를 삽입하는 핵심기술로 \n안정적인 성능 확보"
           },
           "item3": {
-            "title": "Multi-Hazard Protection",
-            "description": "Engineered to protect against multiple hazards rarely covered by standard cut-resistant gloves."
+            "title": "다중위험(Multi-Hazard) 보호",
+            "description": "기존 베임장갑에서는 보기 힘든 다중위험(Multi-Hazard) 대응형 설계"
           },
           "item4": {
-            "title": "Advanced Kevlar®\nEngineered Yarn",
-            "description": "Lightweight and flexible yarn reduces fatigue and supports precision tasks."
+            "title": "Kevlar® 최신 엔지니어드 \n원사 적용",
+            "description": "얇고 유연한 구조로 손의 피로를 줄이고 \n민감한 작업도 손쉽게"
           },
           "item5": {
-            "title": "Versatility Across Industries",
-            "description": "Meets global standards and is suitable for steel, automotive, utilities, and various industrial environments."
+            "title": "산업 전반에 대응하는 범용성",
+            "description": "철강·자동차·유틸리티 등 다양한 산업현장에 \n적용 가능한 글로벌 스탠다드 수준"
           }
         }
       }

@@ -53,10 +53,12 @@
     "equipment": "Equipment",
     "ev-tank": "EV Tank",
     "washer": "Decon Washer",
-    "about-us": "About us"
+    "about-us": "About us",
+    "about-us2": "About Us"
   },
   "common": {
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "thermal-bottom": "Curious about the performance? Contact us"
   },
   "main": {
     "hero": {
@@ -100,13 +102,11 @@
         "frWorkwear": {
           "title": "FR Workwear",
           "description": "Workwear that can protect workers from instantaneous Flash Fire (flame).",
-          "bullet1": "Flash Fire Protection",
-          "bullet2": "Electric Arc Protection",
-          "bullet3": "Heat Protection",
-          "bullet4": "Molten Metal Splash Protection"
+          "bullet": "Flash Fire Protection\nElectric Arc Protection\nHeat Protection\nMolten Metal Splash Protection"
         },
         "bulletproofVest": {
           "title": "Bulletproof vest",
+          "bullet": "",
           "description": "Developed by DuPont in 2023, this ballistic material delivers 30% higher strength than standard aramids. It’s certified to Korean licensing standards, meets NIJ 0101.06 Level 3A, and complies with MIL-STD-662F V50 ≥ 560 m/s."
         },
         "equipmentAccessories": {
@@ -143,6 +143,7 @@
     },
     "corporatePhilosophy": {
       "sectionTitle": "Corporate Philosophy",
+      "sectionDescription": "",
       "cards": {
         "card1": {
           "title": "Slogan",
@@ -214,6 +215,7 @@
           "middleHero": {
             "text": "The Nomex® Balaclava is the optimal choice for protecting\nyour head even in extreme environments."
           },
+          "middleText": "High-performance Fire escape hood",
           "ergonomicTitle": "Ergonomic 3D pattern design with an ear-area air pocket.",
           "grid": {
             "items": {
@@ -426,7 +428,7 @@
       },
       "washer": {
         "bannerTitle": "Decon Washer",
-        "bannerDescription": "A flexible, drive-through tube system that immerses and suppresses EV batteries within 30 minutes using minimal crew and water.",
+        "bannerDescription": "Fast and Safe PPE Cleaning Powered by High-Performance Rotational Washing and a Smart Interface",
         "topImageAlt": "Washer",
         "keyFeaturesTitle": "Key Features",
         "stats": {

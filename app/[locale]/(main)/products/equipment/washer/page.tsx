@@ -118,7 +118,7 @@ export default function WasherPage() {
           href="/about-us"
           className="bg-[#FFD900] w-full xl:w-auto justify-center text-black font-pretendard xl:px-20 py-2 xl:py-4 text-[17px] xl:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
         >
-          {tMenu("about-us")} <span className="ml-2 text-xl">→</span>
+          {tMenu("about-us2")} <span className="ml-2 text-xl">→</span>
         </Link>
       </div>
     </div>

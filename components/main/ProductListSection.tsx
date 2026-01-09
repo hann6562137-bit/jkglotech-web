@@ -43,7 +43,7 @@ function ProductListRow({ item, reverse }: { item: ProductListItem; reverse?: bo
           </div>
         )}
 
-        {item.bullets && item.bullets.length > 0 && (
+        {item.bullets && item.bullets.length > 0 && item.bullets[0] != "" && (
           <ul className="mt-4 list-disc pl-5 space-y-2 font-pretendard text-white/50 xl:text-[20px] text-[12px]">
             {item.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
@@ -69,18 +69,14 @@ export default function ProductListSection() {
     {
       title: t("cards.frWorkwear.title"),
       description: t("cards.frWorkwear.description"),
-      bullets: [
-        t("cards.frWorkwear.bullet1"),
-        t("cards.frWorkwear.bullet2"),
-        t("cards.frWorkwear.bullet3"),
-        t("cards.frWorkwear.bullet4"),
-      ],
+      bullets: t("cards.frWorkwear.bullet").split("\n"),
       imageSrc: "/assets/main/main-product-list-1.png",
       href: "/products/thermal/garment",
     },
     {
       title: t("cards.bulletproofVest.title"),
       description: t("cards.bulletproofVest.description"),
+      bullets: t("cards.bulletproofVest.bullet").split("\n"),
       imageSrc: "/assets/main/main-product-list-2.png",
       href: "/products/body-armor/bulletproof-vest",
     },

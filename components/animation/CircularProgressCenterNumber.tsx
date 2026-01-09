@@ -38,7 +38,7 @@ export default function CircularProgressCenterNumber({
   suffix = "",
   prefix = "",
   decimals = 0,
-  strokeThickness = 8,
+  strokeThickness = 3,
   bgRingColor = "black",
   ringColor = "white",
   imageSrc
@@ -103,7 +103,7 @@ export default function CircularProgressCenterNumber({
     : `${prefix}${displayValue.toFixed(decimals)}${suffix}`;
 
   return (
-    <div ref={containerRef} className="relative w-full h-full flex items-center justify-center font-aldrich">
+    <div ref={containerRef} className="relative w-[60%] mx-auto h-full flex items-center justify-center font-aldrich">
       <svg viewBox={`0 0 ${size} ${size}`} className="w-full h-full transform -rotate-90">
         {/* Background Circle */}
         <circle
@@ -131,7 +131,7 @@ export default function CircularProgressCenterNumber({
       <div className="absolute inset-0 flex flex-col items-center justify-center select-none">
         {imageSrc ? (
           <>
-            <div className="relative w-[30%] h-[30%] xl:w-[40%] xl:h-[40%] mb-2">
+            <div className="relative w-[30%] h-[30%] xl:w-[40%] 3xl:h-[40%] mb-2">
               <Image
                 src={imageSrc}
                 alt="Progress Icon"
@@ -139,12 +139,12 @@ export default function CircularProgressCenterNumber({
                 className="object-contain"
               />
             </div>
-            <div className="text-white font-aldrich text-[17px] xl:text-[30px]">
+            <div className="text-white font-aldrich text-[17px] xl:text-[40px]">
               {formattedText}
             </div>
           </>
         ) : (
-          <div className="text-white font-aldrich text-[17px] xl:text-[30px]">
+          <div className="text-white font-aldrich text-[17px] xl:text-[40px]">
             {formattedText}
           </div>
         )}

@@ -15,7 +15,7 @@ import { GoChevronUp } from "react-icons/go";
 
 function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [backgroundHeight, setBackgroundHeight] = useState(0);
+  const [backgroundHeight, setBackgroundHeight] = useState(277);
   const menuRefs = useRef<(HTMLDivElement | null)[]>([]);
   const t = useTranslations('menu');
 

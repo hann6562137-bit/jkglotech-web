@@ -61,8 +61,15 @@ export default function CorporatePhilosophy() {
 
   return (
     <section className="content-container py-20 xl:py-40">
-      <div className="font-pretendard font-semibold text-white text-[20px] xl:text-[40px]">{t("sectionTitle")}</div>
-      <div className="mt-10 grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-6">
+      <div className='w-full flex xl:flex-row flex-col'>
+        <div className='font-pretendard font-semibold xl:text-[40px] text-[20px] xl:pe-40 whitespace-nowrap'>
+          {t("sectionTitle")}
+        </div>
+        <div className='font-pretendard xl:text-[20px] text-[12px] leading-relaxed xl:pe-10 mt-5 xl:mt-0 whitespace-pre-line'>
+          {t("sectionDescription")}
+        </div>
+      </div>
+      <div className="mt-10 xl:mt-30 grid grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-6">
         {cards.map((card) => (
           <PhilosophyCardItem key={card.title} card={card} />
         ))}

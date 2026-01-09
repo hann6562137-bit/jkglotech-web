@@ -64,15 +64,31 @@ export default function FeatureCard({
             ))}
           </ul>
         ) : (
-          <p
-            className="text-gray-400 text-[12px] xl:text-[20px] leading-relaxed whitespace-pre-line font-pretendard"
+          <div
+            className="text-gray-400 text-[12px] xl:text-[20px] leading-relaxed flex flex-col font-pretendard"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="400"
             data-aos-anchor={`#${anchorId}`}
           >
-            {description}
-          </p>
+            {
+              description.split('\n').map((line, idx) => (
+                <div
+                  className="flex flex-row"
+                  key={idx}>
+                  {
+                    description.split('\n').length > 1 &&
+                    <div>
+                      •&nbsp;&nbsp;
+                    </div>
+                  }
+                  <div className="flex-1 whitespace-pre-line">
+                    {line}
+                  </div>
+                </div>
+              ))
+            }
+          </div>
         )}
       </div>
     </div>

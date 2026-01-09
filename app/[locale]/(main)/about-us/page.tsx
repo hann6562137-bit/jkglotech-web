@@ -124,7 +124,7 @@ export default function AboutUsPage() {
     <div className="mt-[50px] xl:mt-0 min-h-auto xl:min-h-screen bg-black flex items-center justify-center px-5 py-4 xl:py-20">
       <div className="w-full max-w-[1200px]">
         {/* Header */}
-        <h1 className="text-white font-aldrich text-[60px] text-center mb-16 hidden xl:block">
+        <h1 className="text-white font-aldrich text-[60px] text-center mt-22 mb-6 hidden xl:block">
           {t('aboutUs.pageTitle')}
         </h1>
 

@@ -46,9 +46,9 @@ function ContentSection() {
         </div>
       </div>
 
-      <div className='content-container-content xl:py-50 py-20'>
+      <div className='content-container xl:py-50 py-20'>
         <div className='w-full flex xl:flex-row flex-col'>
-          <div className='font-pretendard font-semibold xl:text-[40px] text-[20px] xl:pe-10'>
+          <div className='font-pretendard font-semibold xl:text-[40px] text-[20px] xl:pe-40 whitespace-nowrap'>
             {tMission("titleLine1")}
             <br className="xl:block hidden" />
             <span className="xl:hidden inline">&nbsp;</span>

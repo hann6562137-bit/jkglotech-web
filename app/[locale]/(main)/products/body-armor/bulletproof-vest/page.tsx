@@ -116,7 +116,7 @@ export default function BulletproofVestPage() {
           href="/about-us"
           className="w-full justify-center xl:w-auto bg-[#FFD900] text-black font-pretendard px-0 xl:px-20 py-2 xl:py-4 text-[17px] xl:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
         >
-          {tMenu("about-us")} <span className="ml-2 text-xl">→</span>
+          {tMenu("about-us2")} <span className="ml-2 text-xl">→</span>
         </Link>
       </div>
     </div>

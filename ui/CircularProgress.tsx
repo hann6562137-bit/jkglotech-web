@@ -35,7 +35,7 @@ export default function CircularProgress({
 }) {
   return (
     <div className={`flex flex-col font-pretendard justify-start items-center bg-[${background}] ${isEquipment ? "xl:py-12 py-3" : "py-12"} w-full h-full `}>
-      <div className={`w-full px-5 xl:px-20 ${isEquipment ? "h-[100px] xl:h-auto" : "h-auto" }`}>
+      <div className={`w-full ${isEquipment ? "h-[100px] xl:h-auto" : "h-auto" }`}>
         <CircularProgressCenterNumber
           percentage={percentage}
           value={value}
@@ -56,7 +56,7 @@ export default function CircularProgress({
         title && <div className="mt-5 xl:mt-10 text-white text-[15px] xl:text-[30px] font-semibold whitespace-pre-line text-center flex items-center">{title}</div>
       }
       {
-        description && <div className="mt-1 xl:mt-6 text-gray-400 text-[12px] xl:text-[25px] whitespace-pre-line text-center leading-relaxed">{description}</div>
+        description && <div className="px-1 xl:px-5 mt-1 xl:mt-6 h-auto xl:h-[200px] text-gray-400 text-[12px] xl:text-[25px] whitespace-pre-line text-center leading-relaxed">{description}</div>
       }
     </div>
   );

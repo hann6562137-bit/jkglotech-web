@@ -84,6 +84,17 @@ export default function HoodPage() {
           />
         </div>
       </div>
+      <div className="content-container mt-10 mb-10 xl:mt-30 xl:mb-150 flex flex-col">
+        <div className="font-pretendard font-semibold text-[20px] xl:text-[50px] w-full text-center my-10 xl:my-40">화염 차단 능력에 뛰어난 방화두건</div>
+        <div className="w-full">
+            <Image
+              src="/assets/products/hood-middle.png"
+              alt={"hood-middle"}
+              width={1920}
+              height={1080}
+              className="w-full h-auto" />
+        </div>
+      </div>
       <ThermalMiddleHero
         imageSrc="/assets/products/hood-bottom.png"
         alt={t("topImageAlt")}

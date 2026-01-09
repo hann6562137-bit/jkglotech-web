@@ -2,6 +2,7 @@
 import Image from "next/image";
 import RadialRingsSVG from "./RadialFade";
 import { useEffect, useState } from "react";
+import { useLocale } from "next-intl";
 
 export function useIsMobile(breakpoint = 1280) {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,8 +18,15 @@ export function useIsMobile(breakpoint = 1280) {
 }
 
 export default function ProductMainIntoduce({ src, mobileSrc, mobileText }: { src: string, mobileSrc: string, mobileText: string }) {
+  const locale = useLocale();
   // Viewport 너비 지정
   const isMobile = useIsMobile(1280);
+
+  if (locale === "ko") {
+    src = src.replace("-intro", "-intro-ko");
+    mobileText = mobileText.replace("-intro-text", "-intro-text-ko");
+  } 
+
   if (!isMobile) {
     return (
       <div className="w-full relative">
