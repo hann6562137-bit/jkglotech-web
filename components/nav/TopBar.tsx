@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { TopBarMenuItem } from "./navData";
 
@@ -24,13 +24,10 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
       .map(el => el?.offsetHeight ?? 0);
 
     const max = Math.max(...heights);
-    console.log("Max submenu height:", max);
-    console.log("All submenu heights:", heights);
 
     setBackgroundHeight(max);
   }, [items]);
 
-  console.log(backgroundHeight);
   return (
     <div className="w-full h-full flex flex-row relative font-aldrich text-white text-[20px]"
       onMouseEnter={() => setIsHovered(true)}
@@ -95,6 +92,7 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
 
 export default function TopBar({ pathname }: { pathname: string }) {
   const t = useTranslations('menu');
+  const locale = useLocale();
 
   return (
     <div>
@@ -104,8 +102,8 @@ export default function TopBar({ pathname }: { pathname: string }) {
         className="hidden xl:block fixed top-0 left-0 right-0 z-50 w-screen h-[100px] antialiased bg-black/50 backdrop-blur-md">
         <div className="content-container h-full">
           <div className="mx-5 flex flex-row items-center justify-start h-full border-b border-[#404040] font-aldrich">
-            <Link
-              href="/"
+            <a
+              href={`/${locale}/`}
               className="flex items-center justify-center w-[250px] h-full cursor-pointer">
               <Image
                 src="/assets/logo.png"
@@ -114,7 +112,7 @@ export default function TopBar({ pathname }: { pathname: string }) {
                 height={200}
                 className="w-full h-auto object-contain"
               />
-            </Link>
+            </a>
             <div className="ms-auto h-full me-10">
               <TopBarButtons items={topBarItems} />
             </div>
@@ -137,6 +135,7 @@ export default function TopBar({ pathname }: { pathname: string }) {
 
 function MobileTopBar({ pathname }: { pathname: string }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const locale = useLocale();
 
   // body scroll lock
   useEffect(() => {
@@ -155,8 +154,8 @@ function MobileTopBar({ pathname }: { pathname: string }) {
       key={pathname}
       className="flex xl:hidden fixed top-0 left-0 right-0 z-50 w-screen h-[50px] antialiased bg-black/50 backdrop-blur-md px-5 border-b border-[#404040]">
       <div className="w-full flex flex-row">
-        <Link
-          href="/"
+        <a
+          href={`/${locale}/`}
           className="flex items-center justify-center h-full cursor-pointer py-4">
           <Image
             src="/assets/logo.png"
@@ -165,7 +164,7 @@ function MobileTopBar({ pathname }: { pathname: string }) {
             height={200}
             className="h-full w-auto object-contain"
           />
-        </Link>
+        </a>
       </div>
       <button className="ms-auto flex items-center justify-center text-[25px] cursor-pointer" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <RxCross2 /> : <RxHamburgerMenu />}

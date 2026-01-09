@@ -6,10 +6,12 @@ import FeatureGrid from "@/ui/FeatureGrid";
 import ThermalMiddleHero from "@/ui/ThermalMiddleHero";
 import ThermalBottomHero from "@/ui/ThermalBottomHero";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { getLocale } from "next-intl/server";
 
-export default function GlovePage() {
-  const t = useTranslations("products.glove");
+export default async function GlovePage() {
+  const t = await getTranslations("products.glove");
+  const locale = await getLocale();
   const middleHeroLines = t("middleHero.text").split("\n");
 
   return (
@@ -61,11 +63,20 @@ export default function GlovePage() {
         </div>
       </div>
       <div className="content-container mb-10 xl:mb-50">
-        <object
-          data="/assets/products/glove-detail.svg"
-          type="image/svg+xml"
-          className="w-full h-auto"
-        />
+        {
+          locale === "ko" ? (
+            <object
+              data="/assets/products/glove-detail-ko.svg"
+              type="image/svg+xml"
+              className="w-full h-auto"
+            /> ) : (
+            <object
+              data="/assets/products/glove-detail.svg"
+              type="image/svg+xml"
+              className="w-full h-auto"
+            />
+          )
+        }
       </div>
       <div className="content-container flex flex-col">
         <div className="flex flex-col gap-[2px] mt-20 w-full mb-10 xl:mb-40">
