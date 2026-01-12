@@ -138,7 +138,7 @@ export default function LayeredRadar({
                 {outerPoints.map((p, i) => {
                     // 텍스트는 점에서 더 밖으로
                     const labelRadius = rMax + 25; // 텍스트 거리 보정
-                    let lx = cx + labelRadius * Math.cos(p.angle);
+                    const lx = cx + labelRadius * Math.cos(p.angle);
                     const ly = cy + labelRadius * Math.sin(p.angle);
 
                     // 텍스트 라인 분리
