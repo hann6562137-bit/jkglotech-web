@@ -31,14 +31,14 @@ const FeatureGrid: React.FC<FeatureGridProps> = ({ items, className = '' }) => {
                     data-aos-anchor={`#${anchorId}`}
                 >
                     <div className="border-b border-gray-700 pb-2 mb-3 xl:mb-6">
-                        <span className="text-[#FFD900] font-aldrich text-[15px] xl:text-[40px] font-bold">
+                        <span className="text-[#FFD900] font-aldrich text-[15px] md:text-[40px] font-bold">
                             {item.number}
                         </span>
                     </div>
-                    <h3 className="text-[15px] xl:text-[40px] font-semibold mb-2 xl:mb-4 font-pretendard leading-tight">
+                    <h3 className="text-[15px] md:text-[40px] font-semibold mb-2 xl:mb-4 font-pretendard leading-tight">
                         {item.title}
                     </h3>
-                    <p className="text-gray-300 font-pretendard leading-relaxed text-[12px] xl:text-[20px] text-medium">
+                    <p className="text-gray-300 font-pretendard leading-relaxed text-[12px] md:text-[20px] text-medium">
                         {item.description}
                     </p>
                 </div>

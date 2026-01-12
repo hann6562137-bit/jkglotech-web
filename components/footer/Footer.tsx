@@ -26,7 +26,7 @@ export default function Footer() {
             />
           </div>
 
-          <div className="flex flex-col xl:gap-2 text-[7px] xl:text-[18px] text-[#777777] leading-relaxed">
+          <div className="flex flex-col xl:gap-2 text-[7px] md:text-[18px] text-[#777777] leading-relaxed">
             <div>JK Glotech Co., Ltd.</div>
             <div className="my-2 xl:my-0">
               Room 401, Kyeongdong MirWell, 741, Taejang-ro, Gimpo-si,<br />
@@ -46,8 +46,8 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="flex flex-col xl:gap-3 gap-1">
-            <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Quick Links</h3>
-            <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
+            <h3 className="font-aldrich text-[12px] md:text-[24px] lg:text-[30px] text-white font-bold mb-1">Quick Links</h3>
+            <div className="flex flex-col gap-1 text-[9px] md:text-[18px] lg:text-[22px] text-[#777777]">
               <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
               <Link href="/products/thermal/nomex" className="hover:text-white transition-colors">Nomex®</Link>
               <Link href="/products/thermal/kevlar" className="hover:text-white transition-colors">Kevlar®</Link>
@@ -57,8 +57,8 @@ export default function Footer() {
 
           {/* Thermal */}
           <div className="flex flex-col gap-1 xl:gap-3">
-            <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Thermal</h3>
-            <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
+            <h3 className="font-aldrich text-[12px] md:text-[24px] lg:text-[30px] text-white font-bold mb-1">Thermal</h3>
+            <div className="flex flex-col gap-1 text-[9px] md:text-[18px] lg:text-[22px] text-[#777777]">
               <Link href="/products/thermal/garment" className="hover:text-white transition-colors">Garment</Link>
               <Link href="/products/thermal/glove" className="hover:text-white transition-colors">Gloves</Link>
               <Link href="/products/thermal/hood" className="hover:text-white transition-colors">Hoods</Link>
@@ -67,8 +67,8 @@ export default function Footer() {
 
           {/* BodyArmor */}
           <div className="flex flex-col gap-1 xl:gap-3">
-            <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Body Armor</h3>
-            <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
+            <h3 className="font-aldrich text-[12px] md:text-[24px] lg:text-[30px] text-white font-bold mb-1">Body Armor</h3>
+            <div className="flex flex-col gap-1 text-[9px] md:text-[18px] lg:text-[22px] text-[#777777]">
               <Link href="/products/body-armor/bulletproof-vest" className="hover:text-white transition-colors">Bulletproof vest</Link>
               <Link href="/products/body-armor/stabproof-vest" className="hover:text-white transition-colors">Stabproof vest</Link>
               <Link href="/products/body-armor/plate" className="hover:text-white transition-colors">Plate</Link>
@@ -77,8 +77,8 @@ export default function Footer() {
 
           {/* Equipment */}
           <div className="flex flex-col gap-1 xl:gap-3">
-            <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Equipment</h3>
-            <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
+            <h3 className="font-aldrich text-[12px] md:text-[24px] lg:text-[30px] text-white font-bold mb-1">Equipment</h3>
+            <div className="flex flex-col gap-1 text-[9px] md:text-[18px] lg:text-[22px] text-[#777777]">
               <Link href="/products/equipment/ev-tank" className="hover:text-white transition-colors">EV Tank</Link>
               <Link href="/products/equipment/washer" className="hover:text-white transition-colors">Decon Washer</Link>
             </div>

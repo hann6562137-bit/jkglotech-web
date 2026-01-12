@@ -10,14 +10,14 @@ export default function TechAndCertifications() {
 		<div className="text-center pt-12 lg:pt-28 pb-16">
 			<div className="content-container my-0">
 				<span
-					className="font-pretendard font-semibold text-[20px] lg:text-[40px] leading-[130%] tracking-[-0.03em] text-center align-middle"
+					className="font-pretendard font-semibold text-[20px] md:text-[40px] leading-[130%] tracking-[-0.03em] text-center align-middle"
 					data-aos="fade-up"
 					data-aos-delay="0">
 					{t("heading")}
 				</span>
 
 				<div
-					className="font-pretendard font-medium text-[#73798E] text-[10px] lg:text-[30px] leading-[150%] tracking-[-0.03em] text-center align-middle mt-5 lg:mt-12 block whitespace-pre-line"
+					className="font-pretendard font-medium text-[#73798E] text-[10px] md:text-[30px] leading-[150%] tracking-[-0.03em] text-center align-middle mt-5 lg:mt-12 block whitespace-pre-line"
 					data-aos="fade-up"
 					data-aos-delay="0">
 					{t("subheading")}

@@ -29,7 +29,7 @@ export default function ThermalMiddleHero({
         </div>
         <div className="z-20 absolute inset-0 flex items-center justify-center p-4 xl:w-full w-[80%] mx-auto">
           <p
-            className="text-white font-aldrich text-[15px] xl:text-[32px] text-center leading-relaxed drop-shadow-md"
+            className="text-white font-aldrich text-[15px] md:text-[32px] text-center leading-relaxed drop-shadow-md"
             data-aos="fade-up"
             data-aos-duration="800"
           >

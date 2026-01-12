@@ -17,10 +17,10 @@ function CarouselCard({ card }: { card: TechCard }) {
       <div className="h-full w-full flex flex-col xl:flex-row">
         {/* Left text panel */}
         <div className="basis-2/5 bg-black/20 xl:p-15 p-5 flex flex-col xl:justify-between xl:order-1 order-2">
-          <div className="font-pretendard font-semibold text-white text-[12px] xl:text-[40px] leading-tight whitespace-pre-line">
+          <div className="font-pretendard font-semibold text-white text-[12px] md:text-[40px] leading-tight whitespace-pre-line">
             {card.title}
           </div>
-          <div className="font-pretendard text-white/50 leading-relaxed font-medium text-[10px] xl:text-[20px]">{card.description}</div>
+          <div className="font-pretendard text-white/50 leading-relaxed font-medium text-[10px] md:text-[20px]">{card.description}</div>
         </div>
 
         {/* Right image panel */}
@@ -90,7 +90,7 @@ export default function TechnologyIntroductionCarousel() {
       {/* parent container owns content-container */}
       <div className="content-container">
         <div className="flex items-center justify-between">
-          <div className="font-pretendard font-semibold text-white xl:text-[40px] text-[20px] xl:ms-8">{t("sectionTitle")}</div>
+          <div className="font-pretendard font-semibold text-white md:text-[40px] text-[20px] xl:ms-8">{t("sectionTitle")}</div>
 
           <div className="hidden xl:flex items-center gap-2 me-8">
             <button

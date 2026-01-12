@@ -139,12 +139,12 @@ export default function CircularProgressCenterNumber({
                 className="object-contain"
               />
             </div>
-            <div className="text-white font-aldrich text-[17px] xl:text-[40px]">
+            <div className="text-white font-aldrich text-[17px] md:text-[40px]">
               {formattedText}
             </div>
           </>
         ) : (
-          <div className="text-white font-aldrich text-[17px] xl:text-[40px]">
+          <div className="text-white font-aldrich text-[17px] md:text-[40px]">
             {formattedText}
           </div>
         )}

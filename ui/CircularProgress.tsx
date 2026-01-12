@@ -50,13 +50,13 @@ export default function CircularProgress({
         />
       </div>
       {
-        bigTitle && <div className={`${isEquipment ? "text-[12px] xl:text-[35px]" : "text-[15px] xl:text-[35px]"} mt-5 xl:mt-10 text-white font-medium whitespace-pre-line text-center flex items-center ${isEquipment ? 'equipment-class' : ''}`}>{bigTitle}</div>
+        bigTitle && <div className={`${isEquipment ? "text-[12px] md:text-[35px]" : "text-[15px] md:text-[35px]"} mt-5 xl:mt-10 text-white font-medium whitespace-pre-line text-center flex items-center ${isEquipment ? 'equipment-class' : ''}`}>{bigTitle}</div>
       }
       {
-        title && <div className="mt-5 xl:mt-10 text-white text-[15px] xl:text-[30px] font-semibold whitespace-pre-line text-center flex items-center">{title}</div>
+        title && <div className="mt-5 xl:mt-10 text-white text-[15px] md:text-[30px] font-semibold whitespace-pre-line text-center flex items-center">{title}</div>
       }
       {
-        description && <div className="px-1 xl:px-5 mt-1 xl:mt-6 h-auto xl:h-[200px] text-gray-400 text-[12px] xl:text-[25px] whitespace-pre-line text-center leading-relaxed">{description}</div>
+        description && <div className="px-1 xl:px-5 mt-1 xl:mt-6 h-auto xl:h-[200px] text-gray-400 text-[12px] md:text-[25px] whitespace-pre-line text-center leading-relaxed">{description}</div>
       }
     </div>
   );

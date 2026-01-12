@@ -31,7 +31,7 @@ export default function WasherPage() {
           className="w-full h-auto" />
 
         <div className="absolute w-full h-full top-0 left-0">
-          <div className="xl:mt-50 xl:mb-20 font-aldrich text-[20px] xl:text-[50px] mx-auto text-center">
+          <div className="xl:mt-50 xl:mb-20 font-aldrich text-[20px] md:text-[50px] mx-auto text-center">
             {t("keyFeaturesTitle")}
           </div>
           <div className="grid grid-cols-2 gap-10 w-full max-w-[900px] mx-auto">
@@ -61,7 +61,7 @@ export default function WasherPage() {
         </div>
       </div>
       <div className="content-container">
-        <div className="font-aldrich text-[20px] xl:text-[50px] mb-10 w-full text-center">
+        <div className="font-aldrich text-[20px] md:text-[50px] mb-10 w-full text-center">
           {t("systemTitle")}
         </div>
         <div className="flex flex-col gap-[2px] mt-10 xl:mt-20 w-full mb-20 xl:mb-40">
@@ -111,12 +111,12 @@ export default function WasherPage() {
         ]}
       />
       <div className="w-full bg-black my-[100px] xl:my-[300px] flex flex-col items-center justify-center text-center px-4">
-        <p className="text-white font-pretendard text-[20px] xl:text-[50px] mb-10 font-semibold">
+        <p className="text-white font-pretendard text-[20px] md:text-[50px] mb-10 font-semibold">
           {t("cta.heading")}
         </p>
         <Link
           href="/about-us"
-          className="bg-[#FFD900] w-full xl:w-auto justify-center text-black font-pretendard xl:px-20 py-2 xl:py-4 text-[17px] xl:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
+          className="bg-[#FFD900] w-full xl:w-auto justify-center text-black font-pretendard xl:px-20 py-2 xl:py-4 text-[17px] md:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
         >
           {tMenu("about-us2")} <span className="ml-2 text-xl">→</span>
         </Link>

@@ -28,7 +28,7 @@ export default function StabproofVestPage() {
             height={1080}
           />
         </div>
-        <div className="mt-10 xl:mt-50 mb-10 xl:mb-50 font-aldrich text-[20px] xl:text-[50px] mx-auto text-center">
+        <div className="mt-10 xl:mt-50 mb-10 xl:mb-50 font-aldrich text-[20px] md:text-[50px] mx-auto text-center">
           {t("titleMain")}
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function StabproofVestPage() {
         </div>
       </div>
       <div className="content-container flex flex-col">
-        <div className="mt-10 xl:mt-50 mb-10 xl:mb-30 font-aldrich text-[20px] xl:text-[40px] mx-auto text-center">
+        <div className="mt-10 xl:mt-50 mb-10 xl:mb-30 font-aldrich text-[20px] md:text-[40px] mx-auto text-center">
           {t("materialDurabilityTitle")}
         </div>
         <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 xl:gap-6 w-full mb-20 xl:mb-40 md:px-50">
@@ -69,17 +69,17 @@ export default function StabproofVestPage() {
         </div>
         <div className="flex flex-col gap-[2px] mt-10 xl:mt-50 w-full mb-10 xl:mb-40">
           <FeatureCard
-            imageSrc="/assets/products/stabproof-vest-feature-2.png"
+            imageSrc="/assets/products/stabproof-vest-feature-1.png"
             title={t("features.feature1.title")}
             description={t("features.feature1.description")}
           />
           <FeatureCard
-            imageSrc="/assets/products/stabproof-vest-feature-3.png"
+            imageSrc="/assets/products/stabproof-vest-feature-2.png"
             title={t("features.feature2.title")}
             description={t("features.feature2.description")}
           />
           <FeatureCard
-            imageSrc="/assets/products/stabproof-vest-feature-4.png"
+            imageSrc="/assets/products/stabproof-vest-feature-3.png"
             title={t("features.feature3.title")}
             description={t("features.feature3.description")}
           />
@@ -103,12 +103,12 @@ export default function StabproofVestPage() {
         </span>
       </BodyArmorBottomHero>
       <div className="w-full bg-black mt-[100px] xl:mt-[300px] mb-[100px] xl:mb-[300px] flex flex-col items-center justify-center text-center px-4">
-        <p className="text-white font-pretendard text-[20px] xl:text-[50px] mb-10 font-semibold">
+        <p className="text-white font-pretendard text-[20px] md:text-[50px] mb-10 font-semibold">
           {t("cta.heading")}
         </p>
         <Link
           href="/about-us"
-          className="w-full justify-center xl:w-auto bg-[#FFD900] text-black font-pretendard px-0 xl:px-20 py-2 xl:py-4 text-[17px] xl:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
+          className="w-full justify-center xl:w-auto bg-[#FFD900] text-black font-pretendard px-0 xl:px-20 py-2 xl:py-4 text-[17px] md:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
         >
           {tMenu("about-us2")} <span className="ml-2 text-xl">→</span>
         </Link>

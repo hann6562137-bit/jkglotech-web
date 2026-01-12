@@ -32,7 +32,7 @@ export default function HoodPage() {
             height={1080}
           />
         </div>
-        <div className="mt-10 xl:mt-50 mb-10 xl:mb-50 font-aldrich text-[20px] xl:text-[50px] mx-auto text-center">
+        <div className="mt-10 xl:mt-50 mb-10 xl:mb-50 font-aldrich text-[20px] md:text-[50px] mx-auto text-center">
           {t("centerTitle")}
         </div>
 
@@ -85,7 +85,7 @@ export default function HoodPage() {
         </div>
       </div>
       <div className="content-container mt-10 mb-40 xl:mt-30 xl:mb-150 flex flex-col">
-        <div className="font-pretendard font-semibold text-[20px] xl:text-[50px] w-full text-center my-10 xl:my-40">{t("middleText")}</div>
+        <div className="font-pretendard font-semibold text-[20px] md:text-[50px] w-full text-center my-10 xl:my-40">{t("middleText")}</div>
         <div className="w-full">
             <Image
               src="/assets/products/hood-middle.png"
@@ -109,7 +109,7 @@ export default function HoodPage() {
         </>
       </ThermalMiddleHero>
       <div className="w-full bg-black py-5 xl:py-20 mt-10 xl:mt-40">
-        <div className="w-full text-center font-aldrich text-[20px] xl:text-[40px] mt-10 xl:mt-20 mb-12 xl:mb-24 xl:px-0 px-5">
+        <div className="w-full text-center font-aldrich text-[20px] md:text-[40px] mt-10 xl:mt-20 mb-12 xl:mb-24 xl:px-0 px-5">
           {t("ergonomicTitle")}
         </div>
         <div className="content-container">

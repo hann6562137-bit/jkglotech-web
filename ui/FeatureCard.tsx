@@ -43,7 +43,7 @@ export default function FeatureCard({
       {/* Text Section */}
       <div className="flex flex-col justify-center w-full xl:w-1/2 p-0 xl:p-16 xl:pr-24">
         <h3
-          className="text-[20px] xl:text-[40px] font-bold text-white mb-3 xl:mb-6 font-pretendard"
+          className="text-[20px] md:text-[40px] font-bold text-white mb-3 xl:mb-6 font-pretendard"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="200"
@@ -53,7 +53,7 @@ export default function FeatureCard({
         </h3>
         {Array.isArray(description) ? (
           <ul
-            className="text-gray-400 text-[12px] xl:text-[20px] leading-relaxed font-pretendard list-disc pl-5 space-y-2"
+            className="text-gray-400 text-[12px] md:text-[20px] leading-relaxed font-pretendard list-disc pl-5 space-y-2"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="400"
@@ -65,7 +65,7 @@ export default function FeatureCard({
           </ul>
         ) : (
           <div
-            className="text-gray-400 text-[12px] xl:text-[20px] leading-relaxed flex flex-col font-pretendard"
+            className="text-gray-400 text-[12px] md:text-[20px] leading-relaxed flex flex-col font-pretendard"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="400"

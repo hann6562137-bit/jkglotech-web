@@ -33,7 +33,7 @@ export default async function GlovePage() {
             height={1080}
           />
         </div>
-        <div className="mt-10 xl:mt-50 mb-10 xl:mb-50 font-aldrich text-[20px] xl:text-[50px] mx-auto text-center">
+        <div className="mt-10 xl:mt-50 mb-10 xl:mb-50 font-aldrich text-[20px] md:text-[50px] mx-auto text-center">
           {t("chartTitle")}
         </div>
 
@@ -115,7 +115,7 @@ export default async function GlovePage() {
         </>
       </ThermalMiddleHero>
       <div className="w-full bg-black py-5 xl:py-20 mt-10 xl:mt-40">
-        <div className="w-full text-center font-aldrich text-[20px] xl:text-[40px] mt-10 xl:mt-20 mb-12 xl:mb-24 xl:px-0 px-5">
+        <div className="w-full text-center font-aldrich text-[20px] md:text-[40px] mt-10 xl:mt-20 mb-12 xl:mb-24 xl:px-0 px-5">
           {t("allInOneTitle")}
         </div>
         <div className="content-container">

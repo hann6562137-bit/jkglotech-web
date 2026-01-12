@@ -13,10 +13,10 @@ function PhilosophyCardItem({ card }: { card: PhilosophyCard }) {
   return (
     <div className="bg-[#121319] px-3 xl:px-10 py-5 xl:py-20 border border-white/5">
       <Image src={card.iconSrc} alt={card.title} width={71} height={71} className="h-7 w-7 xl:h-[71px] xl:w-[71px]" />
-      <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[12px] xl:text-[30px] leading-tight whitespace-pre-line">
+      <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[12px] md:text-[30px] leading-tight whitespace-pre-line">
         {card.title}
       </div>
-      <div className="mt-1 xl:mt-3 font-pretendard font-medium text-white/60 text-[8px] xl:text-[20px] leading-relaxed">
+      <div className="mt-1 xl:mt-3 font-pretendard font-medium text-white/60 text-[8px] md:text-[20px] leading-relaxed">
         {card.description}
       </div>
     </div>
@@ -62,10 +62,10 @@ export default function CorporatePhilosophy() {
   return (
     <section className="content-container py-20 xl:py-40">
       <div className='w-full flex xl:flex-row flex-col'>
-        <div className='font-pretendard font-semibold xl:text-[40px] text-[20px] xl:pe-40 whitespace-nowrap'>
+        <div className='font-pretendard font-semibold md:text-[40px] text-[20px] xl:pe-40 whitespace-nowrap'>
           {t("sectionTitle")}
         </div>
-        <div className='font-pretendard xl:text-[20px] text-[12px] leading-relaxed xl:pe-10 mt-5 xl:mt-0 whitespace-pre-line'>
+        <div className='font-pretendard md:text-[20px] text-[12px] leading-relaxed xl:pe-10 mt-5 xl:mt-0 whitespace-pre-line'>
           {t("sectionDescription")}
         </div>
       </div>

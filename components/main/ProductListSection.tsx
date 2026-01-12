@@ -35,16 +35,16 @@ function ProductListRow({ item, reverse }: { item: ProductListItem; reverse?: bo
 
       {/* Text (50%) */}
       <div className={`w-full pt-5 xl:pt-20 order-1 ${reverse ? "xl:order-1" : "xl:order-2"}`}>
-        <div className="font-pretendard font-semibold text-white xl:text-[40px] text-[20px] leading-tight">{item.title}</div>
+        <div className="font-pretendard font-semibold text-white md:text-[40px] text-[20px] leading-tight">{item.title}</div>
 
         {item.description && (
-          <div className="mt-4 font-pretendard text-medium text-white/50 xl:text-[20px] text-[12px] leading-relaxed whitespace-pre-line">
+          <div className="mt-4 font-pretendard text-medium text-white/50 md:text-[20px] text-[12px] leading-relaxed whitespace-pre-line">
             {item.description}
           </div>
         )}
 
         {item.bullets && item.bullets.length > 0 && item.bullets[0] != "" && (
-          <ul className="mt-4 list-disc pl-5 space-y-2 font-pretendard text-white/50 xl:text-[20px] text-[12px]">
+          <ul className="mt-4 list-disc pl-5 space-y-2 font-pretendard text-white/50 md:text-[20px] text-[12px]">
             {item.bullets.filter((item) => item !== "").map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
@@ -95,7 +95,7 @@ export default function ProductListSection() {
   return (
     <div className="bg-[#121319] mt-20 xl:py-50 py-20">
       <div className="content-container">
-        <div className="text-center font-pretendard font-semibold xl:text-[40px] text-[20px] text-white">{t("title")}</div>
+        <div className="text-center font-pretendard font-semibold md:text-[40px] text-[20px] text-white">{t("title")}</div>
 
         <div className="flex flex-col gap-24">
           <ProductListRow item={productList[0]} />

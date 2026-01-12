@@ -21,7 +21,7 @@ export default function EVTankPage() {
       />
       <div className="content-container mt-5 xl:mt-15 flex flex-col">
         <BodyArmorMenu currentMenu="ev-tank" menuNameKey="equipment" />
-        <div className="xl:mt-50 mt-20 mb-5 xl:mb-20 font-aldrich text-[20px] xl:text-[50px] mx-auto text-center">
+        <div className="xl:mt-50 mt-20 mb-5 xl:mb-20 font-aldrich text-[20px] md:text-[50px] mx-auto text-center">
           {t("keyFeaturesTitle")}
         </div>
       </div>
@@ -69,7 +69,7 @@ export default function EVTankPage() {
         </div>
       </div>
       <div className="content-container">
-        <div className="font-aldrich text-[20px] xl:text-[50px] mb-10 w-full text-center">
+        <div className="font-aldrich text-[20px] md:text-[50px] mb-10 w-full text-center">
           {t("responseTitle").split("\n").map((line, idx) => (
             <span key={idx}>
               {line}
@@ -99,7 +99,7 @@ export default function EVTankPage() {
           />
         </div>
       </div>
-      <div className="w-full text-center mb-10 font-aldrich text-[20px] xl:text-[40px]">
+      <div className="w-full text-center mb-10 font-aldrich text-[20px] md:text-[40px]">
         {t("scrollCards.introText")}
       </div>
       <HorizontalScrollCards
@@ -127,12 +127,12 @@ export default function EVTankPage() {
         ]}
       />
       <div className="w-full bg-black my-[100px] xl:my-[300px] flex flex-col items-center justify-center text-center px-4">
-        <p className="text-white font-pretendard text-[20px] xl:text-[50px] mb-5 xl:mb-10 font-semibold">
+        <p className="text-white font-pretendard text-[20px] md:text-[50px] mb-5 xl:mb-10 font-semibold">
           {t("cta.heading")}
         </p>
         <Link
           href="/about-us"
-          className="w-full xl:w-auto bg-[#FFD900] text-black font-pretendard xl:px-20 py-2 xl:py-4 justify-center text-[17px] xl:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
+          className="w-full xl:w-auto bg-[#FFD900] text-black font-pretendard xl:px-20 py-2 xl:py-4 justify-center text-[17px] md:text-[35px] font-semibold flex items-center hover:bg-[#ffe033] transition-colors"
         >
           {tMenu("about-us2")} <span className="ml-2 text-xl">→</span>
         </Link>

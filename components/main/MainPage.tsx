@@ -29,17 +29,17 @@ function ContentSection() {
           />
         </div>
         <div className="content-container z-10">
-          <h1 className="text-white font-aldrich xl:text-[80px] text-[40px] leading-tight mb-6 xl:text-start text-center">
+          <h1 className="text-white font-aldrich md:text-[80px] text-[40px] leading-tight mb-6 md:text-start text-center">
             {tHero("titleLine1")}<br />
             {tHero("titleLine2")}
           </h1>
-          <p className="text-white font-pretendard xl:text-[30px] text-[15px] leading-relaxed mb-20 xl:text-start text-center">
+          <p className="text-white font-pretendard md:text-[30px] text-[15px] leading-relaxed mb-20 md:text-start text-center">
             {tHero("descriptionLine1")}<br />
             {tHero("descriptionLine2")}
           </p>
           <Link
             href="/about-us"
-            className="w-full xl:w-auto text-center inline-block bg-[#FFD900] text-black font-aldrich xl:text-[24px] text-[20px] px-10 xl:py-4 py-2 hover:bg-[#ffe033] transition-colors"
+            className="w-full xl:w-auto text-center inline-block bg-[#FFD900] text-black font-aldrich md:text-[24px] text-[20px] px-10 xl:py-4 py-2 hover:bg-[#ffe033] transition-colors"
           >
             {tMenu("about-us")}
           </Link>
@@ -48,13 +48,13 @@ function ContentSection() {
 
       <div className='content-container xl:py-50 py-20'>
         <div className='w-full flex xl:flex-row flex-col'>
-          <div className='font-pretendard font-semibold xl:text-[40px] text-[20px] xl:pe-40 whitespace-nowrap'>
+          <div className='font-pretendard font-semibold md:text-[40px] text-[20px] xl:pe-40 whitespace-nowrap'>
             {tMission("titleLine1")}
             <br className="xl:block hidden" />
             <span className="xl:hidden inline">&nbsp;</span>
             {tMission("titleLine2")}
           </div>
-          <div className='font-pretendard xl:text-[20px] text-[12px] leading-relaxed xl:pe-10 mt-5 xl:mt-0'>
+          <div className='font-pretendard md:text-[20px] text-[12px] leading-relaxed xl:pe-10 mt-5 xl:mt-0'>
             {tMission("body")}
           </div>
         </div>
@@ -93,7 +93,7 @@ function ContentSection() {
       <TechnologyIntroductionCarousel />
 
       <section className="content-container py-10 xl:py-40">
-        <div className="font-pretendard font-semibold text-white text-[20px] xl:text-[40px]">
+        <div className="font-pretendard font-semibold text-white text-[20px] md:text-[40px]">
           {tTech("title")}
         </div>
 
@@ -111,31 +111,31 @@ function ContentSection() {
 
           <div className="flex-2/5 pt-6">
             <div className="flex flex-col space-y-2">
-              <div className="font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
+              <div className="font-pretendard font-semibold text-white text-[20px] md:text-[35px]">
                 {tTech("developmentCapability.title")}
               </div>
-              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] md:text-[20px] leading-relaxed">
                 {tTech("developmentCapability.description")}
               </div>
 
-              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
+              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] md:text-[35px]">
                 {tTech("rdFocus.title")}
               </div>
-              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] md:text-[20px] leading-relaxed">
                 {tTech("rdFocus.description")}
               </div>
 
-              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
+              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] md:text-[35px]">
                 {tTech("reliability.title")}
               </div>
-              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] md:text-[20px] leading-relaxed">
                 {tTech("reliability.description")}
               </div>
 
-              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] xl:text-[35px]">
+              <div className="mt-4 xl:mt-8 font-pretendard font-semibold text-white text-[20px] md:text-[35px]">
                 {tTech("collaborationAgility.title")}
               </div>
-              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] xl:text-[20px] leading-relaxed">
+              <div className="mt-1 xl:mt-2 font-pretendard font-medium text-white/60 text-[12px] md:text-[20px] leading-relaxed">
                 {tTech("collaborationAgility.description")}
               </div>
             </div>
