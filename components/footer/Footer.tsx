@@ -67,7 +67,7 @@ export default function Footer() {
 
           {/* BodyArmor */}
           <div className="flex flex-col gap-1 xl:gap-3">
-            <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">BodyArmor</h3>
+            <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Body Armor</h3>
             <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
               <Link href="/products/body-armor/bulletproof-vest" className="hover:text-white transition-colors">Bulletproof vest</Link>
               <Link href="/products/body-armor/stabproof-vest" className="hover:text-white transition-colors">Stabproof vest</Link>
@@ -79,7 +79,7 @@ export default function Footer() {
           <div className="flex flex-col gap-1 xl:gap-3">
             <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Equipment</h3>
             <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
-              <Link href="/products/equipment/ev-tank" className="hover:text-white transition-colors">EV tank</Link>
+              <Link href="/products/equipment/ev-tank" className="hover:text-white transition-colors">EV Tank</Link>
               <Link href="/products/equipment/washer" className="hover:text-white transition-colors">Decon Washer</Link>
             </div>
           </div>
