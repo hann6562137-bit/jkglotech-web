@@ -49,8 +49,8 @@ export default function Footer() {
             <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Quick Links</h3>
             <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
               <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
-              <Link href="/products/thermal/nomex" className="hover:text-white transition-colors">Nomex</Link>
-              <Link href="/products/thermal/kevlar" className="hover:text-white transition-colors">Kevlar</Link>
+              <Link href="/products/thermal/nomex" className="hover:text-white transition-colors">Nomex®</Link>
+              <Link href="/products/thermal/kevlar" className="hover:text-white transition-colors">Kevlar®</Link>
               <Link href="/about-us" className="hover:text-white transition-colors">About us</Link>
             </div>
           </div>
@@ -60,8 +60,8 @@ export default function Footer() {
             <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Thermal</h3>
             <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
               <Link href="/products/thermal/garment" className="hover:text-white transition-colors">Garment</Link>
-              <Link href="/products/thermal/glove" className="hover:text-white transition-colors">Glove</Link>
-              <Link href="/products/thermal/hood" className="hover:text-white transition-colors">Hood</Link>
+              <Link href="/products/thermal/glove" className="hover:text-white transition-colors">Gloves</Link>
+              <Link href="/products/thermal/hood" className="hover:text-white transition-colors">Hoods</Link>
             </div>
           </div>
 
@@ -79,8 +79,8 @@ export default function Footer() {
           <div className="flex flex-col gap-1 xl:gap-3">
             <h3 className="font-aldrich text-[12px] xl:text-[24px] lg:text-[30px] text-white font-bold mb-1">Equipment</h3>
             <div className="flex flex-col gap-1 text-[9px] xl:text-[18px] lg:text-[22px] text-[#777777]">
-              <Link href="/products/equipment/ev-tank" className="hover:text-white transition-colors">Ev tank</Link>
-              <Link href="/products/equipment/washer" className="hover:text-white transition-colors">Washer</Link>
+              <Link href="/products/equipment/ev-tank" className="hover:text-white transition-colors">EV tank</Link>
+              <Link href="/products/equipment/washer" className="hover:text-white transition-colors">Decon Washer</Link>
             </div>
           </div>
 

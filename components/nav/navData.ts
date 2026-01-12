@@ -7,27 +7,6 @@ export type TopBarMenuItem = {
 
 export const topBarItems: TopBarMenuItem[] = [
   {
-    nameKey: "bodyarmor",
-    link: "/products/body-armor",
-    subMenu: [
-      {
-        nameKey: "bulletproof-vest",
-        link: "/products/body-armor/bulletproof-vest",
-        icon: "/assets/topbar/ico-bulletproof.svg",
-      },
-      {
-        nameKey: "stabproof-vest",
-        link: "/products/body-armor/stabproof-vest",
-        icon: "/assets/topbar/ico-stabproof.svg",
-      },
-      {
-        nameKey: "plate",
-        link: "/products/body-armor/plate",
-        icon: "/assets/topbar/ico-plate.svg",
-      },
-    ],
-  },
-  {
     nameKey: "thermal",
     link: "/products/thermal",
     subMenu: [
@@ -45,6 +24,27 @@ export const topBarItems: TopBarMenuItem[] = [
         nameKey: "hood",
         link: "/products/thermal/hood",
         icon: "/assets/topbar/ico-hood.svg",
+      },
+    ],
+  },
+  {
+    nameKey: "bodyarmor",
+    link: "/products/body-armor",
+    subMenu: [
+      {
+        nameKey: "bulletproof-vest",
+        link: "/products/body-armor/bulletproof-vest",
+        icon: "/assets/topbar/ico-bulletproof.svg",
+      },
+      {
+        nameKey: "stabproof-vest",
+        link: "/products/body-armor/stabproof-vest",
+        icon: "/assets/topbar/ico-stabproof.svg",
+      },
+      {
+        nameKey: "plate",
+        link: "/products/body-armor/plate",
+        icon: "/assets/topbar/ico-plate.svg",
       },
     ],
   },

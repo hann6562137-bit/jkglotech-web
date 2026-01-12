@@ -16,15 +16,15 @@
     "sectionDesc2": "Contact us now and experience our premium-quality solutions.",
     "step1Title": "Which of our products are you interested in?",
     "step1Products": [
-      "Bulletproof vest",
-      "Hood",
-      "tabproof vest",
-      "EV tank",
+      "FR Garment",
       "Plate",
-      "Washer",
-      "Garment",
+      "Gloves",
+      "Decon Washer",
+      "Hoods",
+      "EV Tank",
+      "Bullet-proof vest",
       "Others",
-      "Glove"
+      "Stab-proof vest"
     ],
     "next": "Next",
     "submit": "Submit",
@@ -195,7 +195,7 @@
               "ergonomicFit": "Ergonomic Fit",
               "enhancedSafety": "Enhanced Safety",
               "softComfort": "Soft Comfort",
-              "arcFlashProtection": "Flash Fire and\nArc Flash Resistance"
+              "arcFlashProtection": "Flash Fire and\nArc Flash\n Resistance"
             }
           },
           "features": {
@@ -215,7 +215,7 @@
           "middleHero": {
             "text": "The Nomex® Balaclava is the optimal choice for protecting\nyour head even in extreme environments."
           },
-          "middleText": "High-performance Fire escape hood",
+          "middleText": "High-performance Firefighting Hoods",
           "ergonomicTitle": "Ergonomic 3D pattern design with an ear-area air pocket.",
           "grid": {
             "items": {
@@ -423,7 +423,7 @@
           }
         },
         "cta": {
-          "heading": "Experience trusted ballistic protection"
+          "heading": "Experience trusted EV fire protection"
         }
       },
       "washer": {
@@ -469,12 +469,12 @@
           }
         },
         "cta": {
-          "heading": "Experience trusted ballistic protection"
+          "heading": "Experience trusted Decon Washer"
         }
       },
       "garment": {
         "bannerTitle": "Garment",
-        "bannerDescription": "The ENIGMA flame-resistant garment made with DuPont™ Nomex® fabric is a high-performance industrial\nprotective wear designed to safeguard workers from flash fires and arc flash hazards.",
+        "bannerDescription": "The NOXKA® flame-resistant garment made with DuPont™ Nomex® fabric is a high-performance industrial\nprotective wear designed to safeguard workers from flash fires and arc flash hazards.",
         "topImageAlt": "Garment",
         "chartTitle": "Nomex® FR Performance Chart",
         "chart": {
@@ -501,7 +501,7 @@
           }
         },
         "middleHero": {
-          "text": "It provides reliable protection in various high-risk work\nenvironments through lightweight comfort, high durability,\nand internationally certified safety performance"
+          "text": "It provides reliable protection in various high-risk work environments through lightweight comfort, high durability,\nand internationally certified safety performance"
         },
         "ergonomicTitle": "We deliver optimal solutions through innovative development",
         "grid": {
@@ -520,7 +520,7 @@
             },
             "item4": {
               "title": "Exceptional Heat & Flame Resistance",
-              "description": "This equipment uses 122 sensors to graph burn severity and tests in compliance with ASTM F1930."
+              "description": "Thermo-Man® is the world’s most advanced life-size thermal burn evaluation system. This is equipped with 22 heat sensors and dressed in test garments to demonstrate the heat & flame resistance and durability."
             },
             "item5": {
               "title": "Providing field-appropriate fabrics and solutions",
@@ -530,9 +530,9 @@
         }
       },
       "glove": {
-        "bannerTitle": "Glove",
+        "bannerTitle": "Gloves",
         "bannerDescription": "With ANSI/ISEA 105 Cut Level A5 performance and outstanding comfort,\nyou can experience top-level safety and ease on the job.",
-        "topImageAlt": "glove",
+        "topImageAlt": "gloves",
         "chartTitle": "DEXCut-Pro Overall Protection Performance Index",
         "chart": {
           "labels": {
@@ -545,7 +545,7 @@
         },
         "features": {
           "feature1": {
-            "title": "Permanent flame resistance + cut protection",
+            "title": "Permanent Flame Resistance & Cut Protection",
             "description": "The heat-resistant fiber structure of Kevlar® Engineered Yarn minimizes performance degradation under high temperatures, providing stable protection during heat-intensive tasks, sparks, and friction heat."
           },
           "feature2": {
@@ -558,9 +558,9 @@
           }
         },
         "middleHero": {
-          "text": "Experience the innovative flame and cut protection technologies of\nthe DEXCut-Pro Glove made with Kevlar® Engineered Yarn."
+          "text": "Experience the innovative flame and cut protection technologies of\nthe DEXCut-Pro Gloves made with Kevlar® Engineered Yarn."
         },
-        "allInOneTitle": "All-in-One High-Performance Kevlar® Protective Glove",
+        "allInOneTitle": "All-in-One High-Performance DEXCut-Pro Protective Glove",
         "grid": {
           "items": {
             "item1": {
