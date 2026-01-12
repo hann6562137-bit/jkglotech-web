@@ -38,7 +38,7 @@ export default function EVTankPage() {
             <CircularProgress
               percentage={70}
               value={70}
-              prefix="%"
+              suffix="%"
               background="rgba(0,0,0,0)"
               bgRingColor="#121319"
               strokeThickness={6}
