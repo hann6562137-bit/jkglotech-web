@@ -4,10 +4,13 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from 'next-intl';
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export default function AboutUsPage() {
   const t = useTranslations();
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     products: [] as string[],
     organization: "",
@@ -36,8 +39,10 @@ export default function AboutUsPage() {
     enterFirstName: t('aboutUsAlerts.enterFirstName'),
     enterLastName: t('aboutUsAlerts.enterLastName'),
     enterEmail: t('aboutUsAlerts.enterEmail'),
+    invalidEmail: t('aboutUsAlerts.invalidEmail'),
     enterPhone: t('aboutUsAlerts.enterPhone'),
     agreeConsent: t('aboutUsAlerts.agreeConsent'),
+    submitFailed: t('aboutUsAlerts.submitFailed'),
   };
 
   const handleNext = () => {
@@ -46,29 +51,33 @@ export default function AboutUsPage() {
       return;
     }
     if (currentStep === 2) {
-      if (!formData.organization) {
+      if (!formData.organization.trim()) {
         window.alert(alertMessages.enterOrganization);
         return;
       }
-      if (!formData.country) {
+      if (!formData.country.trim()) {
         window.alert(alertMessages.enterCountry);
         return;
       }
     }
     if (currentStep === 3) {
-      if (!formData.firstName) {
+      if (!formData.firstName.trim()) {
         window.alert(alertMessages.enterFirstName);
         return;
       }
-      if (!formData.lastName) {
+      if (!formData.lastName.trim()) {
         window.alert(alertMessages.enterLastName);
         return;
       }
-      if (!formData.email) {
+      if (!formData.email.trim()) {
         window.alert(alertMessages.enterEmail);
         return;
       }
-      if (!formData.phone) {
+      if (!EMAIL_REGEX.test(formData.email.trim())) {
+        window.alert(alertMessages.invalidEmail);
+        return;
+      }
+      if (!formData.phone.trim()) {
         window.alert(alertMessages.enterPhone);
         return;
       }
@@ -82,14 +91,94 @@ export default function AboutUsPage() {
     }
   };
 
-  const handleSubmit = () => {
-    // Form submission logic will be added later
-    setCurrentStep(4);
+  const handleSubmit = async () => {
+    if (isSubmitting) {
+      return;
+    }
+
+    if (!formData.firstName.trim()) {
+      window.alert(alertMessages.enterFirstName);
+      return;
+    }
+    if (!formData.lastName.trim()) {
+      window.alert(alertMessages.enterLastName);
+      return;
+    }
+    if (!formData.email.trim()) {
+      window.alert(alertMessages.enterEmail);
+      return;
+    }
+    if (!EMAIL_REGEX.test(formData.email.trim())) {
+      window.alert(alertMessages.invalidEmail);
+      return;
+    }
+    if (!formData.phone.trim()) {
+      window.alert(alertMessages.enterPhone);
+      return;
+    }
+    if (!formData.consent) {
+      window.alert(alertMessages.agreeConsent);
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/about-us", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          organization: formData.organization.trim(),
+          country: formData.country.trim(),
+          firstName: formData.firstName.trim(),
+          lastName: formData.lastName.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim(),
+          comments: formData.comments.trim(),
+        }),
+      });
+
+      if (!response.ok) {
+        const errorBody = await response.json().catch(() => null);
+        console.log("Message Fail", response.status, errorBody);
+        setCurrentStep(5);
+        return;
+      }
+
+      console.log("Message Sent");
+      setCurrentStep(4);
+    } catch {
+      console.log("Message Fail");
+      setCurrentStep(5);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleGoBack = () => {
     router.push("/");
   };
+
+  if (currentStep === 5) {
+    return (
+      <div className="px-5 xl:px-0 text-center py-20 mt-10 xl:mt-[100px]">
+        <div className="bg-[#121319] content-container mt-5 xl:mt-20 py-10 xl:py-25 xl:rounded-none rounded-xl">
+          <h2 className="text-white font-pretendard text-[80px] font-semibold mb-12 leading-tight">
+            Submission Fail
+          </h2>
+          <button
+            onClick={handleGoBack}
+            className="bg-[#FFD900] w-full xl:w-auto justify-center text-black font-pretendard text-[20px] md:text-[30px] font-semibold xl:px-12 py-2 xl:py-3 rounded-none xl:rounded hover:bg-[#ffe033] transition-colors"
+          >
+            {t('aboutUs.goBack')}
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (currentStep === 4) {
     return (
@@ -333,9 +422,10 @@ export default function AboutUsPage() {
                   </div>
                   <button
                     onClick={handleSubmit}
+                    disabled={isSubmitting}
                     className="cursor-pointer bg-[#FFD900] text-black font-pretendard text-[20px] md:text-[30px] font-semibold xl:px-12 py-2 xl:py-3 w-full xl:w-auto justify-center rounded hover:bg-[#ffe033] transition-colors flex items-center gap-2"
                   >
-                    {t('aboutUs.submit')}
+                    {isSubmitting ? t('aboutUs.submitting') : t('aboutUs.submit')}
                   </button>
                 </div>
               )}
