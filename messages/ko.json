@@ -21,6 +21,7 @@
       "방염복",
       "방탄판",
       "장갑",
+      "신발",
       "와셔",
       "후드",
       "EV 탱크",
@@ -52,6 +53,7 @@
     "thermal": "Thermal",
     "garment": "Garment",
     "glove": "Gloves",
+    "shoes": "Shoes",
     "hood": "Hoods",
     "equipment": "Equipment",
     "ev-tank": "EV Tank",
@@ -588,6 +590,65 @@
           }
         }
       }
+    },
+    "shoes": {
+  "bannerTitle": "Shoes",
+  "bannerDescription": "100% Kevlar® 원단으로 제작되어 뛰어난 방염성과 베임저항 성능을 갖춘 세이프티 슈즈로, 가벼운 착용감과 편안함을 동시에 제공합니다.",
+  "topImageAlt": "신발",
+  "chartTitle": "Kevlar® Safety Footwear 보호 성능 지표",
+  "chart": {
+    "labels": {
+      "cutResistance": "베임저항성",
+      "punctureResistance": "관통저항성",
+      "antiSlip": "미끄럼방지\n성능",
+      "waterResistance": "방수성능",
+      "comfortFit": "착용감·핏"
     }
+  },
+  "features": {
+  "feature1": {
+    "title": "100% Kevlar® 외피 소재",
+    "description": "방탄·방염 섬유인 Kevlar®로 갑피 전체를 제작\n국내 최초로 Kevlar® 원단을 적용한 세이프티 슈즈입니다"
+  },
+  "feature2": {
+    "title": "베임저항(CR) 인증",
+    "description": "EN ISO 20345:2022+A1:2024 기준 CR(베임저항) 등급 인증\nJK-6200/6200WR는 FO(내유성) 성능도 함께 갖췄습니다"
+  },
+  "feature3": {
+    "title": "PR(관통저항) 미드솔",
+    "description": "방탄 소재 기반의 유연한 미드솔로 안정적인 관통 저항 성능\n일반 스틸 플레이트보다 넓은 면적을 보호하면서도 편안한 착용감 제공"
+  }
+},
+"middleHero": {
+  "text": "까다로운 작업 현장을 위해 설계된 JK-4200/6200 시리즈는\nKevlar® 보호 성능과 다이얼락 체결 시스템, 미끄럼 방지 아웃솔로 안전하고 편안한 착용을 지원합니다."
+},
+  "wrNote": "방수 사양(WR) 버전 — JK-4200WR / JK-6200WR, S7L 등급.",
+  "ceCertification": "유럽 안전기준 CE 인증 · EN ISO 20345:2022+A1:2024",
+  "allInOneTitle": "한 켤레에 담긴 올인원 보호 성능",
+  "grid": {
+    "items": {
+      "item1": {
+        "title": "다이얼 락",
+        "description": "와이어 다이얼락 체결 방식으로 빠르고 간편하게 착·탈화할 수 있으며, 고장률이 낮고 수리도 쉽습니다."
+      },
+      "item2": {
+        "title": "와이드 토우캡",
+        "description": "아시아인의 발 형태를 연구·분석해 최적화한 플라스틱 토우캡으로, 여유로운 내부 공간을 확보해 편안한 착화감을 제공합니다."
+      },
+      "item3": {
+        "title": "미끄럼 방지(오일·물)",
+        "description": "SLIP-X® 아웃솔 적용으로 물·오일·세제 환경에서 우수한 마찰 성능을 제공하며, KOSHA 미끄럼방지 1등급 성능을 갖췄습니다."
+      },
+      "item4": {
+        "title": "S.P.M 시스템",
+        "description": "국내 최초로 적용된 '八'자 형태의 아웃솔 패턴을 적용한 S.P.M 시스템으로 접지 면적을 넓혀 안정성을 높였습니다."
+      },
+      "item5": {
+        "title": "메탈프리 토우캡",
+        "description": "15kN 압박 테스트를 통과한 토우캡을 적용했으며, 금속을 사용하지 않은 Metal-Free 설계로 금속 탐지기에 감지되지 않습니다."
+      }
+    }
+  }
+}
   }
 }

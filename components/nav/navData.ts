@@ -25,6 +25,11 @@ export const topBarItems: TopBarMenuItem[] = [
         link: "/products/thermal/hood",
         icon: "/assets/topbar/ico-hood.svg",
       },
+        {
+        nameKey: "shoes",
+        link: "/products/thermal/shoes",
+        icon: "/assets/topbar/ico-shoes.svg",
+      },
     ],
   },
   {

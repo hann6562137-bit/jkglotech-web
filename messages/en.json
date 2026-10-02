@@ -21,6 +21,7 @@
       "FR Garment",
       "Plate",
       "Gloves",
+      "Shoes",
       "Decon Washer",
       "Hoods",
       "EV Tank",
@@ -53,6 +54,7 @@
     "garment": "Garment",
     "glove": "Gloves",
     "hood": "Hoods",
+    "shoes": "Shoes",
     "equipment": "Equipment",
     "ev-tank": "EV Tank",
     "washer": "Decon Washer",
@@ -588,6 +590,65 @@
           }
         }
       }
+    },
+    "shoes": {
+  "bannerTitle": "Shoes",
+  "bannerDescription": "Kevlar® Safety Shoes made of 100% Kevlar® fabric, delivering outstanding flame resistance and cut protection in a lightweight, comfortable build.",
+  "topImageAlt": "shoes",
+  "chartTitle": "Kevlar® Safety Footwear Protection Performance Index",
+  "chart": {
+    "labels": {
+      "cutResistance": "Cut Resistance",
+      "punctureResistance": "Puncture\nResistance",
+      "antiSlip": "Anti-Slip\nPerformance",
+      "waterResistance": "Water\nResistance",
+      "comfortFit": "Comfort & Fit"
     }
+  },
+"features": {
+  "feature1": {
+    "title": "100% Kevlar® Outershell",
+    "description": "Made entirely of Kevlar®, the same bulletproof and flame-resistant fiber\nKorea's first Kevlar® fabric safety shoe"
+  },
+  "feature2": {
+    "title": "Certified Cut Resistance (CR)",
+    "description": "Meets CR (Cut Resistance) under EN ISO 20345:2022+A1:2024\nJK-6200/6200WR also certified for FO (Fuel Oil Resistance)"
+  },
+  "feature3": {
+    "title": "PR (Perforation Resistant) Midsole",
+    "description": "A flexible, bulletproof midsole for reliable puncture protection\nCovers a larger area than conventional steel plates, without sacrificing comfort"
+  }
+},
+  "middleHero": {
+    "text": "Engineered for demanding worksites,\nthe JK-4200/6200 series pairs Kevlar® protection\nwith a dial-lock closure and anti-slip outsole for secure, all-day wear."
+  },
+  "wrNote": "Also available in a water-resistant version — JK-4200WR / JK-6200WR, rated S7L.",
+  "ceCertification": "CE Certified · EN ISO 20345:2022+A1:2024",
+  "allInOneTitle": "All-in-One Protection Built Into Every Step",
+  "grid": {
+    "items": {
+      "item1": {
+        "title": "Dial Lock",
+        "description": "A wire dial-lock closure for quick, easy on/off wear, with a low failure rate and simple repair."
+      },
+      "item2": {
+        "title": "Wide Toe Cap",
+        "description": "Optimized through research and analysis of Asian foot shapes, the plastic toe cap provides extra room for a comfortable fit."
+      },
+      "item3": {
+        "title": "Non-Slip (Oil & Water)",
+        "description": "The SLIP-X® outsole provides excellent friction performance on surfaces exposed to water, oil, and detergents, while meeting KOSHA Grade 1 anti-slip performance."
+      },
+      "item4": {
+        "title": "S.P.M System",
+        "description": "The S.P.M (Sprain Prevention Midsole) System features Korea’s first “八”-shaped outsole pattern, designed to increase ground contact area for enhanced stability."
+      },
+      "item5": {
+        "title": "Metal-Free Toe Cap",
+        "description": "The toe cap has passed a 15kN compression test and features a completely metal-free design that is not detected by metal detectors."
+      }
+    }
+  }
+}
   }
 }
