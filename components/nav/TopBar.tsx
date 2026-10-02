@@ -18,15 +18,14 @@ function TopBarButtons({ items }: { items: TopBarMenuItem[] }) {
   const [backgroundHeight, setBackgroundHeight] = useState(277);
   const menuRefs = useRef<(HTMLDivElement | null)[]>([]);
   const t = useTranslations('menu');
+useEffect(() => {
+  const heights = menuRefs.current
+    .map(el => el?.offsetHeight ?? 0);
 
-  useEffect(() => {
-    const heights = menuRefs.current
-      .map(el => el?.offsetHeight ?? 0);
+  const max = Math.max(...heights);
 
-    const max = Math.max(...heights);
-
-    setBackgroundHeight(max);
-  }, [items]);
+  setBackgroundHeight(max + 100);
+}, [items]);
 
   return (
     <div className="w-full h-full flex flex-row relative font-aldrich text-white text-[20px]"
